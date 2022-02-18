@@ -1,11 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
 import {
-  FaAngleRight,
-  FaAngleLeft}
-from "react-icons/fa";
-
-import {
   Navbar,
   Container,
   Nav,
@@ -41,12 +36,8 @@ export const Navigation = () => {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-
-
-
     </>
   );
 };
-
 export default Navigation;
 
