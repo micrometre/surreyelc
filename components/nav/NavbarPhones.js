@@ -6,14 +6,12 @@ import Link from "next/link";
 import { FaPhone} from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {
-  let iconStyles = {
-    fontSize: "2.4em"
-  };
   return (
     <>
       {data.map((e, i) => {
         return (
-          <div className={Styles}
+          <div
+            className={Styles.phonesdiv}
             key={i}>
            {e.contact.map((e, i) => {
              return (
@@ -21,10 +19,9 @@ function NavBarContact( { name, href, ...props }) {
                 href={e.href}
                 key={i}  title={e.title}>
                <e.icons
-                style={iconStyles}
-                className={Styles}
+                className={Styles.phoneIconStyles}
                 />
-                  <span className={Styles}>
+                  <span className={Styles.phoneIconText}>
                   {e.name}
                   </span>
               </a>

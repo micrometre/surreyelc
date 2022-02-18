@@ -16,6 +16,13 @@ export const data = [
         subtitle: "Secound Mobile contact",
         icons: FaPhone
       },
+      {
+        name: "Call us 07763472408",
+        title: "Call Elmbridgepainting and Decorating Services Ltd",
+        href:   "07763472408",
+        subtitle: "Secound Mobile contact",
+        icons: FaPhone
+      },
     ]
   }
 ];

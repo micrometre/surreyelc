@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { data } from "../../data/contact-data";
 import Styles from './Navbar.module.css'
 import Link from "next/link";
-import { useState } from 'react'
 import { FaPhone, FaFacebook, FaGem, FaBars, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {

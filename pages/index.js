@@ -5,12 +5,13 @@ import Social from '../components/nav/NavbarSocial'
 import Paths from '../components/nav/NavbarPaths'
 import NavBar from '../components/nav/Navbar'
 import Carousel from '../components/Carousel'
+import Hero from '../components/Hero'
 
 
 export default function Home(initialData) {
   return (
     <MainLayout>
-    <Email />
+    <Hero />
     </MainLayout>
 
   )

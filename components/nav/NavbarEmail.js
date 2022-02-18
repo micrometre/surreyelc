@@ -7,7 +7,7 @@ import {  FaEnvelope } from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {
   let iconStyles = {
-    fontSize: "2.4em"
+    fontSize: "1.4em"
   };
   return (
     <>
