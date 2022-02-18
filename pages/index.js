@@ -12,6 +12,7 @@ export default function Home(initialData) {
   return (
     <MainLayout>
     <Hero />
+    <NavBar />
     </MainLayout>
 
   )
