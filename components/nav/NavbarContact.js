@@ -14,24 +14,26 @@ function NavBarContact( { name, href, ...props }) {
     <>
       {data.map((e, i) => {
         return (
-  <nav className={Styles} key={i}>
+          <div className={Styles}
+            key={i}>
            {e.contact.map((e, i) => {
              return (
-  <a style={Styles} href={e.href}
-    target="_blank" rel="noopener noreferrer"
-    key={i}  title={e.title}>
-    <e.icons
-    className={Styles}
-    />
-    <span className={Styles}>
-      {e.name}
-    </span>
-  </a>
-  );
-  })}
-  </nav>
-       );
-      })}
+               <a style={Styles}
+                href={e.href}
+                key={i}  title={e.title}>
+               <e.icons
+                style={iconStyles}
+                className={Styles}
+                />
+                  <span className={Styles}>
+                  {e.name}
+                  </span>
+              </a>
+                    );
+                    })}
+          </div>
+          );
+          })}
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import { data } from "../../data/paths-data";
-import Styles from './Navbar.module.css'
+import Styles from './Navpaths.module.css'
 import Link from "next/link";
 
 function NavBarContact( { name, href, ...props }) {
