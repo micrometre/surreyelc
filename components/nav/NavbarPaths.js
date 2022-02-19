@@ -3,28 +3,35 @@ import Image from 'next/image'
 import { data } from "../../data/paths-data";
 import Styles from './Navpaths.module.css'
 import Link from "next/link";
-import {Navbar,  Nav, NavLink} from 'react-bootstrap'
+import { FaPhone} from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {
-  let iconStyles = {
-    fontSize: "2.4em"
-};
   return (
     <>
       {data.map((e, i) => {
-return (
-          <Nav key={i}>
-            {e.contact.map((e, i) => {
-              return (
-<Nav.Link key={i} style={Styles} href={e.href} target="_blank" rel="noopener noreferrer" title={e.title}>
-  <span className={Styles}>{e.name}</span>
-</Nav.Link>
-);})}
-          </Nav>
-      );
-})}
+        return (
+          <div
+            className={Styles.phonesdiv}
+            key={i}>
+           {e.contact.map((e, i) => {
+             return (
+               <a style={Styles}
+                href={e.href}
+                key={i}  title={e.title}>
+               <e.icons
+                className={Styles.phoneIconStyles}
+                />
+                  <span className={Styles.phoneIconText}>
+                  {e.name}
+                  </span>
+              </a>
+                    );
+                    })}
+          </div>
+          );
+          })}
     </>
-);
+  );
 };
 
 export default NavBarContact;

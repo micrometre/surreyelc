@@ -1,3 +1,21 @@
-.iconStyles{
-font-size: 3.5em
+.phonesdiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #058b09;
 }
+.phoneIconStyles {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.phoneIconText {
+  color: yellow;
+  text-decoration: none;
+  font-size: 1.0em;
+}
+
+
+
