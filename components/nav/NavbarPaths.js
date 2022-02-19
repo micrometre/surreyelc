@@ -11,7 +11,7 @@ function NavBarContact( { name, href, ...props }) {
       {data.map((e, i) => {
         return (
           <div
-            className={Styles.phonesdiv}
+            className={Styles.pathsdiv}
             key={i}>
            {e.contact.map((e, i) => {
              return (
@@ -19,9 +19,9 @@ function NavBarContact( { name, href, ...props }) {
                 href={e.href}
                 key={i}  title={e.title}>
                <e.icons
-                className={Styles.phoneIconStyles}
+                className={Styles.pathsIconStyles}
                 />
-                  <span className={Styles.phoneIconText}>
+                  <span className={Styles.pathsIconText}>
                   {e.name}
                   </span>
               </a>
