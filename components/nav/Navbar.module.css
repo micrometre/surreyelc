@@ -7,14 +7,14 @@ z-index: 1030;
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .NavBarStyles {
   }
 }
 
 
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 990px) {
   .NavBarStyles {
     margin-top: 2em;
     top: 0;

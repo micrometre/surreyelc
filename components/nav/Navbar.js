@@ -13,9 +13,7 @@ export const Navigation = () => {
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
           <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav" className={Styles}>
-              <Nav >
                 <Paths />
-            </Nav>
           </Navbar.Collapse>
       </Navbar>
     </>

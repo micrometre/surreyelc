@@ -6,16 +6,14 @@ import Paths from '../components/nav/NavbarPaths'
 import Social from '../components/nav/NavbarSocial'
 import Email from '../components/nav/NavbarEmail'
 import Link from "next/link";
+import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 
 function NavBarContact( ) {
   return (
     <>
-  <navbar className={Styles.navbar} >
+  <Navbar className={Styles.navbar} >
     <Phones />
-    <Email />
-    <Social />
-    <Paths />
-  </navbar>
+  </Navbar>
     </>
   );
 };
