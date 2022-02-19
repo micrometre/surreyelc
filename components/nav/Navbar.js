@@ -13,25 +13,18 @@ export const Navigation = () => {
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
         <Container fluid>
           <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-    <Navbar.Toggle aria-controls="offcanvasNavbar" />
-    <Navbar.Offcanvas
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-      placement="end"
-    >
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
-      </Offcanvas.Header>
-      <Offcanvas.Body>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+              <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"placement="end">
+                <Offcanvas.Header closeButton><Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title></Offcanvas.Header>
+                  <Offcanvas.Body>
                                 <Paths />
                                 <Phones />
                                 <Social />
-      </Offcanvas.Body>
-    </Navbar.Offcanvas>
-  </Container>
+                  </Offcanvas.Body>
+              </Navbar.Offcanvas>
+        </Container>
       </Navbar>
     </>
   );
 };
 export default Navigation;
-
