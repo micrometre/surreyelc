@@ -1,30 +1,27 @@
 import React from "react";
 import Image from 'next/image'
 import { data } from "../../data/email-data";
-import Styles from './Navbar.module.css'
+import Styles from './Navemail.module.css'
 import Link from "next/link";
-import {  FaEnvelope } from 'react-icons/fa';
+import { FaPhone} from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {
-  let iconStyles = {
-    fontSize: "1.4em"
-  };
   return (
     <>
       {data.map((e, i) => {
         return (
-          <div className={Styles}
+          <div
+            className={Styles.emaildiv}
             key={i}>
            {e.contact.map((e, i) => {
              return (
-               <a style={Styles}
+               <a
                 href={e.href}
                 key={i}  title={e.title}>
                <e.icons
-                style={iconStyles}
-                className={Styles}
+                className={Styles.emailIconStyles}
                 />
-                  <span className={Styles}>
+                  <span className={Styles.emailIconText}>
                   {e.name}
                   </span>
               </a>

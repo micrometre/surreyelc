@@ -1,32 +1,36 @@
-import Link from 'next/link'
 import Image from 'next/image'
-import Styles from './Navsocial.module.css'
 import { data } from "../../data/social-data";
-import { FaFacebook, FaTwitter, FaInstagram,} from 'react-icons/fa';
-function NavBarSocial( { name, href, ...props }) {
-  let iconStyles = {
-    fontSize: "1.4em",
-  };
+import Styles from './Navsocial.module.css'
+import Link from "next/link";
+import { FaPhone} from 'react-icons/fa';
+
+function NavBarContact( { name, href, ...props }) {
   return (
     <>
       {data.map((e, i) => {
         return (
-  <div className={Styles} key={i}>
+          <div
+            className={Styles.socialdiv}
+            key={i}>
            {e.socialLinks.map((e, i) => {
              return (
-    <a style={Styles} href={e.href}
-        target="_blank" rel="noopener noreferrer"
-        key={i}  title={e.title}>
-    <e.icons
-      style={iconStyles}/>
-    </a>
-);
-  })}
-  </div>
-       );
-      })}
+               <a style={Styles}
+                href={e.href}
+                key={i}  title={e.title}>
+               <e.icons
+                className={Styles.socialIconStyles}
+                />
+                  <span className={Styles.spcialIconText}>
+                  {e.name}
+                  </span>
+              </a>
+                    );
+                    })}
+          </div>
+          );
+          })}
     </>
   );
 };
 
-export default NavBarSocial;
+export default NavBarContact;
