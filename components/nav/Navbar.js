@@ -13,7 +13,7 @@ export const Navigation = () => {
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Container fluid>
-      <Nav className={Styles}>
+      <Nav className={Styles.NavSocial}>
           <Social />
         </Nav>
                                 <Paths />

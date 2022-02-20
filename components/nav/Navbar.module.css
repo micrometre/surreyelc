@@ -8,7 +8,9 @@ z-index: 1030;
 
 /* Small screens */
 @media only screen and (max-width: 990px) {
-  .NavBarStyles {
+.NavSocial{
+    width: 100%;
+
   }
 }
 
@@ -21,5 +23,14 @@ z-index: 1030;
     width: 100%;
 
   }
+
+.NavSocial{
+
+display: none;
+
 }
+
+}
+
+
 
