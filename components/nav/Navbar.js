@@ -22,8 +22,10 @@ export const Navigation = () => {
         <Navbar.Toggle aria-controls="offcanvasNavbar" >
 
           <FaBars />
-              <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"placement="end">
-                <Offcanvas.Header closeButton><Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title></Offcanvas.Header>
+          <Navbar.Offcanvas className={Styles.NavOffcanvas}
+            aria-labelledby="offcanvasNavbarLabel"placement="end">
+                <Offcanvas.Header closeButton><Offcanvas.Title id="offcanvasNavbarLabel">
+                </Offcanvas.Title></Offcanvas.Header>
                   <Offcanvas.Body>
                                 <Paths />
                                 <Phones />
