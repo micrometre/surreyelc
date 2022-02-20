@@ -20,9 +20,6 @@ function NavBarContact( { name, href, ...props }) {
                <e.icons
                 className={Styles.socialIconStyles}
                 />
-                  <span className={Styles.spcialIconText}>
-                  {e.name}
-                  </span>
               </a>
                     );
                     })}

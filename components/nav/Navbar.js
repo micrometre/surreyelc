@@ -11,8 +11,11 @@ export const Navigation = () => {
   return (
     <>
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
+        <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Container fluid>
-            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Nav className={Styles}>
+          <Social />
+        </Nav>
                                 <Paths />
               <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"placement="end">
                 <Offcanvas.Header closeButton><Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title></Offcanvas.Header>
