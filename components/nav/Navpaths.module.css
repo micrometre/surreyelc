@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #058b09;
+  height: 2rem;
 }
 .pathsIconStyles {
   color: white;
@@ -18,4 +19,13 @@
 }
 
 
+/* Small screens */
+@media only screen and (max-width: 990px) {
+  .pathsdiv {
+    display: none;
+  }
+  .navbarNav {
+    flex-direction: row;
+  }
+}
 

@@ -12,8 +12,8 @@ export const Navigation = () => {
     <>
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
         <Container fluid>
-          <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                                <Paths />
               <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"placement="end">
                 <Offcanvas.Header closeButton><Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title></Offcanvas.Header>
                   <Offcanvas.Body>
