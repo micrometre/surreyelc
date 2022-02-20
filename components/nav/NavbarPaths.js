@@ -15,12 +15,9 @@ function NavBarContact( { name, href, ...props }) {
             key={i}>
            {e.contact.map((e, i) => {
              return (
-               <a style={Styles}
+               <a style={Styles.pathsLink}
                 href={e.href}
                 key={i}  title={e.title}>
-               <e.icons
-                className={Styles.pathsIconStyles}
-                />
                   <span className={Styles.pathsIconText}>
                   {e.name}
                   </span>

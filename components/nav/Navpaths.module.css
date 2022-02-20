@@ -9,15 +9,18 @@
 .pathsIconStyles {
   color: white;
   text-decoration: none;
-  font-size: 1.3em;
 }
-
 .pathsIconText {
   color: yellow;
   text-decoration: none;
   font-size: 1.0em;
 }
-
+/* Large screens */
+@media only screen and (min-width: 990px) {
+  .pathsIconText {
+    width: 100%;
+  }
+}
 
 /* Small screens */
 @media only screen and (max-width: 990px) {

@@ -12,7 +12,7 @@ export const Navigation = () => {
   return (
     <>
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
-        <Container fluid>
+        <Container >
       <Nav className={Styles.NavSocial}>
           <Social />
         </Nav>
