@@ -35,7 +35,6 @@ const Index = () => (
       </Head>
     <NavBar />
     <Logo />
-    <Carousel />
   </Container>
 )
 

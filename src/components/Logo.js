@@ -1,5 +1,6 @@
 import { Flex, Heading, Box } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
+import { Carousel } from '../components/Carousel'
 export const Logo = ({ title }) => (
   <Flex
     mt="10rem"

@@ -1,7 +1,7 @@
 import { Link as ChakraLink, Button } from '@chakra-ui/react'
 
 import { Container } from './Container'
-import { NavBar } from '../components/NavBar'
+import { Carousel } from '../components/Carousel'
 
 export const CTA = () => (
   <Container
