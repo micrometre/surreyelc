@@ -28,9 +28,12 @@ export const Header = () => {
       align="center"
       mb={8}
       p={4}
+      py={1}
       as="nav"
       wrap="wrap"
-      w="100%"
+          justify={[ 'space-between']}
+      width="100%"
+    py={4}
     >
       <Box display={{ base: 'block', md: 'none' }} onClick={toggleMenu}>
         {show ? <CloseIcon /> : <HamburgerIcon />}
@@ -41,7 +44,7 @@ export const Header = () => {
       >
         <Flex
           align="center"
-          justify={['center', 'space-between', 'flex-end', 'flex-end']}
+          justify={['space-between']}
           direction={['column', 'row', 'row', 'row']}
           pt={[4, 4, 0, 0]}
         >

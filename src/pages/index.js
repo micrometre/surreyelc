@@ -13,13 +13,21 @@ import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
+import { NavBar } from '../components/NavBar'
+import { SocialNav } from '../components/SocialNav'
 import { Header } from '../components/Header'
 
 const Index = () => (
   <Container
 
   >
-    <Header />
+    <NavBar />
+    <Hero />
+    <Hero />
+    <Hero />
+    <Hero />
+    <Hero />
+    <Hero />
     <Hero />
     <Main>
       <Text>
@@ -69,7 +77,6 @@ const Index = () => (
         </ListItem>
       </List>
     </Main>
-    <DarkModeSwitch />
     <Footer>
       <Text>Next ❤️ Chakra</Text>
     </Footer>
