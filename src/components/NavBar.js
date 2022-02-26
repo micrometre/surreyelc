@@ -28,7 +28,7 @@ export const NavBar = () => {
     const hamburgerIconStyles = {fontSize: "2.0em",color: "#ffff"};
     const closeIconStyles = {fontSize: "1.3em",color: "#ffff"};
   return (
-    <Flex
+    <Container
       bgGradient="linear(to-tr, teal.300,yellow.400)"
       mt={0}
       bgColor="#ffffff"
@@ -99,7 +99,7 @@ export const NavBar = () => {
         display={{ base: show ? 'block' : 'none', md: 'block' }}
         flexBasis={{ base: '100%', md: 'auto' }}
       >
-        <Flex
+        <Container
           m={2}
           p={1}
           py={2}
@@ -116,7 +116,7 @@ export const NavBar = () => {
           <MenuItem to="/painting">Painting and Decoration </MenuItem>
           <MenuItem to="/commercial">Commercial</MenuItem>
           <MenuItem to="/contact">Contact</MenuItem>
-        </Flex>
+        </Container>
       </Box>
   </Container>
  <style jsx>{`
@@ -139,6 +139,6 @@ export const NavBar = () => {
 }
       `}</style>
     </>
-        </Flex>
+        </Container>
 )
 }

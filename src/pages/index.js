@@ -33,7 +33,6 @@ const Index = () => (
           <meta name="Elmbridge Painting and Decorating Services Ltd" content={siteTitle} />
             <title>{siteTitle}</title>
       </Head>
-    <NavBar />
     <Carousel />
     <Main>
       <Text>
