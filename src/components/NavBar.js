@@ -22,20 +22,22 @@ const MenuItem = ({ children, isLast, to = '/' }) => {
 export const NavBar = () => {
     const [show, setShow] = useState(false)
     const toggleMenu = () => setShow(!show)
-    const phoneIconStyles = {fontSize: "1.0em",color: "black"};
+    const phoneIconStyles = {fontSize: "1.5em",color: "black"};
     const socialIconStyles = {fontSize: "2.5em",color: "#ffff"};
+    const hamburgerBoxStyles = {fontSize: "2.0em",color: "#ffff"};
+    const hamburgerIconStyles = {fontSize: "2.0em",color: "#ffff"};
+    const closeIconStyles = {fontSize: "1.3em",color: "#ffff"};
   return (
-        <Flex
+    <Flex
+      bgGradient="linear(to-tr, teal.300,yellow.400)"
+      mt={1}
       bgColor="#ffffff"
       position="fixed"
       top="0rem"
       align="center"
-      mb={0}
-      p={4}
       as="nav"
       wrap="wrap"
       width="100%"
-      py={0}
       align="center"
       justify={['space-between']}
       direction={['column', 'row', 'row', 'row']}
@@ -62,7 +64,10 @@ export const NavBar = () => {
           </div>
           );
           })}
-   <Container width="100%" bgColor="#6c757d">
+  <Container
+    py={1}
+    width="100%"
+    bgColor="#6c757d">
       {SocialData.map((e, i) => {
         return (
           <div
@@ -85,18 +90,24 @@ export const NavBar = () => {
       })}
           </Container>
   <Container width="100%" bgGradient="linear(to-tr, teal.300,yellow.400)">
-      <Box display={{ base: 'block', md: 'none' }} onClick={toggleMenu}>
-        {show ? <CloseIcon /> : <HamburgerIcon />}
+    <Box
+     style={hamburgerBoxStyles}
+      display={{ base: 'block', md: 'none' }} onClick={toggleMenu}>
+      {show ? <CloseIcon style={closeIconStyles} /> : <HamburgerIcon style={hamburgerIconStyles}/>}
       </Box>
       <Box
         display={{ base: show ? 'block' : 'none', md: 'block' }}
         flexBasis={{ base: '100%', md: 'auto' }}
       >
         <Flex
-                    align="center"
+          m={2}
+          p={1}
+          py={2}
+          align="center"
           justify={['space-between']}
           direction={['column', 'row', 'row', 'row']}
           pt={[4, 4, 0, 0]}
+          fontSize="1.5rem"
         >
           <MenuItem to="/">Home</MenuItem>
           <MenuItem to="/interior">Interior</MenuItem>

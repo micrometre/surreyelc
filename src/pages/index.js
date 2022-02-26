@@ -25,11 +25,6 @@ const Index = () => (
     <NavBar />
     <Logo />
     <Hero />
-    <Hero />
-    <Hero />
-    <Hero />
-    <Hero />
-    <Hero />
     <Main>
       <Text>
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.

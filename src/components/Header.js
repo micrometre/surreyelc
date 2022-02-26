@@ -43,10 +43,6 @@ export const Header = () => {
         flexBasis={{ base: '100%', md: 'auto' }}
       >
         <Flex
-          align="center"
-          justify={['space-between']}
-          direction={['column', 'row', 'row', 'row']}
-          pt={[4, 4, 0, 0]}
         >
           <MenuItem to="/">Home</MenuItem>
           <MenuItem to="/interior">Interior</MenuItem>
