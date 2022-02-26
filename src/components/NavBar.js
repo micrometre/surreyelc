@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
     <Flex
       bgGradient="linear(to-tr, teal.300,yellow.400)"
-      mt={1}
+      mt={0}
       bgColor="#ffffff"
       position="fixed"
       top="0rem"

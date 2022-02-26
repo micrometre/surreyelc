@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import {
   Link as ChakraLink,
   Text,
@@ -17,11 +18,25 @@ import { NavBar } from '../components/NavBar'
 import { SocialNav } from '../components/SocialNav'
 import { Header } from '../components/Header'
 import { Logo } from '../components/Logo'
+export const siteTitle = 'Elmbridge Painting and Decorating Services Ltd'
 
 const Index = () => (
   <Container
-
   >
+
+      <Head>
+        <link rel="icon" href="/logo.png" />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" content="Professional Painters and Decorators in Elmbridge and surrounding areas." />
+          <meta name="og:title" content={siteTitle} />
+          <meta name="Elmbridge Painting and Decorating Services Ltd" content={siteTitle} />
+            <title>{siteTitle}</title>
+      </Head>
+
+
+
+
     <NavBar />
     <Logo />
     <Hero />
