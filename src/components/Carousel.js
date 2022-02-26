@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
 import { Image } from '@chakra-ui/react'
+import React, {useState, useEffect} from "react"
+import { Link as ChakraLink, Button } from '@chakra-ui/react'
+import { Container } from './Container'
+import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
-import {
-  Flex,
-  Heading,
-  Box ,
-  IconButton,
-  useBreakpointValue
-} from '@chakra-ui/react'
+
 const settings = {
   dots: true,
   arrows: false,
@@ -19,33 +17,81 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 };
-
-
-export const Carousel = ({ title }) => {
-const cards = ["/img/exterior.webp ", "/img/leavingroom-0.webp",  "/img/hair-drasers.webp"]
+export const Carousel = () => {
+  const cards = ["/img/exterior.webp ", "/img/leavingroom-0.webp",  "/img/hair-drasers.webp"]
   const [slider, setSlider] = useState();
   const top = useBreakpointValue({ base: '90%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '10px' });
-  return (
-  <Flex
-    bgGradient="linear(to-tr, teal.300,yellow.400)"
-    mb="30rem"
-    alignItems="center"
+  return(
+  <Container
+    flexDirection="row"
+    bottom="60"
+    width="100%"
+    maxWidth="51rem"
+    py={2}
   >
-        <Flex>
-          <Image
-            src="/img/sky.jpg"
-            alt="Picture of the logo"
-            width={342}
-            height={1172}
-            loading="lazy"
-            className={'image'}
+  <>
+      <Box
+      position={'relative'}
+            height={'7600px'}
+      width={'full'}
+      overflow={'hidden'}>
+      {/* CSS files for react-slick */}
+      <link
+        rel="stylesheet"
+        type="text/css"
+        charSet="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+      {/* Left Icon */}
+      <IconButton
+        aria-label="left-arrow"
+        colorScheme="messenger"
+        borderRadius="full"
+        position="absolute"
+        left={side}
+        top={top}
+        transform={'translate(0%, -50%)'}
+        zIndex={2}
+        onClick={() => slider?.slickPrev()}>
+        <BiLeftArrowAlt />
+      </IconButton>
+      {/* Right Icon */}
+      <IconButton
+        aria-label="right-arrow"
+        colorScheme="messenger"
+        borderRadius="full"
+        position="absolute"
+        right={side}
+        top={top}
+        transform={'translate(0%, -50%)'}
+        zIndex={2}
+        onClick={() => slider?.slickNext()}>
+        <BiRightArrowAlt />
+      </IconButton>
+      {/* Slider */}
+      <Slider {...settings} ref={(slider) => setSlider(slider)}>
+        {cards.map((url, index) => (
+          <Box
+            key={index}
+            height={'6xl'}
+            position="relative"
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            backgroundImage={`url(${url})`}
           />
-    </Flex>
-  </Flex>
-  )
-}
+        ))}
+      </Slider>
+    </Box>
+    </>
 
-Carousel.defaultProps = {
-  title: 'Professional Painters and Decorators in Elmbridge and surrounding areas.',
+
+  </Container>
+  )
 }
