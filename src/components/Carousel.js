@@ -25,17 +25,13 @@ export const Carousel = () => {
   return(
   <Container
     flexDirection="row"
-    bottom="60"
-    width="100%"
-    maxWidth="51rem"
-    py={2}
   >
   <>
       <Box
       position={'relative'}
-            height={'7600px'}
-      width={'full'}
-      overflow={'hidden'}>
+     height={'900px'}
+      width={'900px'}
+      >
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -53,7 +49,7 @@ export const Carousel = () => {
         aria-label="left-arrow"
         colorScheme="messenger"
         borderRadius="full"
-        position="absolute"
+        position="relative"
         left={side}
         top={top}
         transform={'translate(0%, -50%)'}
@@ -79,7 +75,8 @@ export const Carousel = () => {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={'2xl'}
+      width={'900px'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
