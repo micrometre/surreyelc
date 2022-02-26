@@ -16,13 +16,14 @@ import { Footer } from '../components/Footer'
 import { NavBar } from '../components/NavBar'
 import { SocialNav } from '../components/SocialNav'
 import { Header } from '../components/Header'
+import { Logo } from '../components/Logo'
 
 const Index = () => (
   <Container
 
   >
     <NavBar />
-    <Hero />
+    <Logo />
     <Hero />
     <Hero />
     <Hero />
