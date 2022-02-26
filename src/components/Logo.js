@@ -1,9 +1,11 @@
 import { Flex, Heading, Box } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 export const Logo = ({ title }) => (
-  <Flex justifyContent="center" alignItems="center" height="100vh">
+  <Flex
+    mt="10rem"
+    justifyContent="center" alignItems="center">
     <Heading
-      fontSize="10vw"
+      fontSize="20rem"
       bgGradient="linear(to-l, #7928CA, #FF0080)"
       bgClip="text"
     >
@@ -22,5 +24,5 @@ export const Logo = ({ title }) => (
 )
 
 Logo.defaultProps = {
-  title: 'with-chakra-ui',
+  title: 'Professional Painters and Decorators in Elmbridge and surrounding areas.',
 }

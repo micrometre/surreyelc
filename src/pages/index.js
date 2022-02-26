@@ -18,12 +18,12 @@ import { NavBar } from '../components/NavBar'
 import { SocialNav } from '../components/SocialNav'
 import { Header } from '../components/Header'
 import { Logo } from '../components/Logo'
+import { Carousel } from '../components/Carousel'
 export const siteTitle = 'Elmbridge Painting and Decorating Services Ltd'
 
 const Index = () => (
   <Container
   >
-
       <Head>
         <link rel="icon" href="/logo.png" />
           <meta charSet="utf-8" />
@@ -33,13 +33,10 @@ const Index = () => (
           <meta name="Elmbridge Painting and Decorating Services Ltd" content={siteTitle} />
             <title>{siteTitle}</title>
       </Head>
-
-
-
-
     <NavBar />
     <Logo />
     <Hero />
+    <Carousel />
     <Main>
       <Text>
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.
