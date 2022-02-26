@@ -3,14 +3,8 @@ import { Flex, Heading, Box } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 export const Carousel = ({ title }) => (
   <Flex
-    mt="10rem"
+    mb="30rem"
     justifyContent="center" alignItems="center">
-    <Heading
-      fontSize="20rem"
-      bgGradient="linear(to-l, #7928CA, #FF0080)"
-      bgClip="text"
-    >
-    </Heading>
     <Flex>
           <Image
             src="/img/logo.png"
