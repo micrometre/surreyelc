@@ -15,6 +15,9 @@ export default function Home(initialData) {
     <MainLayout>
     <Hero />
     <NavBar />
+    <Carousel />
+    <Carousel />
+    <Carousel />
     </MainLayout>
 
   )
