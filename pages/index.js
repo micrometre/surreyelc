@@ -1,5 +1,4 @@
 import MainLayout from '../components/layout'
-import styles from '../styles/Home.module.css'
 import Email from '../components/nav/NavbarEmail'
 import Phones from '../components/nav/NavbarPhones'
 import Social from '../components/nav/NavbarSocial'
@@ -13,8 +12,8 @@ import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 export default function Home(initialData) {
   return (
     <MainLayout>
-    <Hero />
-    <NavBar />
+    <Social />
+    <Paths />
     <Carousel />
     <Carousel />
     <Carousel />

@@ -12,7 +12,6 @@ function NavBarContact( ) {
   return (
     <>
   <Navbar className={Styles.navbar} >
-    <Phones />
   </Navbar>
     </>
   );

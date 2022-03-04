@@ -14,10 +14,8 @@ export const Navigation = () => {
       <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
         <Container >
       <Nav className={Styles.NavSocial}>
-          <Social />
         </Nav>
       <Nav className={Styles.NavPaths}>
-          <Paths/>
         </Nav>
         <Navbar.Toggle aria-controls="offcanvasNavbar" >
 
