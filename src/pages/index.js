@@ -34,7 +34,7 @@ const Index = () => (
             <title>{siteTitle}</title>
       </Head>
     <NavBar />
-    <Logo />
+    <Carousel />
   </Container>
 )
 

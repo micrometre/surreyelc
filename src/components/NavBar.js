@@ -27,8 +27,10 @@ export const NavBar = () => {
     const hamburgerBoxStyles = {fontSize: "2.0em",color: "#ffff"};
     const hamburgerIconStyles = {fontSize: "2.0em",color: "#ffff"};
     const closeIconStyles = {fontSize: "1.3em",color: "#ffff"};
+  const navBarStyles = {fontSize: "1.3em",color: "#ffff", zIndex:"1090"};
   return (
     <Container
+     style={navBarStyles}
       bgGradient="linear(to-tr, teal.300,yellow.400)"
       mt={0}
       bgColor="#ffffff"
@@ -65,6 +67,7 @@ export const NavBar = () => {
           );
           })}
   <Container
+    className="navbardiv"
     py={1}
     width="100%"
     bgColor="#6c757d">
