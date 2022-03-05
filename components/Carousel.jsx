@@ -8,7 +8,7 @@ const images = ["/img/exterior.webp ", "/img/leavingroom-0.webp",  "/img/hair-dr
 export const ImageSlider = () => {
   return (
     <>
-   <div className=" flex flex-row justify-center w-full p-5 m-1">
+   <div className=" flex flex-row justify-center w-full p-1 m-1">
      <Container>
     <div id="carouselFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
  <Carousel fluid>
