@@ -13,9 +13,6 @@ export default function Home(initialData) {
   return (
     <MainLayout>
     <Social />
-    <Paths />
-    <Carousel />
-    <Carousel />
     <Carousel />
     </MainLayout>
 

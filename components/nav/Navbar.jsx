@@ -4,21 +4,20 @@ import Email from '../../components/nav/NavbarEmail'
 import Phones from '../../components/nav/NavbarPhones'
 import Social from '../../components/nav/NavbarSocial'
 import Paths from '../../components/nav/NavbarPaths'
-import Hero from '../../components/Hero.js'
+import Hero from '../../components/Hero'
 import Styles from './Navbar.module.css'
 import {Navbar, Container, Nav, NavDropdown, Offcanvas } from 'react-bootstrap'
 import { FaBars } from 'react-icons/fa';
 export const Navigation = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg" fixed="top" className={Styles.NavBarStyles}>
+      <Navbar bg="dark" expand="lg" sticky="top" className={Styles.NavBarStyles}>
         <Container >
       <Nav className={Styles.NavSocial}>
         </Nav>
       <Nav className={Styles.NavPaths}>
         </Nav>
         <Navbar.Toggle aria-controls="offcanvasNavbar" >
-
           <FaBars />
           <Navbar.Offcanvas className={Styles.NavOffcanvas}
             aria-labelledby="offcanvasNavbarLabel"placement="end">
