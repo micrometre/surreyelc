@@ -32,7 +32,7 @@ top: 0;
 right: 0;
 left: 0;
 z-index: 1030;
-border: 4px solid red;
+border: 4px solid yellow;
 border-radius: 11px;
 padding: 0rem;
 margin-bottom: 1rem;
