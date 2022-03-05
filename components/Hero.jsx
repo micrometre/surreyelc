@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import Link from "next/link";
-import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
+import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
@@ -10,38 +10,53 @@ function NavBarPhones( ) {
  return (
 <>
 
-  <Navbar bg="light" expand="lg" sticky="top" className="socialList">
-
+  <Navbar bg="light" expand="lg" sticky="top" className="pathsList">
     <Container fluid>
-
+            <Navbar.Toggle aria-controls="offcanvasNavbar" />
    {data.map((e, i) => {
-
      return (
-
       <div className="pathsDiv"key={i}>
-
        {e.contact.map((e, i) => {
-
          return (
-
         <a className="pathsLinks"href={e.href}key={i}title={e.title}>
-
           {e.name}
-
            </a>
-
          );
-
         })}
-
       </div>
-
      );
-
       })}
 </Container >
-
   </Navbar>
+  <Navbar bg="light" expand={false}>
+  <Container fluid>
+    <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+      <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Navbar.Offcanvas
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      placement="end"
+    >
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+      </Offcanvas.Header>
+      <Offcanvas.Body>
+        <Nav className="justify-content-end flex-grow-1 pe-3">
+          <Nav.Link href="#action1">Home</Nav.Link>
+          <Nav.Link href="#action2">Link</Nav.Link>
+          <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
+            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action5">
+              Something else here
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Offcanvas.Body>
+    </Navbar.Offcanvas>
+  </Container>
+</Navbar>
 <style jsx>{`
 .pathsLinks{
   text-decoration: none;
