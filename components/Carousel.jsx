@@ -1,16 +1,17 @@
 import * as React from "react";
 import Image from "next/image";
 import { FaAngleRight,  FaAngleLeft} from "react-icons/fa";
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Container } from 'react-bootstrap'
 
 const images = ["/img/exterior.webp ", "/img/leavingroom-0.webp",  "/img/hair-drasers.webp"]
 
 export const ImageSlider = () => {
   return (
     <>
-   <div className=" flex flex-row justify-center w-full p-5 m-5">
+   <div className=" flex flex-row justify-center w-full p-5 m-1">
+     <Container>
     <div id="carouselFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
- <Carousel>
+ <Carousel fluid>
         <Carousel.Item>
           <Image
             className="d-block w-100"
@@ -18,6 +19,7 @@ export const ImageSlider = () => {
             alt="First slide"
             width={1500}
             height={700}
+            layout="responsive"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -27,6 +29,7 @@ export const ImageSlider = () => {
             width={1500}
             height={700}
             alt="Third slide"
+            layout="responsive"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -36,10 +39,12 @@ export const ImageSlider = () => {
             width={1500}
             height={700}
             alt="Third slide"
+            layout="responsive"
           />
         </Carousel.Item>
       </Carousel>
     </div>
+     </Container>
     </div>
     </>
   );
