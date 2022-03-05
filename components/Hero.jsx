@@ -5,55 +5,58 @@ import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
-   const socialIconStyles = {fontSize: "2.0em",color: "black"};
+   const socialIconStyles = {fontSize: "1.2em",color: "black"};
    const socialLinkStyles = {color: "black"};
  return (
 <>
-        <Navbar bg="light" expand="lg" sticky="top"
-    className="socialList"
-        >
 
-      {data.map((e, i) => {
-        return (
-          <div
-            className="pathsdiv"
-            key={i}
-          >
-           {e.contact.map((e, i) => {
-             return (
-               <a
-                className="socialLinks"
-                href={e.href}
-                key={i}
-                title={e.title}
-               >
-                  <span
-                    style={socialIconStyles}
-                    className="socialIcons"
-                  >
-                  {e.name}
-                  </span>
-              </a>
-                    );
-                    })}
-          </div>
-          );
-          })}
+  <Navbar bg="light" expand="lg" sticky="top" className="socialList">
+
+    <Container fluid>
+
+   {data.map((e, i) => {
+
+     return (
+
+      <div className="pathsDiv"key={i}>
+
+       {e.contact.map((e, i) => {
+
+         return (
+
+        <a className="pathsLinks"href={e.href}key={i}title={e.title}>
+
+          {e.name}
+
+           </a>
+
+         );
+
+        })}
+
+      </div>
+
+     );
+
+      })}
+</Container >
+
   </Navbar>
 <style jsx>{`
-.socialLinks{
+.pathsLinks{
   text-decoration: none;
+  color: black;
 }
-.pathsdiv {
+.pathsDiv {
   margin-top: 6rem;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: white;
   transition: 100ms ease-in background;
 }
-.socialdiv:hover {
-  background: green;
+.pathsDiv:hover {
+  background: yellow;
 }
       `}</style>
     </>
