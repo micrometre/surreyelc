@@ -12,16 +12,10 @@ function RiverAccess ( ) {
 
 
     <div className="container">
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+              <h1 className="title">
+We can access hard-to-reach areas like riverside properties and islands via a boat.
+        </h1>
+
       <style jsx>{`
 
         .container {
@@ -34,7 +28,22 @@ function RiverAccess ( ) {
           margin-top: 1rem;
           padding: 0rem;
          background: url(./img/river.jpg) top center;
+    justify-content: center!important;
+    align-items: center!important;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #fff;
+    top: 56%;
+    font-family: Oxygen, sans-serif;
         }
+
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+
+
       `}</style>
     </div>
 
