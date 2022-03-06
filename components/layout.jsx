@@ -5,11 +5,11 @@ import styles from './layout.module.css'
 
 export const siteTitle = 'Elmbridge Painting and Decorating Services Ltd'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children}) {
   return (
     <div className="section">
       <Head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/img/logo.png" />
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content="Professional Painters and Decorators in Elmbridge and surrounding areas." />

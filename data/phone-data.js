@@ -2,25 +2,25 @@ import { FaPhone, FaFacebook, FaGem, FaBars, FaTwitter, FaInstagram, FaEnvelope 
 export const data = [
   {
     contact: [
-      {
-        name: "Call us 077079218873",
+            {
+        name: "077079218873",
         title: "Call Elmbridgepainting and Decorating Services Ltd",
-        href:   "077079218873",
+        href:   "tel:07707921887<",
         subtitle: "Mobile contact",
         icons: FaPhone
       },
       {
-        name: "Call us 07763472408",
+        name: "07763472408",
         title: "Call Elmbridgepainting and Decorating Services Ltd",
-        href:   "07763472408",
+        href:   "tel:07763472408<" ,
         subtitle: "Secound Mobile contact",
         icons: FaPhone
       },
       {
-        name: "Call us 07763472408",
+        name: "01932 253753",
         title: "Call Elmbridgepainting and Decorating Services Ltd",
-        href:   "07763472408",
-        subtitle: "Secound Mobile contact",
+        href:   "tel:+441932253753<" ,
+        subtitle: "Land line contact",
         icons: FaPhone
       },
     ]
