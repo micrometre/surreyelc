@@ -1,8 +1,6 @@
-import React from "react";
 import Image from 'next/image'
-import { data } from "../../data/phone-data";
-import Styles from './Navphones.module.css'
 import Link from "next/link";
+import { data } from "../../data/phone-data";
 import { FaPhone} from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {
