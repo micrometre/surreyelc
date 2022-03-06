@@ -12,7 +12,7 @@ function NavBarPhones( ) {
 <>
 <Navbar bg="light" expand="lg" sticky="top" className="pathsList">
 
-  <Container fluid>
+  <Container >
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -33,7 +33,7 @@ function NavBarPhones( ) {
   </Container >
 </Navbar>
   <Navbar bg="light" expand="lg">
-    <Container fluid>
+    <Container >
       <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
           <Offcanvas.Header closeButton>

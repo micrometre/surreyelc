@@ -37,6 +37,8 @@ function NavBarContact( { name, href, ...props }) {
 
 .phonesdiv{
 position: fixed;
+z-index: 1030;
+width: 100vw;
 bottom: 0;
 height: 3rem;
 width: 100%;

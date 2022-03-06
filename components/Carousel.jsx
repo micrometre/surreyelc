@@ -11,7 +11,7 @@ export const ImageSlider = () => {
    <div className=" flex flex-row justify-center w-full p-1 m-1">
      <Container>
     <div id="carouselFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
- <Carousel fluid>
+ <Carousel >
         <Carousel.Item>
           <Image
             className="d-block w-100"
