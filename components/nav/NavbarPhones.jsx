@@ -5,7 +5,7 @@ import { FaPhone} from 'react-icons/fa';
 
 function NavBarContact( { name, href, ...props }) {
      const phoneLinksStyles = {fontSize: "1.0em",color: "white", };
-     const phoneIconStyles = {fontSize: "1.0em",color: "white"};
+     const phoneIconStyles = {fontSize: "2.5em",color: "white"};
 
   return (
     <>
@@ -18,16 +18,14 @@ function NavBarContact( { name, href, ...props }) {
              return (
                <a
                 style={phoneLinksStyles}
+                className="phoneLinksStyles"
                 href={e.href}
                 key={i}  title={e.title}>
-               <e.icons
-                className="phoneLinksStyles"
-                />
-                  <span className="phoneIconLinks"
-                style={phoneIconStyles}
-                  >
+                 <e.icons
+                className="phoneIconsStyles"
+                 >
+                </e.icons>
                   {e.name}
-                  </span>
               </a>
                     );
                     })}
@@ -52,8 +50,13 @@ border: 4px solid yellow;
 border-radius: 11px;
 text-decoration: none;
 padding: 0rem;
-    font-size: 1.4rem;
+font-size: 1.4rem;
 }
+.phoneLinksStyles{
+    font-size: 0.8rem;
+text-decoration: none;
+}
+
 
 @media (max-width: 990px) {
 .phonesdiv {

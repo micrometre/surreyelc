@@ -5,14 +5,12 @@ import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
-   const socialIconStyles = {fontSize: "1.2em",color: "black"};
-   const socialLinkStyles = {color: "black"};
-   const OffcanvasStyles = {color: "black"};
+   const OffcanvasStyles = {color: "black",  textDecoration: 'none' };
  return (
 <>
 <Navbar bg="light" expand="lg" sticky="top" className="pathsList">
 
-  <Container fluid>
+  <Container>
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -33,7 +31,7 @@ function NavBarPhones( ) {
   </Container >
 </Navbar>
   <Navbar bg="light" expand="lg">
-    <Container fluid>
+    <Container >
       <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
           <Offcanvas.Header closeButton>
@@ -47,7 +45,7 @@ function NavBarPhones( ) {
               <Nav className="justify-content-end flex-grow-1 pe-3" key={i}>
        {e.contact.map((e, i) => {
          return (
-                <a style={OffcanvasStyles}className="pathsLinksCanvas"href={e.href}key={i}title={e.title}>
+                <a style={OffcanvasStyles} href={e.href}key={i}title={e.title}>
                   {e.name}
                 </a>
          );
