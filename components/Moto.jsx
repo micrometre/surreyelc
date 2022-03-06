@@ -15,15 +15,19 @@ export default function Home() {
   align-items: center;
 }
 .title {
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:3rem;
-  text-align:center;
-  color:black;
+    font-family: font-sans-serif;
+    text-align: center!important;
+    color: rgba(var(--bs-black-rgb),var(--bs-text-opacity))!important;
+    box-sizing: border-box;
+    margin-top: 1.15rem;
+    letter-spacing: 2px;
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    margin-bottom: 1.5rem!important;
+    line-height: 1!important;
 }
 @media (max-width: 600px) {
   .title {
-  font-size:1.1rem;
   width: 100%;
   }
 }

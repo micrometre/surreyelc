@@ -1,83 +1,47 @@
 import React from "react";
 import Image from 'next/image'
-import Link from "next/link";
 import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
-function NavBarPhones( ) {
-   const socialIconStyles = {fontSize: "1.2em",color: "black"};
-   const socialLinkStyles = {color: "black"};
-   const OffcanvasStyles = {color: "black"};
+function RiverAccess ( ) {
+    const src = `/img/river.jpg`;
+
  return (
+
 <>
-<Navbar bg="light" expand="lg" sticky="top" className="pathsList">
 
-  <Container >
 
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-   {data.map((e, i) => {
-     return (
-        <div className="pathsDiv"key={i}>
-       {e.contact.map((e, i) => {
-         return (
-          <a className="pathsLinks"href={e.href}key={i}title={e.title}>
-            {e.name}
-          </a>
-         );
-       })}
-        </div>
-     );
-   })}
-      </Navbar.Collapse>
-  </Container >
-</Navbar>
-  <Navbar bg="light" expand="lg">
-    <Container >
-      <Navbar.Toggle aria-controls="offcanvasNavbar" />
-        <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">
-              <Image src="/img/logo.png"alt="Picture of the logo"width={330}height={178}loading="eager"/>
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-            <Offcanvas.Body>
-   {data.map((e, i) => {
-     return (
-              <Nav className="justify-content-end flex-grow-1 pe-3" key={i}>
-       {e.contact.map((e, i) => {
-         return (
-                <a style={OffcanvasStyles}className="pathsLinksCanvas"href={e.href}key={i}title={e.title}>
-                  {e.name}
-                </a>
-         );
-       })}
-              </Nav>
-     );
-   })}
-            </Offcanvas.Body>
-        </Navbar.Offcanvas>
-    </Container>
-  </Navbar>
-  <style jsx>{`
-.pathsLinks{
-  text-decoration: none;
-  color: black;
-}
-.pathsDiv {
-  margin-top: 6rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  transition: 100ms ease-in background;
-}
-.pathsDiv:hover {
-  background: yellow;
-}
+    <div className="container">
+        <p className="description">
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.js</code>
+        </p>
+      <style jsx>{`
+
+        .container {
+          padding: 100rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          margin-top: 1rem;
+          padding: 0rem;
+         background: url(./img/river.jpg) top center;
+        }
       `}</style>
-    </>
-  );
+    </div>
+
+   </>
+
+ );
+
 };
 
-export default NavBarPhones;
+export default RiverAccess;

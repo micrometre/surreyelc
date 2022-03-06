@@ -1,12 +1,10 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function Home() {
   const src = `/img/logo.png`;
   return (
     <div className="container">
           <div className="card">
-          <Link href="/" passHref className="card">
           <Image
             src={src}
             alt="Picture of the logo"
@@ -15,7 +13,6 @@ export default function Home() {
             loading="lazy"
             className={'image'}
           />
-          </Link>
           </div>
       <style jsx>{`
         .container {
