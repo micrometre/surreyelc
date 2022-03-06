@@ -17,6 +17,8 @@ export default function Home(initialData) {
     <Logo />
     <Moto />
     <Carousel />
+    <Carousel />
+    <Carousel />
     <Footer />
     </MainLayout>
 

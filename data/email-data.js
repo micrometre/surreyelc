@@ -1,5 +1,5 @@
 import { FaEnvelope } from 'react-icons/fa';
-export const data = [
+export const emaildata = [
   {
     contact: [
       {

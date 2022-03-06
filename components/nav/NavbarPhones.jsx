@@ -38,8 +38,6 @@ function NavBarContact( { name, href, ...props }) {
 .phonesdiv{
 position: fixed;
 bottom: 0;
-z-index: 1030;
-width: 100vw;
 height: 3rem;
 width: 100%;
 display: flex;

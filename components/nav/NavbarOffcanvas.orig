@@ -1,22 +1,25 @@
+import React from "react";
 import Image from 'next/image'
 import Link from "next/link";
 import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
-  const OffcanvasNavbar = {color: "green", marginTop: 0,   };
-  const OffcanvasNav = {padding: 0,
+  const OffcanvasNav = {padding: 9,
+
         backgroundColor: '#ffffff',
         width: '70%',
         height: '100%'
 
   };
-  const OffcanvasLinks = {color: "green", fontSize: "1.14rem", textDecoration: 'none',  padding: 0, };
+  const OffcanvasLinks = {color: "green", fontSize: "1.14rem", textDecoration: 'none',  padding: 3, };
  return (
 <>
-  <main>
-<Navbar bg="light" expand="lg"  style={OffcanvasNavbar}>
+<Navbar bg="light" expand="lg" sticky="top" className="pathsList">
+
   <Container>
+
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
    {data.map((e, i) => {
      return (
@@ -62,23 +65,12 @@ function NavBarPhones( ) {
     </Container>
   </Navbar>
   <style jsx>{`
-
-main{
- margin-top: 3.60rem;
- position: fixed;
- top: 0;
- right: 0;
- left: 0;
- z-index: 1030;
-}
-
-
 .pathsLinks{
   text-decoration: none;
   color: black;
 }
 .pathsDiv {
-  margin-top: 0rem;
+  margin-top: 6rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -89,7 +81,6 @@ main{
   background: yellow;
 }
       `}</style>
-  </main>
     </>
   );
 };

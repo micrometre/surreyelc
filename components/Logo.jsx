@@ -5,8 +5,6 @@ export default function Home() {
   const src = `/img/logo.png`;
   return (
     <div className="container">
-      <main>
-        <div className="grid">
           <div className="card">
           <Link href="/" passHref className="card">
           <Image
@@ -19,19 +17,9 @@ export default function Home() {
           />
           </Link>
           </div>
-        </div>
-      </main>
       <style jsx>{`
         .container {
           padding: 0 0.0rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        main {
-          padding: 0rem 0;
-          flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -41,17 +29,8 @@ export default function Home() {
           color: inherit;
           text-decoration: none;
         }
-        .grid {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          max-width: 800px;
-          margin-top: orem;
-        }
         .card {
-          margin: 1rem;
+          margin-top: 9rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;

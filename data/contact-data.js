@@ -3,16 +3,16 @@ export const data = [
   {
     contact: [
       {
-        name: "Call us 077079218873",
+        name: "Call us tel:07707921887<",
         title: "Call Elmbridgepainting and Decorating Services Ltd",
-        href:   "077079218873",
+        href:   "tel:07707921887<",
         subtitle: "Mobile contact",
         icons: FaPhone
       },
       {
-        name: "Call us 07763472408",
+        name: "Call us tel:07763472408<",
         title: "Call Elmbridgepainting and Decorating Services Ltd",
-        href:   "07763472408",
+        href:   "tel:07763472408<",
         subtitle: "Secound Mobile contact",
         icons: FaPhone
       },
