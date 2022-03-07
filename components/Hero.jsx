@@ -1,26 +1,41 @@
 import React from "react";
 import Image from 'next/image'
-import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
+
 function RiverAccessHeader ( ) {
-    const src = `/img/river.jpg`;
- return (
-<>
 
-  <div className="container">
+  const src = `/img/bathroom2.jpg`;
 
-    <main>
+  return (
+<div className="container">
+<main>
+<section  className="aboutsection">
+<div className="container-fluid">
+<h2 className="header">About us</h2>
+<div className="row">
+<div className="col">
+          <Image
+            src={src}
+            alt="Picture of the logo"
+            width={342}
+            height={172}
+            loading="lazy"
+            className={'image'}
+          />
+<p className="descriotion">
+With over 25 years’ combined experience,
+</p>
+</div>
+</div>
+</div>
+</section>
+</main>
 
-      <h1 className="title">
-    River Access
-      </h1>
-
-  </main>
-
-      <style jsx>{`
+<style jsx>{`
         .container {
-          padding: 1rem;
+          min-height: 100vh;
+          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -28,8 +43,7 @@ function RiverAccessHeader ( ) {
         }
 
         main {
-          box-sizing: border-box;
-          padding: 1rem;
+          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -37,18 +51,14 @@ function RiverAccessHeader ( ) {
           align-items: center;
         }
 
-      .title {
-    font-family: font-sans-serif;
-    text-align: center!important;
-    margin-top: 1rem;
-    font-size: 1rem
-    font-weight: 300;
-    line-height: 1!important;
-      }
-      `}</style>
+  `}</style>
+
     </div>
-   </>
- );
+
+
+
+  );
+
 };
 
 export default RiverAccessHeader;

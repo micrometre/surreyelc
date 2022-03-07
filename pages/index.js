@@ -23,6 +23,7 @@ export default function Home(initialData) {
     <Services />
     <RiverHeader />
     <River />
+    <Hero />
     <Footer />
     </MainLayout>
 
