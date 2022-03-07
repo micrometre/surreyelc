@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel'
 import Logo from '../components/Logo'
 import Moto from '../components/Moto'
 import Services from '../components/Services'
+import RiverHeader from '../components/RiverHeader'
 import River from '../components/River'
 import Hero from '../components/Hero'
 import Footer from '../components/nav/NavbarPhones'
@@ -20,7 +21,7 @@ export default function Home(initialData) {
     <Carousel />
     <Moto />
     <Services />
-    <Hero />
+    <RiverHeader />
     <River />
     <Footer />
     </MainLayout>
