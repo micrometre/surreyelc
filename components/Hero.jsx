@@ -1,20 +1,17 @@
-import React from "react";
 import Image from 'next/image'
-import { data } from "../data/paths-data";
-import { FaPhone} from 'react-icons/fa'
+import {Col, Row, Container } from 'react-bootstrap'
 
 function RiverAccessHeader ( ) {
-
   const src = `/img/bathroom2.jpg`;
-
   return (
-<div className="container">
-<main>
-<section  className="aboutsection">
-<div className="container-fluid">
-<h2 className="header">About us</h2>
-<div className="row">
-<div className="col">
+    <div className="container">
+
+      <main>
+        <h1 className="title">
+          About us
+        </h1>
+        <div className="grid">
+          <a href="https://nextjs.org/docs" className="card">
           <Image
             src={src}
             alt="Picture of the logo"
@@ -23,41 +20,95 @@ function RiverAccessHeader ( ) {
             loading="lazy"
             className={'image'}
           />
-<p className="descriotion">
+          </a>
+          <a href="https://nextjs.org/learn" className="card">
+            <p>
 With over 25 years’ combined experience,
-</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-<style jsx>{`
+We pride ourselves in providing the highest quality finish
+to meet any individual’s vision.
+With our clients’ interests always remaining at the forefront of our business.
+We are always clean and efficient With a professional manner to keep disruption and stress to our clients and family to a minimum.
+            </p>
+          </a>
+        </div>
+      </main>
+      <style jsx>{`
         .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          padding: 1rem;
         }
-
         main {
-          padding: 5rem 0;
-          flex: 1;
+          padding: 1rem ;
+        }
+        a {
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
+          color: inherit;
+          text-decoration: none;
+        }
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+        .title,
+        .description {
+          text-align: center;
+        }
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+        }
+        .grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 3rem;
+        }
+        .card {
+          margin: 1rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: inherit;
+          text-decoration: none;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+          display: flex;
+          flex-direction: column;
+        }
+        .card p {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1.5;
+        }
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+      `}</style>
+
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
         }
 
-  `}</style>
-
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
     </div>
 
-
-
-  );
+ );
 
 };
 
