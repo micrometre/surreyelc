@@ -46,8 +46,6 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 background-color: #6c757d;
-border: 4px solid yellow;
-border-radius: 11px;
 text-decoration: none;
 padding: 0rem;
 font-size: 1.4rem;

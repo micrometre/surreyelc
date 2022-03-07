@@ -3,54 +3,52 @@ import Image from 'next/image'
 import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
-function RiverAccess ( ) {
+function RiverAccessHeader ( ) {
     const src = `/img/river.jpg`;
-
  return (
-
 <>
 
+  <div className="container">
 
-    <div className="container">
-              <h1 className="title">
-We can access hard-to-reach areas like riverside properties and islands via a boat.
-        </h1>
+    <main>
+
+      <h1 className="title">
+    River Access
+      </h1>
+
+  </main>
 
       <style jsx>{`
-
         .container {
-          padding: 100rem;
+          padding: 1rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        main {
           box-sizing: border-box;
-          margin-top: 1rem;
-          padding: 0rem;
-         background: url(./img/river.jpg) top center;
-    justify-content: center!important;
-    align-items: center!important;
-    height: 100vh;
-    box-sizing: border-box;
-    color: #fff;
-    top: 56%;
-    font-family: Oxygen, sans-serif;
+          padding: 1rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-
+      .title {
+    font-family: font-sans-serif;
+    text-align: center!important;
+    margin-top: 1rem;
+    font-size: 1rem
+    font-weight: 300;
+    line-height: 1!important;
+      }
       `}</style>
     </div>
-
    </>
-
  );
-
 };
 
-export default RiverAccess;
+export default RiverAccessHeader;
