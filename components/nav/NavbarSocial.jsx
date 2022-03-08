@@ -45,7 +45,8 @@ background: green;
 }
 @media (max-width: 990px) {
 .socialdiv {
-    font-size: 0.8rem;
+    font-size: .9rem;
+width: 100%;
     }
 }
 
