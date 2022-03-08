@@ -6,7 +6,6 @@ import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
   const OffcanvasNavbar = {color: "green", marginTop: 0,   };
   const OffcanvasNav = {padding: 0,
-        backgroundColor: '#ffffff',
         width: '70%',
         height: '100%'
 
@@ -82,7 +81,6 @@ main{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: white;
   transition: 100ms ease-in background;
 }
 .pathsDiv:hover {
