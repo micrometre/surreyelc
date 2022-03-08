@@ -5,45 +5,43 @@ function RiverAccessHeader ( ) {
   const src = `/img/bathroom2.jpg`;
   return (
     <div className="container">
-
       <main>
         <h1 className="title">
           About us
         </h1>
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-                     <Image
-            className="d-block w-100"
+          <div  className="card">
+            <Image
             src={src}
-            alt="First slide"
-            width={1500}
-            height={700}
+            alt="About picture"
+            width={500}
+            height={300}
           />
-          </a>
-          <a href="https://nextjs.org/learn" className="card">
-            <p>
+          </div>
+          <div  className="card">
+            <p className="description">
 With over 25 years’ combined experience,
+              <br />
 We pride ourselves in providing the highest quality finish
-to meet any individual’s vision.
+
+              to meet any individual’s vision.
+              <br />
 With our clients’ interests always remaining at the forefront of our business.
-We are always clean and efficient With a professional manner to keep disruption and stress to our clients and family to a minimum.
+              <br />We are always clean and efficient With a professional manner to keep disruption and stress to our clients and family to a minimum.
             </p>
-          </a>
+          </div>
         </div>
       </main>
       <style jsx>{`
+
+
+
         .container {
           padding: 1rem;
         }
         main {
+          box-sizing: border-box;
           padding: 1rem ;
-        }
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: inherit;
-          text-decoration: none;
         }
         .title {
           margin: 0;
@@ -55,8 +53,13 @@ We are always clean and efficient With a professional manner to keep disruption 
           text-align: center;
         }
         .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
+    text-align: var(--bs-body-text-align);
+    font-family: font-sans-serif;
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 3rem!important;
+    font-weight: 400!important;
+    --bs-text-opacity: 1;
         }
         .grid {
           display: flex;
@@ -68,11 +71,12 @@ We are always clean and efficient With a professional manner to keep disruption 
         .card {
           margin: 1rem;
           flex-basis: 45%;
-          padding: 1.5rem;
+          padding: 1.0rem;
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+           border: 5px solid #eaeaea;
+
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
           display: flex;
@@ -94,21 +98,6 @@ We are always clean and efficient With a professional manner to keep disruption 
             width: 100%;
             flex-direction: column;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
