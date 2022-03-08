@@ -12,13 +12,12 @@ function RiverAccessHeader ( ) {
         </h1>
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
-          <Image
+                     <Image
+            className="d-block w-100"
             src={src}
-            alt="Picture of the logo"
-            width={342}
-            height={172}
-            loading="lazy"
-            className={'image'}
+            alt="First slide"
+            width={1500}
+            height={700}
           />
           </a>
           <a href="https://nextjs.org/learn" className="card">
@@ -81,8 +80,14 @@ We are always clean and efficient With a professional manner to keep disruption 
         }
         .card p {
           margin: 0;
-          font-size: 1.25rem;
           line-height: 1.5;
+    font-family: font-sans-serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 3rem!important;
+    font-weight: 400!important;
+    color: #6c757d!important;
         }
         @media (max-width: 600px) {
           .grid {
