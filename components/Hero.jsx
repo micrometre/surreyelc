@@ -8,162 +8,17 @@ function RiverAccessHeader ( ) {
       <main>
          <section className="card-list">
       <article className="card">
-        <header className="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Never forget</h2>
-        </header>
 
-        <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="avatar.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Author</div>
-            Jeff Delaney
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-          <a href="#">web-dev</a>
-        </div>
-      </article>
-
-
-
-      <article className="card">
-        <header className="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Card Tricks are fun!</h2>
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/a.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Pirate</div>
-            Zheng Zhilong
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-        </div>
-      </article>
-
-
-
-
-      <article className="card">
-        <header className="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Card Tricks are fun!</h2>
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/b.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Pirate</div>
-            Francis Drake
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-        </div>
       </article>
 
       <article className="card">
-        <header className="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Card Tricks are fun!</h2>
-        </header>
 
-        <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/c.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Pirate</div>
-            Edward Teach
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-        </div>
       </article>
 
 
       <article className="card">
-        <header className="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Card Tricks are fun!</h2>
-        </header>
 
-        <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Pirate</div>
-            William Kidd
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-        </div>
       </article>
-
-      <article className="card">
-        <header className="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Card Tricks are fun!</h2>
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#">
-            <img src="https://api.adorable.io/avatars/172/d.png" />
-          </a>
-          <svg className="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Pirate</div>
-            William Kidd
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-        </div>
-      </article>
-
 
  </section>
       </main>
@@ -338,15 +193,6 @@ a {
     position: relative;
 }
 
-.tags a:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-box-decoration-break: clone;
-    background-clip: text;
-    border-color: white;
-}
 
 
 
