@@ -7,6 +7,7 @@ import Moto from '../components/Moto'
 import Services from '../components/Services'
 import RiverHeader from '../components/RiverHeader'
 import River from '../components/River'
+import About from '../components/About'
 import Hero from '../components/Hero'
 import Footer from '../components/nav/NavbarPhones'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
@@ -23,6 +24,7 @@ export default function Home(initialData) {
     <Services />
     <RiverHeader />
     <River />
+    <About />
     <Hero />
     <Footer />
     </MainLayout>
