@@ -15,6 +15,7 @@ import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 
 export default function Home(initialData) {
   return (
+  <div className="container">
     <MainLayout>
     <Social />
     <NavbarOffcanvas />
@@ -28,6 +29,33 @@ export default function Home(initialData) {
     <Hero />
     <Footer />
     </MainLayout>
+    <style jsx>{`
+.container {
+  padding:  0.0rem;
+}
+`}</style>
+
+<style jsx global>{`
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #ecf9ff;
+      font-family: font-sans-serif;
+}
+body{
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+`}</style>
+
+
+
+</div>
 
   )
 }

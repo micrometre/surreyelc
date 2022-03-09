@@ -4,17 +4,15 @@ import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
-  const OffcanvasNavbar = {color: "green", marginTop: 0,   };
-  const OffcanvasNav = {padding: 0,
-        width: '70%',
-        height: '100%'
-
-  };
-  const OffcanvasLinks = {color: "green", fontSize: "1.14rem", textDecoration: 'none',  padding: 0, };
+  const OffcanvasNav = {padding: 0, backgroundColor: "#6c757d", width: '70%', height: '100%'};
+  const offcanvasHeader = {padding: 0, backgroundColor: "white", width: '70%', height: '100%'};
+  const offcanvasTitle = {padding: 0, height: '100%'};
+  const offcanvasBody = {padding: 0,  height: '100%'};
+  const OffcanvasLinks = { color: "#fff", fontSize: "1.14rem", textDecoration: 'none',  padding: 0, };
  return (
 <>
   <main>
-<Navbar bg="light" expand="lg"  style={OffcanvasNavbar}>
+<Navbar bg="light" expand="lg" >
   <Container>
       <Navbar.Collapse id="basic-navbar-nav">
    {data.map((e, i) => {
@@ -37,12 +35,12 @@ function NavBarPhones( ) {
     <Container >
       <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas style={OffcanvasNav} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">
+          <Offcanvas.Header closeButton style={offcanvasHeader}>
+            <Offcanvas.Title id="offcanvasNavbarLabel" style={offcanvasTitle}>
               <Image src="/img/logo.png"alt="Picture of the logo"width={165}height={89}loading="eager"/>
             </Offcanvas.Title>
           </Offcanvas.Header>
-            <Offcanvas.Body>
+            <Offcanvas.Body style={offcanvasBody}>
    {data.map((e, i) => {
      return (
               <Nav className="justify-content-end flex-grow-1 pe-3" key={i}>
