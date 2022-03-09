@@ -17,7 +17,11 @@ function NavBarPhones( ) {
     <div className="socialdiv" key={i}>
        {e.socialLinks.map((e, i) => {
          return (
-      <a style={socialIconStyles} href={e.href} key={i}  title={e.title}>
+      <a style={socialIconStyles} href={e.href} key={i}  title={e.title}
+
+target="_blank" rel="noreferrer"
+
+      >
            <span className="icons" key={i}>
         <e.icons className={socialIconStyles} />
            </span>

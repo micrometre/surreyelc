@@ -20,7 +20,7 @@ function NavBarPhones( ) {
         <div className="pathsDiv"key={i}>
        {e.contact.map((e, i) => {
          return (
-          <a className="pathsLinks"href={e.href}key={i}title={e.title}>
+          <a className="pathsLinks"href={e.href}key={i}title={e.title} >
             {e.name}
           </a>
          );
