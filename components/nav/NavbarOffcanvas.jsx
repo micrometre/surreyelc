@@ -5,10 +5,10 @@ import { data } from "../../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
   const OffcanvasNav = {padding: 0, backgroundColor: "#6c757d", width: '70%', height: '100%'};
-  const offcanvasHeader = {padding: 0, backgroundColor: "white", width: '70%', height: '100%'};
+  const offcanvasHeader = {padding: 0, backgroundColor: "white", width: '100%', height: '30%'};
   const offcanvasTitle = {padding: 0, height: '100%'};
   const offcanvasBody = {padding: 0,  height: '100%'};
-  const OffcanvasLinks = { color: "#fff", fontSize: "1.14rem", textDecoration: 'none',  padding: 0, };
+  const OffcanvasLinks = { color: "#fff", fontSize: "1.18rem", textDecoration: 'none',  padding: 8, };
  return (
 <>
   <main>

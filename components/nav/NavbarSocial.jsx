@@ -18,7 +18,9 @@ function NavBarPhones( ) {
        {e.socialLinks.map((e, i) => {
          return (
       <a style={socialIconStyles} href={e.href} key={i}  title={e.title}>
+           <span className="icons" key={i}>
         <e.icons className={socialIconStyles} />
+           </span>
            </a>
          );
       })}
@@ -39,11 +41,9 @@ z-index: 1030;
 padding: 0rem;
 margin-bottom: 1rem;
 }
-
 socialdiv::-webkit-justify-content {
   background: #1e1e24;
 }
-
 
 .socialdiv:hover {
 background: green;
