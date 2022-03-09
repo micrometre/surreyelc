@@ -43,9 +43,9 @@ export default function Home(initialData) {
 }
 html {
   background-color: #ecf9ff;
-      font-family: font-sans-serif;
 }
 body{
+      font-family: font-sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;

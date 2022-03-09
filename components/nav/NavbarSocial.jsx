@@ -2,9 +2,14 @@ import Image from 'next/image'
 import Link from "next/link";
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../../data/social-data";
-import { FaPhone} from 'react-icons/fa'
+import { FaPhone, IconContext} from 'react-icons/fa'
+
 function NavBarPhones( ) {
-   const socialIconStyles = {fontSize: "2.7em",color: "white"};
+  const socialIconStyles = {fontSize: "2.7em",color: "white", borderRadius: "4rem",
+
+      top: '10px',
+      right: '20px',
+  };
  return (
 <>
    {data.map((e, i) => {
@@ -24,7 +29,7 @@ function NavBarPhones( ) {
 .socialdiv {
 width: 100%;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-around;
 background-color: #6c757d;
 position: fixed;
 top: 0;

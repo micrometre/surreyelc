@@ -65,9 +65,11 @@ We remain clean and organised throughout. Thorough cleaning will be carried out 
         </div>
       </div>
     </li>
-
-
   </ul>
+  <h1>
+                Customers satisfaction is our top priority.
+
+</h1>
 </div>
   </main>
 <style jsx>{`
