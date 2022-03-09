@@ -5,10 +5,10 @@ import { data } from "../../data/paths-data";
 import { FaPhone} from 'react-icons/fa'
 function NavBarPhones( ) {
   const OffcanvasNav = {padding: 0, backgroundColor: "#6c757d", width: '70%', height: '100%'};
-  const offcanvasHeader = {padding: 0, backgroundColor: "white", width: '100%', height: '30%'};
-  const offcanvasTitle = {padding: 0, height: '100%'};
+  const offcanvasHeader = {padding: 3, backgroundColor: "#6c757d", width: '100%', height: '20%', borderRadius: "5px", margin: 2,};
+  const offcanvasTitle = {padding: 0, height: '100%', backgroundColor: "white"};
   const offcanvasBody = {padding: 0,  height: '100%'};
-  const OffcanvasLinks = { color: "#fff", fontSize: "1.18rem", textDecoration: 'none',  padding: 8, };
+  const OffcanvasLinks = { color: "#fff", fontSize: "1.18rem", textDecoration: 'none',  padding: 8, margin: 8};
  return (
 <>
   <main>
@@ -37,7 +37,7 @@ function NavBarPhones( ) {
         <Navbar.Offcanvas style={OffcanvasNav} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
           <Offcanvas.Header closeButton style={offcanvasHeader}>
             <Offcanvas.Title id="offcanvasNavbarLabel" style={offcanvasTitle}>
-              <Image src="/img/logo.png"alt="Picture of the logo"width={165}height={89}loading="eager"/>
+              <Image src="/img/logo.png" className="brandLogo"alt="Picture of the logo"width={165}height={89}loading="eager"/>
             </Offcanvas.Title>
           </Offcanvas.Header>
             <Offcanvas.Body style={offcanvasBody}>
