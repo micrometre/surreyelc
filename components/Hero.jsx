@@ -4,148 +4,217 @@ function RiverAccessHeader ( ) {
     const src = `/img/bathroom2.jpg`;
 
   return (
-<div className="container">
-  <main>
-    <div className="main">
-  <h1>Our Promise
-</h1>
-<h3 className="made_by">
-            Full client satisfaction with thorough walk through and final inspection before completion.
-</h3>
-  <ul className="cards">
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image">
+    <div className="container">
+
+      <main>
+
+
+
             <Image
-            src="/img/kitchen-2.webp"
+            src="/img/map.webp"
             alt="About picture"
             width={500}
             height={300}
           />
-        </div>
-        <div className="card_content">
-          <p className="card_text">
-            Work carried out to the highest of standards.
-          </p>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image">
+        <h1 className="title">
+         Areas we cover
+        </h1>
+
+        <p className="description">
+          Esher, Walton on Thames, Weybridge, Claygate,
+                        East Molesey, Cobham, Hersham, Oxshott, Thames Ditton, Long Ditton,
+                        Stoke D’Abernon, Hinchley Wood, Downside,
+                        St Georges Hill, Weston Green, Whiteley Village, Byfleet, West End and Oatlands.
+                    </p>
+
+        <div className="grid">
+          <a href="https://nextjs.org/docs" className="card">
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+
             <Image
-            src="/img/kitchen-3.webp"
+            src="/img/map.webp"
             alt="About picture"
             width={500}
             height={300}
           />
+
+
+
+          </a>
+
+          <a href="https://nextjs.org/learn" className="card">
+            <h3>Learn &rarr;</h3>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a
+            href="https://github.com/vercel/next.js/tree/master/examples"
+            className="card"
+          >
+            <h3>Examples &rarr;</h3>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
+            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            className="card"
+          >
+            <h3>Deploy &rarr;</h3>
+            <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
         </div>
-        <div className="card_content">
-          <p className="card_text">
-We remain clean and organised throughout. Thorough cleaning will be carried out on completion.
-          </p>
-        </div>
-      </div>
-    </li>
+      </main>
+      <style jsx>{`
+        .container {
+          min-height: 100vh;
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image">
-            <Image
-            src="/img/leavingroom-1.webp"
-            alt="About picture"
-            width={500}
-            height={300}
-          />
-        </div>
-        <div className="card_content">
-          <p className="card_text">
-            Your home will be treated with the utmost respect.
-          </p>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <h1>
-                Customers satisfaction is our top priority.
+        main {
+          padding: 5rem 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
-</h1>
-</div>
-  </main>
-<style jsx>{`
-.main{
-  background-color: #6c757d;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+        footer {
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #eaeaea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: center;
-  color: #ffffff;
-}
+        footer img {
+          margin-left: 0.5rem;
+        }
 
+        footer a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
 
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
+        .title a {
+          color: #0070f3;
+          text-decoration: none;
+        }
 
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
+        .title a:hover,
+        .title a:focus,
+        .title a:active {
+          text-decoration: underline;
+        }
 
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
 
-.card {
-  background-color: #6c757d;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+        .title,
+        .description {
+          text-align: center;
+        }
 
-.card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, ##6c757d 30%, #6c757d 100%);
-}
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+        }
 
+        code {
+          background: #fafafa;
+          border-radius: 5px;
+          padding: 0.75rem;
+          font-size: 1.1rem;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
 
-.card_text {
-  color: #ffffff;
-  font-size: 1.275rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  font-weight: 300;
-}
-.made_by{
-  font-weight: 300;
-  font-size: 1.45rem;
-  margin-top: 35px;
-  text-align: center;
-  color: #ffffff;
-}
+        .grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
 
+          max-width: 800px;
+          margin-top: 3rem;
+        }
 
+        .card {
+          margin: 1rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: inherit;
+          text-decoration: none;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+        }
 
-`}</style>
+        .card:hover,
+        .card:focus,
+        .card:active {
+          color: #0070f3;
+          border-color: #0070f3;
+        }
+
+        .card h3 {
+          margin: 0 0 1rem 0;
+          font-size: 1.5rem;
+        }
+
+        .card p {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1.5;
+        }
+
+        .logo {
+          height: 1em;
+        }
+
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+      `}</style>
+
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
     </div>
+
+
  );
 };
 export default RiverAccessHeader;

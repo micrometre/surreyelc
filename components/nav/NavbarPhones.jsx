@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import { data } from "../../data/phone-data";
 import { FaPhone} from 'react-icons/fa';
+import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 
 function NavBarContact( { name, href, ...props }) {
      const phoneLinksStyles = {fontSize: "1.0em",color: "white", };
@@ -9,6 +10,12 @@ function NavBarContact( { name, href, ...props }) {
 
   return (
     <>
+
+      <div>
+<Navbar  expand="lg"
+ variant="dark"
+fixed="bottom">
+
       {data.map((e, i) => {
         return (
           <div
@@ -32,22 +39,21 @@ function NavBarContact( { name, href, ...props }) {
           </div>
           );
           })}
-
+</Navbar>
+      </div>
       <style jsx>{`
 
 .phonesdiv{
 position: fixed;
 z-index: 1030;
-width: 100vw;
+width: 100%;
 bottom: 0;
 height: 3rem;
-width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
 background-color: #6c757d;
 text-decoration: none;
-padding: 0rem;
 font-size: 1.4rem;
 }
 .phoneLinksStyles{
