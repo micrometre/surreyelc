@@ -9,6 +9,7 @@ import RiverHeader from '../components/RiverHeader'
 import River from '../components/River'
 import About from '../components/About'
 import Promise from '../components/Promise'
+import Map from '../components/Map'
 import Hero from '../components/Hero'
 import Footer from '../components/nav/NavbarPhones'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
@@ -29,6 +30,7 @@ export default function Home(initialData) {
     <River />
     <About />
     <Promise />
+    <Map />
     <Hero />
     <Footer />
     </MainLayout>

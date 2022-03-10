@@ -1,20 +1,32 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-function CopyRight ( ) {
- const current = new Date();
-  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
-  const year = `${current.getFullYear()}`;
+function RiverAccessHeader ( ) {
+    const src = `/img/bathroom2.jpg`;
+
   return (
 <div className="container">
 <main>
-    <div className="container">
-      <main className="main">
-        <h1 className="title">
-        </h1>
-<p className="text-center" >Copyright ©{year} Painting and Decorating Services Ltd.</p>
-      </main>
-    </div>
+<Image
+src="/img/map.jpeg"
+alt="About picture"
+width={1200}
+height={500}
+/>
+        <Link href="https://goo.gl/maps/HNW7FNaFFqYdAGXv5">
+          <a target="_blank">
+<h1 className="title">
+ Areas we cover
+</h1>
+          </a>
+        </Link>
+  <p className="description">
+  Esher, Walton on Thames, Weybridge, Claygate,
+                East Molesey, Cobham, Hersham, Oxshott, Thames Ditton, Long Ditton,
+                Stoke D’Abernon, Hinchley Wood, Downside,
+                St Georges Hill, Weston Green, Whiteley Village, Byfleet, West End and Oatlands.
+            </p>
+
 </main>
 <style jsx>{`
   .container {
@@ -25,7 +37,7 @@ function CopyRight ( ) {
     align-items: center;
   }
   main {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -56,4 +68,4 @@ function CopyRight ( ) {
     </div>
  );
 };
-export default CopyRight;
+export default RiverAccessHeader;
