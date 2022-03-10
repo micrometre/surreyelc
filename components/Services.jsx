@@ -2,7 +2,7 @@ import { data } from "../data/paths-data";
 function Services( ) {
  return (
 <>
-<div className="container">
+<div className="services-container">
       <main>
         <h1 className="title">
           Services
@@ -12,7 +12,7 @@ function Services( ) {
         </p>
       </main>
       <style jsx>{`
-        .container {
+        .services-container {
           margin-top: 0rem;
           padding: 0rem;
           display: flex;

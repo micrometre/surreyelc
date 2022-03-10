@@ -1,7 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { FaAngleRight,  FaAngleLeft} from "react-icons/fa";
-import { Carousel, Container } from 'react-bootstrap'
+import { Carousel } from 'react-bootstrap'
 
 const images = ["/img/exterior.webp ", "/img/leavingroom-0.webp",  "/img/hair-drasers.webp"]
 

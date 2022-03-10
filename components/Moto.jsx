@@ -1,14 +1,14 @@
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="logo-container">
       <main>
         <h1 className="title">
           Professional Painters and Decorators in Elmbridge and surrounding areas.
         </h1>
       </main>
       <style jsx>{`
-.container {
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,6 @@ export default function Home() {
 .title {
     font-family: font-sans-serif;
     text-align: center!important;
-    color: rgba(var(--bs-black-rgb),var(--bs-text-opacity))!important;
     box-sizing: border-box;
     margin-top: 1.15rem;
     letter-spacing: 2px;

@@ -7,7 +7,7 @@ function RiverAccessHeader ( ) {
  return (
 <>
 
-  <div className="container">
+  <div className="header-container">
 
     <main>
 
@@ -18,14 +18,6 @@ function RiverAccessHeader ( ) {
   </main>
 
       <style jsx>{`
-        .container {
-          padding: 1rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
         main {
           box-sizing: border-box;
           padding: 1rem;

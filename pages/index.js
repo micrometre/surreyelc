@@ -12,13 +12,13 @@ import Promise from '../components/Promise'
 import Map from '../components/Map'
 import Hero from '../components/Hero'
 import Footer from '../components/nav/NavbarPhones'
-import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 
 
 export default function Home(initialData) {
   return (
-  <div className="container">
- <Container className="md-container">
+  <div className="home">
+ <div className="home-container">
     <MainLayout>
     <Social />
     <NavbarOffcanvas />
@@ -34,16 +34,15 @@ export default function Home(initialData) {
     <Hero />
     <Footer />
     </MainLayout>
-   </Container>
+   </div>
     <style jsx>{`
 `}</style>
 
 <style jsx global>{`
 body{
       font-family: font-sans-serif;
-  font-style: normal;
-  letter-spacing: 0;
-  padding: 0rem;
+  padding: 4rem;
+  width: 100%;
 }
 `}</style>
 

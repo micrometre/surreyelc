@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   const src = `/img/logo.png`;
   return (
-    <div className="container">
+    <div className="logo-container">
           <div className="card">
           <Image
             src={src}
@@ -15,7 +15,7 @@ export default function Home() {
           />
           </div>
       <style jsx>{`
-        .container {
+        .logo-container {
           padding: 0 0.0rem;
           display: flex;
           flex-direction: column;

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from "next/link";
-import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import { data } from "../../data/social-data";
 import { FaPhone, IconContext} from 'react-icons/fa'
 

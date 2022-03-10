@@ -4,7 +4,7 @@ function RiverAccessHeader ( ) {
     const src = `/img/bathroom2.jpg`;
 
   return (
-<div className="container">
+<div className="promise-container">
   <main>
     <div className="main">
   <h1>Our Promise
@@ -75,7 +75,7 @@ We remain clean and organised throughout. Thorough cleaning will be carried out 
 <style jsx>{`
 .main{
   background-color: #6c757d;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
