@@ -1,1 +1,7 @@
-@import 'bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.md-container {
+  max-width: 1500px;
+  padding-top: 2rem;
+}
+

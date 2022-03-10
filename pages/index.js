@@ -17,6 +17,7 @@ import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 export default function Home(initialData) {
   return (
   <div className="container">
+ <Container className="md-container">
     <MainLayout>
     <Social />
     <NavbarOffcanvas />
@@ -31,6 +32,7 @@ export default function Home(initialData) {
     <Hero />
     <Footer />
     </MainLayout>
+   </Container>
     <style jsx>{`
 `}</style>
 

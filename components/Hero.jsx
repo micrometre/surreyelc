@@ -30,7 +30,6 @@ height={500}
 </main>
 <style jsx>{`
   .container {
-    min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
@@ -38,7 +37,7 @@ height={500}
     align-items: center;
   }
   main {
-    padding: 5rem 0;
+    padding-bottom: 28rem;
     flex: 1;
     display: flex;
     flex-direction: column;

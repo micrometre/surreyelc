@@ -8,11 +8,11 @@ export default function Home() {
         </h1>
       </main>
       <style jsx>{`
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .title {
     font-family: font-sans-serif;
