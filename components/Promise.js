@@ -9,9 +9,9 @@ function RiverAccessHeader ( ) {
     <div className="main">
   <h1>Our Promise
 </h1>
-<h3 className="made_by">
+<h2 className="made_by">
             Full client satisfaction with thorough walk through and final inspection before completion.
-</h3>
+</h2>
   <ul className="cards">
     <li className="cards_item">
       <div className="card">

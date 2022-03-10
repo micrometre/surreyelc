@@ -64,7 +64,7 @@ function Services( ) {
         font-size: 1.25rem;
         margin-bottom: 1rem!important;
         font-weight: 400!important;
-        color: #6c757d!important;
+        color: #000000;
         }
       `}</style>
     </div>

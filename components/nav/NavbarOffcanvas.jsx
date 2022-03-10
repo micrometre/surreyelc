@@ -33,7 +33,7 @@ function NavBarPhones( ) {
 </Navbar>
   <Navbar bg="light" expand="lg">
     <Container >
-      <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Navbar.Toggle aria-controls="offcanvasNavbar" aria-labelledby="offcanvasNavbar"/>
         <Navbar.Offcanvas style={OffcanvasNav} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
           <Offcanvas.Header closeButton style={offcanvasHeader}>
             <Offcanvas.Title id="offcanvasNavbarLabel" style={offcanvasTitle}>
