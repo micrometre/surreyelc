@@ -14,7 +14,7 @@ width={1200}
 height={500}
 />
         <Link href="https://goo.gl/maps/HNW7FNaFFqYdAGXv5">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer" >
 <h1 className="title">
  Areas we cover
 </h1>
