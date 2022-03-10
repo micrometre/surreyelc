@@ -6,7 +6,7 @@ function RiverAccess ( ) {
     const src = `/img/river.jpg`;
  return (
     <>
- <div className="container">
+ <div className="river-container">
       <main>
         <h1 className="title">
           We can access hard-to-reach areas like riverside properties and islands via a boat.
@@ -16,7 +16,7 @@ function RiverAccess ( ) {
         </p>
       </main>
       <style jsx>{`
-        .container {
+        .river-container {
           min-height: 100vh;
           padding: 1rem;
           display: flex;

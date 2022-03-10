@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-function RiverAccessHeader ( ) {
+function About ( ) {
   const src = `/img/bathroom2.jpg`;
   return (
-    <div className="container">
+    <div className="about-container">
       <main>
         <h1 className="title">
           About us
@@ -35,8 +35,9 @@ With our clients’ interests always remaining at the forefront of our business.
 
 
 
-        .container {
-          padding: 1rem;
+        .about-container {
+          padding: 4rem;
+            width: 100%;
         }
         main {
           box-sizing: border-box;
@@ -105,4 +106,4 @@ With our clients’ interests always remaining at the forefront of our business.
 
 };
 
-export default RiverAccessHeader;
+export default About;

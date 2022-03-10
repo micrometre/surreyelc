@@ -16,7 +16,7 @@ export default function Home() {
           </div>
       <style jsx>{`
         .logo-container {
-          padding: 0 0.0rem;
+          padding: 2rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -27,7 +27,8 @@ export default function Home() {
           text-decoration: none;
         }
         .card {
-          margin-top: 9rem;
+          margin-top: 4rem;
+          margin-bttom: 7rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;

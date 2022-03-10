@@ -5,7 +5,7 @@ function RiverAccessHeader ( ) {
     const src = `/img/bathroom2.jpg`;
 
   return (
-<div className="container">
+<div className="map-container">
 <main>
 <Image
 src="/img/map.jpeg"
@@ -29,12 +29,13 @@ height={500}
 
 </main>
 <style jsx>{`
-  .container {
+  .map-container {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   main {
     padding-bottom: 1rem;

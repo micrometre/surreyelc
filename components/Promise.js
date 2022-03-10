@@ -75,8 +75,8 @@ We remain clean and organised throughout. Thorough cleaning will be carried out 
 <style jsx>{`
 .main{
   background-color: #6c757d;
-  max-width: 1800px;
   margin: 0 auto;
+    width: 100%;
 }
 
 h1 {

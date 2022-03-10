@@ -6,7 +6,7 @@ function CopyRight ( ) {
   const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   const year = `${current.getFullYear()}`;
   return (
-<div className="container">
+<div className="copyright-container">
 <main>
     <div className="container">
       <main className="main">
@@ -17,15 +17,15 @@ function CopyRight ( ) {
     </div>
 </main>
 <style jsx>{`
-  .container {
-    padding: 1rem;
+  .copyright-container{
+    padding: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   main {
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     flex: 1;
     display: flex;
     flex-direction: column;
