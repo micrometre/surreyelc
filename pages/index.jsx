@@ -11,6 +11,7 @@ import About from '../components/About'
 import Promise from '../components/Promise'
 import Map from '../components/Map'
 import Hero from '../components/Hero'
+import Copyright from '../components/Copyright'
 import Footer from '../components/nav/NavbarPhones'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 
@@ -32,6 +33,7 @@ export default function Home(initialData) {
     <Promise />
     <Map />
     <Hero />
+    <Copyright />
     <Footer />
     </MainLayout>
    </div>

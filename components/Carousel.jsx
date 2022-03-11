@@ -17,6 +17,7 @@ export const ImageSlider = () => {
             width={1500}
             height={700}
             layout="responsive"
+            priority
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -27,6 +28,7 @@ export const ImageSlider = () => {
             height={700}
             alt="Third slide"
             layout="responsive"
+            priority
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -37,6 +39,7 @@ export const ImageSlider = () => {
             height={700}
             alt="Third slide"
             layout="responsive"
+            priority
           />
         </Carousel.Item>
       </Carousel>

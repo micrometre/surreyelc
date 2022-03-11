@@ -10,8 +10,8 @@ export default function Home() {
             alt="Picture of the logo"
             width={342}
             height={172}
-            loading="lazy"
             className={'image'}
+            priority
           />
           </div>
       <style jsx>{`
