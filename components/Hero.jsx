@@ -10,22 +10,12 @@ function CopyRight ( ) {
 <main>
 <div className="hero-image">
   <div className="hero-text">
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <h1>I am John Doe</h1>
-    <p>And Photographer</p>
-    <button>Hire me</button>
+    <h1 className="hero-title">
+      We can access hard-to-reach areas like riverside properties and islands via a boat.
+    </h1>
+    <p className="hero-decripion">
+      And Photographer
+    </p>
   </div>
 </div>
 
@@ -48,17 +38,30 @@ justify-content: center;
 align-items: center;
  }
 
+
+
+
 .hero-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/river.jpg);
+padding: 8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./img/river.jpg);
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.hero-title {
+font-size: 4rem;
+color: #fff;
+}
+
+.hero-text {
 
 
 
 }
+
 
       `}</style>
     </div>
