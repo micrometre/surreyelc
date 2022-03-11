@@ -1,6 +1,7 @@
 import MainLayout from '../components/layout'
 import Social from '../components/nav/NavbarSocial'
 import NavbarOffcanvas from '../components/nav/NavbarOffcanvas'
+import Logo from '../components/Logo'
 import Hero from '../components/Hero'
 import Copyright from '../components/Copyright'
 import Footer from '../components/nav/NavbarPhones'
@@ -25,7 +26,7 @@ export default function Home(initialData) {
 <style jsx global>{`
 body{
       font-family: font-sans-serif;
-  padding: 4rem;
+  padding: 1rem;
   width: 100%;
 }
 `}</style>

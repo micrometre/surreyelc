@@ -22,7 +22,7 @@ function CopyRight() {
       </main>
       <style jsx>{`
         .river-container {
-          padding: 0rem;
+          padding: 15rem;
           display: flex;
           flex-direction: column;
           justify-content: center;

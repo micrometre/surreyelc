@@ -23,7 +23,6 @@ export default function Home(initialData) {
     <MainLayout>
     <Social />
     <NavbarOffcanvas />
-    <Logo />
     <Carousel />
     <Moto />
     <Services />
@@ -32,7 +31,6 @@ export default function Home(initialData) {
     <About />
     <Promise />
     <Map />
-    <Hero />
     <Copyright />
     <Footer />
     </MainLayout>
@@ -43,7 +41,7 @@ export default function Home(initialData) {
 <style jsx global>{`
 body{
       font-family: font-sans-serif;
-  padding: 4rem;
+  padding: 1rem;
   width: 100%;
 }
 `}</style>

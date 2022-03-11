@@ -1,73 +1,60 @@
-import Image from 'next/image'
-import {Offcanvas, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
-import { data } from "../data/paths-data";
-import { FaPhone} from 'react-icons/fa'
-function RiverAccess ( ) {
-    const src = `/img/river.jpg`;
- return (
-    <>
- <div className="river-container">
+import Image from "next/image";
+import Link from "next/link";
+
+function CopyRight() {
+  return (
+    <div className="river-container">
       <main>
-        <h1 className="title">
-          We can access hard-to-reach areas like riverside properties and islands via a boat.
-        </h1>
-        <p className="description">
-          All our services are available to these properties.
-        </p>
+        <div className="hero-image">
+          <div className="hero-text">
+            <h1 className="hero-title">
+              We can access hard-to-reach areas like riverside properties and
+              islands via a boat.
+            </h1>
+          </div>
+        </div>
       </main>
       <style jsx>{`
         .river-container {
-          min-height: 100vh;
-          padding: 1rem;
+          padding: 0rem;
           display: flex;
           flex-direction: column;
-          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
         }
         main {
-          width: 100%;
-          background: url(./img/river.jpg) top center;
-          padding: 1rem;
+          padding-bottom: 0rem;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
         }
-        .title {
-          color: #fff;
+
+        .hero-image {
+          padding: 8rem;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.2)
+            ),
+            url(./img/river.jpg);
+          height: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
           font-family: Oxygen, sans-serif;
-          box-sizing: border-box;
-          margin-top: 0;
-          margin-bottom: .5rem;
-          line-height: 1.2;
-          font-weight: 300;
-          letter-spacing: 2px;
-          font-size: 48px;
         }
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-          text-align: var(--bs-body-text-align);
-          -webkit-text-size-adjust: 100%;
-          -webkit-tap-highlight-color: transparent;
+
+        .hero-title {
+          font-size: 4rem;
           color: #fff;
-          font-family: Oxygen, sans-serif;
-          box-sizing: border-box;
-          margin-top: 0;
-          margin-bottom: .5rem;
-          font-weight: 500;
-          line-height: 1.2;
-          font-size: calc(1.325rem + .9vw);
         }
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
+
+        .hero-text {
         }
       `}</style>
     </div>
-   </>
- );
-};
-
-export default RiverAccess;
+  );
+}
+export default CopyRight;
