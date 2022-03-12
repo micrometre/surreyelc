@@ -17,7 +17,7 @@ function CopyRight() {
       </main>
       <style jsx>{`
         .river-container {
-          min-height: 70vh;
+          min-height: 64vh;
           padding: 1rem;
           margin: 1rem;
           display: flex;
@@ -43,9 +43,9 @@ function CopyRight() {
           position: relative;
           width: 100%;
         }
-        .river-title {
+        .river-title, river-description {
+          margin: 1rem;
           color: white;
-          border: 1px solid #eaeaea;
           font-weight: 300;
           font-size: 1.5rem;
         }
