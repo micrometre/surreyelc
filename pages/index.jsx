@@ -33,7 +33,6 @@ export default function Home(initialData) {
     <Promise />
     <Map />
     <Copyright />
-    <Footer />
     </MainLayout>
    </div>
     <style jsx>{`

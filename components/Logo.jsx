@@ -56,7 +56,8 @@ function Logo() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+          border: 1px solid #cddc39;
+
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }

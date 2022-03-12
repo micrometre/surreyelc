@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function AboutUs() {
   return (
-    <div classNameName="about-container">
+    <div className="about-container">
       <main>
         <div id="about-box">
           <h1>About us</h1>
@@ -88,4 +88,4 @@ function CopyRight() {
     </div>
   );
 }
-export default CopyRight;
+export default AboutUs;

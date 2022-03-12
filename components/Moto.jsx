@@ -29,20 +29,17 @@ function CopyRight() {
           line-height: 1.15;
           font-size: 4rem;
           text-align: center;
-    margin-top: 1.15rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-    margin-bottom: 1.5rem!important;
+          margin-top: 1.15rem;
+          letter-spacing: 2px;
+          font-weight: 300;
+          margin-bottom: 1.5rem !important;
         }
 
         @media (max-width: 600px) {
-          .grid {
+        .title {
             width: 100%;
             flex-direction: column;
           }
-        }
-        .title {
-          font-size: 2.9rem;
         }
       `}</style>
     </div>
