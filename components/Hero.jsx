@@ -2,49 +2,55 @@ import Image from "next/image";
 import Link from "next/link";
 
 function CopyRight() {
+  const current = new Date();
+  const date = `${current.getDate()}/${
+    current.getMonth() + 1
+  }/${current.getFullYear()}`;
+  const year = `${current.getFullYear()}`;
   return (
-    <div className="moto-container">
-      <main>
-        <h1 className="title">
-          Professional Painters and Decorators in Elmbridge and surrounding
-          areas.
-        </h1>
-      </main>
-
+    <div className="container">
+      <footer>
+        <p className="description">
+          Copyright ©{year}
+          Painting and Decorating Services Ltd.
+        </p>
+      </footer>
       <style jsx>{`
-        .moto-container {
+        .container {
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
+          font-size: 1.1rem;
           align-items: center;
         }
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
+        footer {
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #eaeaea;
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
         }
-        .title {
-          text-decoration: none;
-          line-height: 1.15;
-          font-size: 4rem;
-          text-align: center;
-    margin-top: 1.15rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-    margin-bottom: 1.5rem!important;
+          .description {
+          line-height: 1.5;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
         }
 
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
+        * {
+          box-sizing: border-box;
         }
       `}</style>
     </div>

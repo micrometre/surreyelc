@@ -1,109 +1,91 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
 
-function About ( ) {
-  const src = `/img/bathroom2.jpg`;
+function CopyRight() {
   return (
-    <div className="about-container">
+    <div classNameName="about-container">
       <main>
-        <h1 className="title">
-          About us
-        </h1>
-        <div className="grid">
-          <div  className="card">
-            <Image
-            src={src}
-            alt="About picture"
-            width={500}
-            height={300}
-          />
-          </div>
-          <div  className="card">
-            <p className="description">
-With over 25 years’ combined experience,
-              <br />
-We pride ourselves in providing the highest quality finish
-
-              to meet any individual’s vision.
-              <br />
-With our clients’ interests always remaining at the forefront of our business.
-              <br />We are always clean and efficient With a professional manner to keep disruption and stress to our clients and family to a minimum.
-            </p>
-          </div>
+        <div id="about-box">
+          <h1>About us</h1>
+          <article className="row" id="idea-one">
+            <div>
+              <Image
+                src="/img/bathroom2.webp"
+                alt="logo"
+                width={329}
+                height={188}
+                priority
+              />
+            </div>
+            <div>
+              <p className="description">
+                With over 25 years’ combined experience,
+                <br />
+                We pride ourselves in providing the highest quality finish to
+                meet any individual’s vision.
+                <br />
+                With our clients’ interests always remaining at the forefront of
+                our business.
+                <br />
+                We are always clean and efficient With a professional manner to
+                keep disruption and stress to our clients and family to a
+                minimum.
+              </p>
+            </div>
+          </article>
         </div>
       </main>
+
       <style jsx>{`
-
-
-
-        .about-container {
-          padding: 4rem;
-            width: 100%;
-        }
         main {
-          box-sizing: border-box;
-          padding: 1rem ;
-        }
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-        .title,
-        .description {
-          text-align: center;
-        }
-        .description {
-    text-align: var(--bs-body-text-align);
-    font-family: font-sans-serif;
-    margin-top: 0;
-    font-size: 1.25rem;
-    margin-bottom: 3rem!important;
-    font-weight: 400!important;
-    --bs-text-opacity: 1;
-        }
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin-top: 3rem;
-        }
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.0rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-           border: 5px solid #eaeaea;
-
+                     border: 5px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
-          display: flex;
-          flex-direction: column;
+          padding: 1rem;
         }
-        .card p {
-          margin: 0;
-          line-height: 1.5;
-    font-family: font-sans-serif;
-    box-sizing: border-box;
-    margin-top: 0;
-    font-size: 1.25rem;
-    margin-bottom: 3rem!important;
-    font-weight: 400!important;
-    color: #6c757d!important;
+        #about-box {
+          background: #fff;
+          padding: 40px 0px 80px;
+          font-family: "Open Sans", sans-serif;
         }
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+        #about-box h1 {
+          text-align: center;
+        }
+        #about-box h3 {
+          font-size: 26px;
+        }
+
+        article.row {
+          width: 100%;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        article.row div {
+          width: 49.4%;
+          display: inline-block;
+          position: relative;
+        }
+
+
+        #idea-one img {
+          position: absolute;
+          bottom: -20px;
+          left: 50px;
+        }
+        @media (max-width: 750px) {
+          article.row div {
+            min-width: 300px;
+            width: 90%;
+            margin: 0 5%;
+            text-align: center;
+            display: block;
+          }
+          #about-other-box h3 {
+            text-align: center;
           }
         }
       `}</style>
     </div>
-
- );
-
-};
-
-export default About;
+  );
+}
+export default CopyRight;

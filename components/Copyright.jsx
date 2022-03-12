@@ -1,57 +1,60 @@
+import Image from "next/image";
+import Link from "next/link";
 
-function CopyRight ( ) {
- const current = new Date();
-  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+function CopyRight() {
+  const current = new Date();
+  const date = `${current.getDate()}/${
+    current.getMonth() + 1
+  }/${current.getFullYear()}`;
   const year = `${current.getFullYear()}`;
   return (
-<div className="copyright-container">
-<main>
     <div className="container">
-      <main className="main">
-        <h1 className="title">
-        </h1>
-<p className="text-center" >Copyright ©{year} Painting and Decorating Services Ltd.</p>
-      </main>
-    </div>
-</main>
-<style jsx>{`
-  .copyright-container{
-    padding: 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  main {
-    padding-bottom: 0rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        }
-        .title  {
-          color: #0070f3;
-          text-decoration: none;
-          text-decoration: underline;
-        }
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 3rem;
+      <footer>
+        <p className="description">
+          Copyright ©{year}
+          Painting and Decorating Services Ltd.
+        </p>
+      </footer>
+      <style jsx>{`
+        .container {
+          min-height: 10vh;
+          padding: 0 0.7rem;
+          margin-bottom: 0 0.9rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 1.1rem;
+          align-items: center;
         }
 
-        .title,
-        .description {
-          text-align: center;
+        footer {
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #eaeaea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
-
-        .description {
+          .description {
           line-height: 1.5;
-          font-size: 1.0rem;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
         }
       `}</style>
     </div>
- );
-};
+  );
+}
 export default CopyRight;
