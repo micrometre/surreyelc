@@ -12,16 +12,14 @@ function CopyRight() {
       <style jsx>{`
         .river-container {
           min-height: 70vh;
-          padding: 1rem;
-          margin: 1rem;
+          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
         main {
-          padding: 1rem;
-          margin: 1rem;
+          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -35,8 +33,6 @@ function CopyRight() {
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
-                      width: 100%;
-
         }
 
         .title {
