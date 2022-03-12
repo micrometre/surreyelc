@@ -23,6 +23,7 @@ export default function Home(initialData) {
     <MainLayout>
     <Social />
     <NavbarOffcanvas />
+    <Logo />
     <Carousel />
     <Moto />
     <Services />

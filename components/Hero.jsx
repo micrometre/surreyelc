@@ -2,62 +2,49 @@ import Image from "next/image";
 import Link from "next/link";
 
 function CopyRight() {
-  const current = new Date();
-  const date = `${current.getDate()}/${
-    current.getMonth() + 1
-  }/${current.getFullYear()}`;
-  const year = `${current.getFullYear()}`;
   return (
-    <div className="river-container">
+    <div className="moto-container">
       <main>
-        <div className="hero-image">
-          <div className="hero-text">
-            <h1 className="hero-title">
-              We can access hard-to-reach areas like riverside properties and
-              islands via a boat.
-            </h1>
-            <p className="hero-decripion">And Photographer</p>
-          </div>
-        </div>
+        <h1 className="title">
+          Professional Painters and Decorators in Elmbridge and surrounding
+          areas.
+        </h1>
       </main>
+
       <style jsx>{`
-        .river-container {
-          padding: 15rem;
+        .moto-container {
+          min-height: 100vh;
+          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
+
         main {
-          padding-bottom: 0rem;
+          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
-
-        .hero-image {
-          padding: 8rem;
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url(./img/river.jpg);
-          height: 50%;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
-          font-family: Oxygen, sans-serif;
-        }
-
-        .hero-title {
+        .title {
+          text-decoration: none;
+          line-height: 1.15;
           font-size: 4rem;
-          color: #fff;
+          text-align: center;
+    margin-top: 1.15rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1.5rem!important;
         }
 
-        .hero-text {
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
         }
       `}</style>
     </div>
