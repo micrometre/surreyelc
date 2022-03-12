@@ -31,7 +31,7 @@ function Logo() {
 
         main {
           padding-top: 2rem;
-          margin-top: 1rem;
+          margin-top: 2rem;
           flex: 1;
           display: flex;
           flex-direction: column;

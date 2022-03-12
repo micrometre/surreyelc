@@ -5,8 +5,14 @@ function CopyRight() {
   return (
     <div className="river-container">
       <main>
-        <div className="title">
-          <h1>Documentation &rarr;</h1>
+        <div className="river-title">
+          <h1 className="river-header">
+            We can access hard-to-reach areas like riverside properties and
+            islands via a boat.
+          </h1>
+          <p className="river-description">
+            All our services are available to these properties.
+          </p>
         </div>
       </main>
       <style jsx>{`
@@ -35,28 +41,13 @@ function CopyRight() {
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
-                      width: 100%;
-
+          width: 100%;
         }
-
-        .title {
+        .river-title {
           color: white;
-          font-size: 2.5rem;
           border: 1px solid #eaeaea;
         }
 
-        .card {
-          margin: 1rem;
-          padding: 1.5rem;
-          text-align: left;
-          text-decoration: none;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
         @media (max-width: 600px) {
           .river-container {
             flex-direction: column;

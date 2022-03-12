@@ -35,7 +35,7 @@ function RiverAccessHeader() {
           width: 100%;
         }
         main {
-          padding-bottom: 1rem;
+          padding-bottom: 0.1rem;
           flex: 1;
           display: flex;
           flex-direction: column;
