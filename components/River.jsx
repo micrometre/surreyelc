@@ -15,44 +15,6 @@ function CopyRight() {
         </div>
       </main>
       <style jsx>{`
-        .river-container {
-          padding: 0rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        main {
-          padding-bottom: 0rem;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .hero-image {
-          padding: 8rem;
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url(./img/river.jpg);
-          height: 50%;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
-          font-family: Oxygen, sans-serif;
-        }
-
-        .hero-title {
-          font-size: 4rem;
-          color: #fff;
-        }
-
-        .hero-text {
-        }
       `}</style>
     </div>
   );

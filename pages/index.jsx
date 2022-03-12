@@ -41,7 +41,7 @@ export default function Home(initialData) {
 <style jsx global>{`
 body{
       font-family: font-sans-serif;
-  padding: 1rem;
+  padding: 0rem;
   width: 100%;
 }
 `}</style>

@@ -16,28 +16,6 @@ function CopyRight() {
         </p>
       </footer>
       <style jsx>{`
-        .container {
-          min-height: 10vh;
-          padding: 0 0.7rem;
-          margin-bottom: 0 0.9rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          font-size: 1.1rem;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-          .description {
-          line-height: 1.5;
-        }
       `}</style>
     </div>
   );
