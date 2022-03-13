@@ -1,4 +1,4 @@
-function CopyRight() {
+function Moto() {
   return (
     <div className="moto-container">
       <main>
@@ -45,4 +45,4 @@ function CopyRight() {
     </div>
   );
 }
-export default CopyRight;
+export default Moto;

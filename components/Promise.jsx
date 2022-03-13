@@ -1,5 +1,5 @@
 import Image from "next/image";
-function AboutUs() {
+function Promise() {
   return (
     <div className="promise-container">
       <main>
@@ -129,4 +129,4 @@ function AboutUs() {
     </div>
   );
 }
-export default AboutUs;
+export default Promise;

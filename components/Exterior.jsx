@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function Exterior() {
   return (
-    <div className="river-container">
+    <div className="exterior-container">
       <main>
-        <div className="river-title">
-          <h1 className="river-header">Exterior Decoration</h1>
+        <div className="exterior-title">
+          <h1 className="exterior-header">Exterior Decoration</h1>
         </div>
       </main>
       <div className="description">
@@ -19,7 +19,7 @@ function CopyRight() {
         </p>
       </div>
       <style jsx>{`
-        .river-container {
+        .exterior-container {
           min-height: 64vh;
           padding: 1rem;
           margin: 1rem;
@@ -47,15 +47,15 @@ function CopyRight() {
           width: 100%;
           min-height: 60vh;
         }
-        .river-title,
-        river-description {
+        .exterior-title,
+        exterior-description {
           margin: 1rem;
           color: white;
           font-weight: 300;
           font-size: 1.5rem;
         }
         .description {
-               padding: 0.45rem;
+          padding: 0.45rem;
           margin: 0.45rem;
         }
         p {
@@ -69,4 +69,4 @@ function CopyRight() {
     </div>
   );
 }
-export default CopyRight;
+export default Exterior;

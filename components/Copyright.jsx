@@ -8,7 +8,7 @@ function CopyRight() {
   }/${current.getFullYear()}`;
   const year = `${current.getFullYear()}`;
   return (
-    <div className="container">
+    <div className="copyright-container">
       <footer>
         <p className="description">
           Copyright ©{year}
@@ -16,7 +16,7 @@ function CopyRight() {
         </p>
       </footer>
       <style jsx>{`
-        .container {
+        .copyright-container {
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;

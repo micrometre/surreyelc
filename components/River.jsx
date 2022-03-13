@@ -19,7 +19,7 @@ function CopyRight() {
         .river-container {
           min-height: 64vh;
           padding: 1rem;
-          margin: 1rem;
+          margin: 0.4rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -27,7 +27,7 @@ function CopyRight() {
         }
         main {
           padding: 1rem;
-          margin: 1rem;
+          margin: 0rem;
           flex: 1;
           display: flex;
           flex-direction: column;

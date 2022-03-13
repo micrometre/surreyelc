@@ -14,7 +14,9 @@ export default function Home(initialData) {
         <MainLayout>
           <Social />
           <NavbarOffcanvas />
+          <div className="section">
           <Painting />
+          </div>
           <Copyright />
           <Footer />
         </MainLayout>
@@ -26,6 +28,11 @@ export default function Home(initialData) {
           font-family: font-sans-serif;
           padding: 0rem;
           width: 100%;
+        }
+        .section {
+          border: 1px solid #fff;
+          margin-top: 3.54rem;
+
         }
       `}</style>
     </div>

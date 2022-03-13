@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function Painting() {
   return (
-    <div className="river-container">
+    <div className="painting-container">
       <main>
-        <div className="river-title">
-          <h1 className="river-header">Painting Decoration.</h1>
+        <div className="painting-title">
+          <h1 className="painting-header">Painting Decoration.</h1>
         </div>
       </main>
       <div className="description">
@@ -21,8 +21,7 @@ function CopyRight() {
         </p>
       </div>
       <style jsx>{`
-        .river-container {
-          min-height: 64vh;
+        .painting-container {
           padding: 1rem;
           margin: 1rem;
           display: flex;
@@ -49,8 +48,8 @@ function CopyRight() {
           width: 100%;
           min-height: 60vh;
         }
-        .river-title,
-        river-description {
+        .painting-title,
+        painting-description {
           margin: 1rem;
           color: white;
           font-weight: 300;
@@ -67,4 +66,4 @@ function CopyRight() {
     </div>
   );
 }
-export default CopyRight;
+export default Painting;

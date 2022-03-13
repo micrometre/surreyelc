@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function Comercial() {
   return (
-    <div className="river-container">
+    <div className="commercial-container">
       <main>
         <div className="river-title">
           <h1 className="river-header">Comercial Decoration</h1>
@@ -20,18 +20,17 @@ function CopyRight() {
         </p>
       </div>
       <style jsx>{`
-        .river-container {
-          min-height: 64vh;
+        .commercial-container {
           padding: 1rem;
-          margin: 1rem;
+          margin-top: 1rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
         main {
-          padding: 1rem;
-          margin: 1rem;
+          padding: 0rem;
+          margin: 0rem;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -70,4 +69,4 @@ function CopyRight() {
     </div>
   );
 }
-export default CopyRight;
+export default Comercial;

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function Contact() {
   return (
-    <div className="river-container">
+    <div className="contact-container">
       <main>
         <div className="river-title">
           <h1 className="river-header">Exterior Decoration</h1>
@@ -16,7 +16,7 @@ Please provide your name and telephone contact details in the email so we can ge
         </p>
       </div>
       <style jsx>{`
-        .river-container {
+        .contact-container {
           min-height: 24vh;
           padding: 1rem;
           margin: 1rem;
@@ -57,4 +57,4 @@ Please provide your name and telephone contact details in the email so we can ge
     </div>
   );
 }
-export default CopyRight;
+export default Contact;

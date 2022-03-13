@@ -30,7 +30,7 @@ function Logo() {
         }
 
         main {
-          padding-top: 2rem;
+          padding-top: 3rem;
           margin-top: 2rem;
           flex: 1;
           display: flex;

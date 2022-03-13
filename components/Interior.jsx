@@ -3,10 +3,10 @@ import Link from "next/link";
 
 function Interior() {
   return (
-    <div className="river-container">
+    <div className="interior-container">
       <main>
-        <div className="river-title">
-          <h1 className="river-header">Interior Decoration</h1>
+        <div className="interior-title">
+          <h1 className="interior-header">Interior Decoration</h1>
         </div>
       </main>
       <div className="description">
@@ -19,7 +19,7 @@ function Interior() {
         </p>
       </div>
       <style jsx>{`
-        .river-container {
+        .interior-container {
           min-height: 64vh;
           padding: 1rem;
           margin: 1rem;
@@ -47,8 +47,8 @@ function Interior() {
           width: 100%;
           min-height: 60vh;
         }
-        .river-title,
-        river-description {
+        .interior-title,
+        interior-description {
           margin: 1rem;
           color: white;
           font-weight: 300;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function RiverAccessHeader() {
+function AreasMap() {
   const src = `/img/bathroom2.jpg`;
 
   return (
@@ -66,4 +66,4 @@ function RiverAccessHeader() {
     </div>
   );
 }
-export default RiverAccessHeader;
+export default AreasMap;
