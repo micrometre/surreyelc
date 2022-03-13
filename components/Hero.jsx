@@ -1,60 +1,133 @@
 import Image from "next/image";
-import Link from "next/link";
-
-function CopyRight() {
+function AboutUs() {
   return (
-    <div className="river-container">
+    <div className="promise-container">
       <main>
-        <div className="river-title">
-          <h1 className="river-header">
-            We can access hard-to-reach areas like riverside properties and
-            islands via a boat.
-          </h1>
-          <p className="river-description">
-            All our services are available to these properties.
-          </p>
+        <h2 className="title">Our Promise</h2>
+        <p className="description">
+          Full client satisfaction with thorough walk through and final
+          inspection before completion.
+        </p>
+
+        <div className="row">
+          <div className="column">
+            <div className="card">
+              <Image
+                src="/img/kitchen-2.webp"
+                alt="About picture"
+                width={500}
+                height={300}
+              />
+              <p className="description">
+                Work carried out to the highest of standards.
+              </p>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <Image
+                src="/img/kitchen-3.webp"
+                alt="About picture"
+                width={500}
+                height={300}
+              />
+              <p className="description">
+                We remain clean and organised throughout. Thorough cleaning will
+                be carried out on completion.
+              </p>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <Image
+                src="/img/leavingroom-1.webp"
+                alt="About picture"
+                width={500}
+                height={300}
+              />
+              <p className="description">
+                Your home will be treated with the utmost respect.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
       <style jsx>{`
-        .river-container {
-          min-height: 70vh;
-          padding: 1rem;
-          margin: 1rem;
+        .promise-container {
+          min-height: 100vh;
+          margin-top: 11rem;
+          padding: 0.1rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-color: #6c757d;
+          color: #ffffff;
         }
         main {
-          padding: 1rem;
-          margin: 1rem;
+          padding: 0.1rem;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url(./img/river.jpg);
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
-          width: 100%;
-        }
-        .river-title {
-          color: white;
-          border: 1px solid #eaeaea;
         }
 
-        @media (max-width: 600px) {
-          .river-container {
-            flex-direction: column;
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 33%;
+          padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+          margin: 0 -5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
           }
+        }
+
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 16px;
+          text-align: center;
+          background-color: #6c757d;
+        }
+        .title {
+          text-decoration: none;
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
         }
       `}</style>
     </div>
   );
 }
-export default CopyRight;
+export default AboutUs;

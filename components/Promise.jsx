@@ -1,151 +1,132 @@
-import Image from 'next/image'
-
-function RiverAccessHeader ( ) {
-    const src = `/img/bathroom2.jpg`;
-
+import Image from "next/image";
+function AboutUs() {
   return (
-<div className="promise-container">
-  <main>
-    <div className="main">
-  <h1>Our Promise
-</h1>
-<h2 className="made_by">
-            Full client satisfaction with thorough walk through and final inspection before completion.
-</h2>
-  <ul className="cards">
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image">
-            <Image
-            src="/img/kitchen-2.webp"
-            alt="About picture"
-            width={500}
-            height={300}
-          />
+    <div className="promise-container">
+      <main>
+        <h2 className="title">Our Promise</h2>
+        <p className="description">
+          Full client satisfaction with thorough walk through and final
+          inspection before completion.
+        </p>
+
+        <div className="row">
+          <div className="column">
+            <div className="card">
+              <Image
+                src="/img/kitchen-2.webp"
+                alt="About picture"
+                width={500}
+                height={300}
+              />
+              <p className="description">
+                Work carried out to the highest of standards.
+              </p>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <Image
+                src="/img/kitchen-3.webp"
+                alt="About picture"
+                width={500}
+                height={300}
+              />
+              <p className="description">
+                We remain clean and organised throughout. Thorough cleaning will
+                be carried out on completion.
+              </p>
+            </div>
+          </div>
+
+          <div className="column">
+            <div className="card">
+              <Image
+                src="/img/leavingroom-1.webp"
+                alt="About picture"
+                width={500}
+                height={300}
+              />
+              <p className="description">
+                Your home will be treated with the utmost respect.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="card_content">
-          <p className="card_text">
-            Work carried out to the highest of standards.
-          </p>
-        </div>
-      </div>
-    </li>
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image">
-            <Image
-            src="/img/kitchen-3.webp"
-            alt="About picture"
-            width={500}
-            height={300}
-          />
-        </div>
-        <div className="card_content">
-          <p className="card_text">
-We remain clean and organised throughout. Thorough cleaning will be carried out on completion.
-          </p>
-        </div>
-      </div>
-    </li>
+      </main>
+      <style jsx>{`
+        .promise-container {
+          margin-top: 6rem;
+          padding: 0.1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #6c757d;
+          color: #ffffff;
+        }
+        main {
+          padding: 0.1rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
-    <li className="cards_item">
-      <div className="card">
-        <div className="card_image">
-            <Image
-            src="/img/leavingroom-1.webp"
-            alt="About picture"
-            width={500}
-            height={300}
-          />
-        </div>
-        <div className="card_content">
-          <p className="card_text">
-            Your home will be treated with the utmost respect.
-          </p>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <h1>
-                Customers satisfaction is our top priority.
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 33%;
+          padding: 0 10px;
+        }
 
-</h1>
-</div>
-  </main>
-<style jsx>{`
-.main{
-  background-color: #6c757d;
-  margin: 0 auto;
-    width: 100%;
-}
+        /* Remove extra left and right margins, due to padding */
+        .row {
+          margin: 0 -5px;
+        }
 
-h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: center;
-  color: #ffffff;
-}
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
 
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 16px;
+          text-align: center;
+          background-color: #6c757d;
+        }
+        .title {
+          text-decoration: none;
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
 
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
+        .title,
+        .description {
+          text-align: center;
+        }
 
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
-
-.card {
-  background-color: #6c757d;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, ##6c757d 30%, #6c757d 100%);
-}
-
-
-.card_text {
-  color: #ffffff;
-  font-size: 1.275rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  font-weight: 300;
-}
-.made_by{
-  font-weight: 300;
-  font-size: 1.45rem;
-  margin-top: 35px;
-  text-align: center;
-  color: #ffffff;
-}
-
-
-
-`}</style>
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+        }
+      `}</style>
     </div>
- );
-};
-export default RiverAccessHeader;
+  );
+}
+export default AboutUs;

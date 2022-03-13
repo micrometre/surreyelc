@@ -1,4 +1,4 @@
-.emaildiv{
+.emaildiv {
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,6 +14,5 @@
 .emailIconText {
   color: yellow;
   text-decoration: none;
-  font-size: 1.0em;
+  font-size: 1em;
 }
-

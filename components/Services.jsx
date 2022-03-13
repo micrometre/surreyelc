@@ -12,61 +12,38 @@ function Services() {
         </main>
         <style jsx>{`
           .services-container {
-            margin-top: 0rem;
-            padding: 0rem;
+            min-height: 10vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-sizing: border-box;
-            --bs-bg-opacity: 1;
-            background-color: rgba(
-              var(--bs-light-rgb),
-              var(--bs-bg-opacity)
-            ) !important;
+            margin: 1rem;
+            flex-basis: 45%;
+            padding: 1.5rem;
+            text-align: left;
+            text-decoration: none;
+            border: 0.1rem solid green;
+            border-radius: 10px;
+            transition: color 0.15s ease, border-color 0.15s ease;
           }
           main {
-            box-sizing: border-box;
-            padding: 1rem 0;
+            padding: 5rem 0;
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
           }
-          .title a:hover,
-          .title a:focus,
-          .title a:active {
-            text-decoration: underline;
-          }
+
           .title {
-            font-family: font-sans-serif;
-            text-align: center !important;
-            box-sizing: border-box;
-            margin-top: 0;
-            font-size: calc(1.475rem + 2.7vw);
-            margin-bottom: 1.5rem !important;
-            line-height: 1 !important;
+            text-decoration: none;
             margin: 0;
             line-height: 1.15;
-            font-size: 2.45rem;
-            text-align: center !important;
-            margin-top: 0;
-            margin-bottom: 1.5rem !important;
-            line-height: 1 !important;
+            font-size: 4rem;
           }
-          .title,
+
           .description {
             text-align: center;
-          }
-          .description {
-            text-align: center !important;
-            font-style: italic !important;
-            margin-top: 1rem;
-            font-size: 1.25rem;
-            margin-bottom: 1rem !important;
-            font-weight: 400 !important;
-            color: #000000;
           }
         `}</style>
       </div>

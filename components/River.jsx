@@ -49,12 +49,6 @@ function CopyRight() {
           font-weight: 300;
           font-size: 1.5rem;
         }
-
-        @media (max-width: 600px) {
-          .river-container {
-            flex-direction: column;
-          }
-        }
       `}</style>
     </div>
   );

@@ -38,7 +38,7 @@ function AboutUs() {
 
       <style jsx>{`
         main {
-                     border: 5px solid #eaeaea;
+          border: 5px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
           padding: 1rem;
@@ -65,7 +65,6 @@ function AboutUs() {
           display: inline-block;
           position: relative;
         }
-
 
         #idea-one img {
           position: absolute;
