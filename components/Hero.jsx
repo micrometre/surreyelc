@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <div className="about-container">
       <main>
-        <h2>About us</h2>
+        <h2 className="title">About us</h2>
         <div className="row">
           <div className="column">
             <Image
@@ -41,24 +41,22 @@ function AboutUs() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          border: 5px solid green;
-
         }
 
         main {
+          padding: 16px;
           padding: 2rem;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          border: 5px solid green;
         }
         .column {
           float: left;
           width: 50%;
           padding: 10px;
-          border: 5px solid green;
+          background: #ffffff;
         }
 
         .row:after {
@@ -67,9 +65,29 @@ function AboutUs() {
           clear: both;
         }
 
+        .title {
+          text-decoration: none;
+          margin: 1rem;
+          font-size: 4rem;
+          text-align: center;
+        }
+
+        p {
+          text-align: left;
+          line-height: 1.7;
+          font-size: 1.09rem;
+          margin: .5rem;
+          flex-basis: 45%;
+          padding: 0.5rem;
+          text-align: left;
+          text-decoration: none;
+        }
         @media screen and (max-width: 600px) {
           .column {
             width: 100%;
+          }
+          p {
+            line-height: 1.8;
           }
         }
       `}</style>

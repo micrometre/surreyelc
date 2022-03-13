@@ -5,15 +5,14 @@ function AboutUs() {
   return (
     <div className="about-container">
       <main>
-  <h2 className="title">
-        About us</h2>
+        <h2 className="title">About us</h2>
         <div className="row">
           <div className="column">
             <Image
               src="/img/4.webp"
               alt="logo"
-              width={640}
-              height={480}
+              width={492}
+              height={288}
               priority
             />
           </div>
@@ -37,7 +36,7 @@ function AboutUs() {
       <style jsx>{`
         .about-container {
           padding: 0.1rem;
-          margin-top: 2.9rem;
+          margin-top: 1.9rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -45,6 +44,7 @@ function AboutUs() {
         }
 
         main {
+          padding: 16px;
           padding: 2rem;
           flex: 1;
           display: flex;
@@ -56,6 +56,7 @@ function AboutUs() {
           float: left;
           width: 50%;
           padding: 10px;
+          background: #ffffff;
         }
 
         .row:after {
@@ -66,15 +67,27 @@ function AboutUs() {
 
         .title {
           text-decoration: none;
-          margin: 1;
-          line-height: 1.15;
+          margin: 1rem;
           font-size: 4rem;
           text-align: center;
         }
 
+        p {
+          text-align: left;
+          line-height: 1.7;
+          font-size: 1.09rem;
+          margin: .5rem;
+          flex-basis: 45%;
+          padding: 0.5rem;
+          text-align: left;
+          text-decoration: none;
+        }
         @media screen and (max-width: 600px) {
           .column {
             width: 100%;
+          }
+          p {
+            line-height: 1.8;
           }
         }
       `}</style>
