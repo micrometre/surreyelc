@@ -1,65 +1,79 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function AboutUs() {
   return (
-    <div className="river-container">
+    <div className="about-container">
       <main>
-        <div className="title">
-          <h1>Documentation &rarr;</h1>
+        <h2>About us</h2>
+        <div className="row">
+          <div className="column">
+            <Image
+              src="/img/4.webp"
+              alt="logo"
+              width={492}
+              height={288}
+              priority
+            />
+          </div>
+          <div className="column">
+            <p>
+              With over 25 years’ combined experience,
+              <br />
+              We pride ourselves in providing the highest quality finish to meet
+              any individual’s vision.
+              <br />
+              With our clients’ interests always remaining at the forefront of
+              our business.
+              <br />
+              We are always clean and efficient With a professional manner to
+              keep disruption and stress to our clients and family to a minimum.
+            </p>
+          </div>
         </div>
       </main>
+
       <style jsx>{`
-        .river-container {
-          min-height: 70vh;
-          padding: 0 0.5rem;
+        .about-container {
+          padding: 0.1rem;
+          margin-top: 7.9rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: 5px solid green;
+
         }
+
         main {
-          padding: 5rem 0;
+          padding: 2rem;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url(./img/river.jpg);
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
+          border: 5px solid green;
+        }
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          border: 5px solid green;
         }
 
-        .title {
-          color: white;
-          font-size: 2.5rem;
-          border: 1px solid #eaeaea;
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
         }
 
-        .card {
-          margin: 1rem;
-          padding: 1.5rem;
-          text-align: left;
-          text-decoration: none;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-        @media (max-width: 600px) {
-          .river-container {
-            flex-direction: column;
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
           }
         }
       `}</style>
     </div>
   );
 }
-export default CopyRight;
+export default AboutUs;

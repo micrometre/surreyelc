@@ -12,8 +12,8 @@ function AboutUs() {
             <Image
               src="/img/4.webp"
               alt="logo"
-              width={492}
-              height={288}
+              width={640}
+              height={480}
               priority
             />
           </div>

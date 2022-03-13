@@ -41,6 +41,8 @@ function AboutUs() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: 5px solid green;
+
         }
 
         main {
@@ -50,11 +52,13 @@ function AboutUs() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: 5px solid green;
         }
         .column {
           float: left;
           width: 50%;
           padding: 10px;
+          border: 5px solid green;
         }
 
         .row:after {

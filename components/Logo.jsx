@@ -11,8 +11,8 @@ function Logo() {
               <Image
                 src="/img/logo.png"
                 alt="logo"
-                width={329}
-                height={188}
+                width={330}
+                height={178}
                 priority
               />
             </a>
