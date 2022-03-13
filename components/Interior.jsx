@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CopyRight() {
+function Interior() {
   return (
     <div className="river-container">
       <main>
@@ -55,15 +55,14 @@ function CopyRight() {
           font-size: 1.5rem;
         }
         .description{
-          padding: 1rem;
-          margin: 2rem;
+          padding: 0.45rem;
+          margin: 0.45rem;
         }
-
         p {
           text-align: left;
           line-height: 1.7;
           font-size: 1.09rem;
-          margin: .5rem;
+          margin: .2rem;
           flex-basis: 45%;
           padding: 0.5rem;
           text-decoration: none;
@@ -73,4 +72,4 @@ function CopyRight() {
     </div>
   );
 }
-export default CopyRight;
+export default Interior;

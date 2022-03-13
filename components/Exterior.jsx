@@ -37,8 +37,8 @@ function CopyRight() {
           justify-content: center;
           align-items: center;
           background-image: linear-gradient(
-              rgba(0, 0, 0, 0.3),
-              rgba(0, 0, 0, 0.2)
+              rgba(0, 0, 0, 0.1),
+              rgba(0, 0, 0, 0.1)
             ),
             url(./img/3.webp);
           background-repeat: no-repeat;
@@ -55,11 +55,15 @@ function CopyRight() {
           font-size: 1.5rem;
         }
         .description {
-          padding: 1rem;
-          margin: 2rem;
+               padding: 0.45rem;
+          margin: 0.45rem;
         }
         p {
           line-height: 1.7;
+          font-size: 1.09rem;
+          margin: 0.1rem;
+          padding: 0.1rem;
+          text-decoration: none;
         }
       `}</style>
     </div>
