@@ -30,8 +30,8 @@ export default function Home(initialData) {
           width: 100%;
         }
         .section {
-          border: 1px solid #fff;
-          margin-top: 3.54rem;
+          border: 1px solid #ffffff;
+          margin-top: 3.46rem;
 
         }
       `}</style>
