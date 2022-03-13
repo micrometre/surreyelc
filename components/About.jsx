@@ -5,82 +5,76 @@ function AboutUs() {
   return (
     <div className="about-container">
       <main>
-        <div id="about-box">
-          <h1>About us</h1>
-          <article className="row" id="idea-one">
-            <div>
-              <Image
-                src="/img/bathroom2.webp"
-                alt="logo"
-                width={329}
-                height={188}
-                priority
-              />
-            </div>
-            <div>
-              <p className="description">
-                With over 25 years’ combined experience,
-                <br />
-                We pride ourselves in providing the highest quality finish to
-                meet any individual’s vision.
-                <br />
-                With our clients’ interests always remaining at the forefront of
-                our business.
-                <br />
-                We are always clean and efficient With a professional manner to
-                keep disruption and stress to our clients and family to a
-                minimum.
-              </p>
-            </div>
-          </article>
+  <h2 className="title">
+        About us</h2>
+        <div className="row">
+          <div className="column">
+            <Image
+              src="/img/4.webp"
+              alt="logo"
+              width={492}
+              height={288}
+              priority
+            />
+          </div>
+          <div className="column">
+            <p>
+              With over 25 years’ combined experience,
+              <br />
+              We pride ourselves in providing the highest quality finish to meet
+              any individual’s vision.
+              <br />
+              With our clients’ interests always remaining at the forefront of
+              our business.
+              <br />
+              We are always clean and efficient With a professional manner to
+              keep disruption and stress to our clients and family to a minimum.
+            </p>
+          </div>
         </div>
       </main>
 
       <style jsx>{`
+        .about-container {
+          padding: 0.1rem;
+          margin-top: 2.9rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
         main {
-          border: 5px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-          padding: 1rem;
+          padding: 2rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
-        #about-box {
-          background: #fff;
-          padding: 40px 0px 80px;
-          font-family: "Open Sans", sans-serif;
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
         }
-        #about-box h1 {
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .title {
+          text-decoration: none;
+          margin: 1;
+          line-height: 1.15;
+          font-size: 4rem;
           text-align: center;
         }
-        #about-box h3 {
-          font-size: 26px;
-        }
 
-        article.row {
-          width: 100%;
-          max-width: 900px;
-          margin: 0 auto;
-        }
-        article.row div {
-          width: 49.4%;
-          display: inline-block;
-          position: relative;
-        }
-
-        #idea-one img {
-          position: absolute;
-          bottom: -20px;
-          left: 50px;
-        }
-        @media (max-width: 750px) {
-          article.row div {
-            min-width: 300px;
-            width: 90%;
-            margin: 0 5%;
-            text-align: center;
-            display: block;
-          }
-          #about-other-box h3 {
-            text-align: center;
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
           }
         }
       `}</style>

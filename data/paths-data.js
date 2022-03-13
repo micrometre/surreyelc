@@ -5,49 +5,49 @@ export const data = [
       {
         name: 'Home',
         title: "home page",
-        subtitle: "homepage link",
+        subtitle: "homepage ",
         href: '/',
         icons: FaHome
       },
       {
         name: 'Interior',
-        title: "home page",
-        subtitle: "homepage link",
+        title: "Interior page",
+        subtitle: "homepage ",
         href: '/interior',
         icons: FaPaintBrush
       },
       {
         name: 'Exterior',
-        title: "home page",
-        subtitle: "homepage link",
+        title: "Exterior page",
+        subtitle: "homepage ",
         href: '/exterior',
         icons: FaEnvelope
       },
      {
         name: 'River Access',
-        title: "home page",
-        subtitle: "homepage link",
+        title: "River Access page",
+        subtitle: "homepage ",
         href: '/river',
         icons: FaWater
      },
      {
         name: 'Painting Decoaration',
-        title: "home page",
-        subtitle: "homepage link",
+        title: "Painting page",
+        subtitle: "homepage ",
         href: '/painting',
         icons: FaPaintRoller
      },
      {
         name: 'Commercial',
-        title: "home page",
-        subtitle: "homepage link",
+        title: "Commercial page",
+        subtitle: "homepage ",
         href: '/commercial',
         icons: FaBusinessTime
      },
      {
         name: 'Contact',
-        title: "home page",
-        subtitle: "homepage link",
+        title: "Contact page",
+        subtitle: "homepage ",
         href: '/contact',
         icons: FaAddressCard
      },

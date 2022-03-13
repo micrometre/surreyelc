@@ -13,12 +13,12 @@ function NavBarPhones() {
   const OffcanvasNav = {
     padding: 0,
     backgroundColor: "#6c757d",
-    width: "70%",
+    width: "50%",
     height: "100%",
   };
   const offcanvasHeader = {
     padding: 3,
-    backgroundColor: "#6c757d",
+    backgroundColor: "#fff",
     width: "100%",
     height: "20%",
     borderRadius: "5px",
@@ -137,9 +137,6 @@ function NavBarPhones() {
             display: flex;
             justify-content: space-around;
             transition: 100ms ease-in background;
-          }
-          .pathsDiv:hover {
-            background: yellow;
           }
         `}</style>
       </main>

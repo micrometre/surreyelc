@@ -52,10 +52,6 @@ function NavBarPhones() {
         socialdiv::-webkit-justify-content {
           background: #1e1e24;
         }
-
-        .socialdiv:hover {
-          background: green;
-        }
         @media (max-width: 990px) {
           .socialdiv {
             font-size: 0.9rem;
