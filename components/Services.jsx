@@ -22,8 +22,6 @@ function Services() {
             padding: 1.5rem;
             text-align: left;
             text-decoration: none;
-            border: 0.1rem solid green;
-            border-radius: 10px;
             transition: color 0.15s ease, border-color 0.15s ease;
           }
           main {
@@ -33,6 +31,7 @@ function Services() {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
           }
 
           .title {

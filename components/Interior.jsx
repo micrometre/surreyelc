@@ -20,7 +20,6 @@ function Interior() {
       </div>
       <style jsx>{`
         .interior-container {
-          min-height: 64vh;
           padding: 1rem;
           margin: 1rem;
           display: flex;
@@ -29,8 +28,8 @@ function Interior() {
           align-items: center;
         }
         main {
-          padding: 1rem;
-          margin: 1rem;
+          padding: 0rem;
+          margin: 0rem;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -54,20 +53,17 @@ function Interior() {
           font-weight: 300;
           font-size: 1.5rem;
         }
-        .description{
+        .description {
           padding: 0.45rem;
           margin: 0.45rem;
         }
         p {
-          text-align: left;
           line-height: 1.7;
           font-size: 1.09rem;
-          margin: .2rem;
-          flex-basis: 45%;
-          padding: 0.5rem;
+          margin: 0.1rem;
+          padding: 0.1rem;
           text-decoration: none;
         }
-
       `}</style>
     </div>
   );

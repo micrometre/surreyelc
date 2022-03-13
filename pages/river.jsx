@@ -14,7 +14,6 @@ export default function Home(initialData) {
           <Social />
           <NavbarOffcanvas />
           <div className="section">
-            <RiverHeader />
             <River />
           </div>
           <Copyright />

@@ -56,16 +56,18 @@ function Logo() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #cddc39;
+          border: 1px solid #ffffff;
 
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
         }
         .card:hover,
         .card:focus,
         .card:active {
           color: #fff;
-          border-color: #fff;
+          border-color: #ffffff;
         }
         @media (max-width: 600px) {
           .grid {

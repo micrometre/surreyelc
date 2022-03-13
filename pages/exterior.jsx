@@ -31,7 +31,7 @@ export default function Home(initialData) {
           width: 100%;
         }
         .section {
-          margin-top: 4rem;
+          margin-top: 2rem;
           border: 1px solid #fff;
         }
       `}</style>

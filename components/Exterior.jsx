@@ -20,7 +20,6 @@ function Exterior() {
       </div>
       <style jsx>{`
         .exterior-container {
-          min-height: 64vh;
           padding: 1rem;
           margin: 1rem;
           display: flex;
@@ -29,7 +28,8 @@ function Exterior() {
           align-items: center;
         }
         main {
-          padding: 1rem;
+          padding: 0rem;
+          padding: 0rem;
           margin: 1rem;
           flex: 1;
           display: flex;
@@ -55,10 +55,12 @@ function Exterior() {
           font-size: 1.5rem;
         }
         .description {
+          padding: 1rem;
           padding: 0.45rem;
           margin: 0.45rem;
         }
         p {
+          padding: 1rem;
           line-height: 1.7;
           font-size: 1.09rem;
           margin: 0.1rem;
