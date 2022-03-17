@@ -12,7 +12,7 @@ import Promise from '../components/Promise'
 import Map from '../components/Map'
 import Hero from '../components/Hero'
 import Copyright from '../components/Copyright'
-import Footer from '../components/nav/NavbarPhones'
+import Footer from '../components/nav/NavbarFooter'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 
 
