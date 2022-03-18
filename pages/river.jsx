@@ -4,7 +4,7 @@ import NavbarOffcanvas from "../components/nav/NavbarOffcanvas";
 import RiverHeader from "../components/RiverHeader";
 import River from "../components/River";
 import Copyright from "../components/Copyright";
-import Footer from "../components/nav/NavbarPhones";
+import Footer from '../components/nav/NavbarFooter'
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 export default function Home(initialData) {
   return (

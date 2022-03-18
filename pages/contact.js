@@ -4,7 +4,7 @@ import NavbarOffcanvas from "../components/nav/NavbarOffcanvas";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Copyright from "../components/Copyright";
-import Footer from "../components/nav/NavbarPhones";
+import Footer from '../components/nav/NavbarFooter'
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export default function Home(initialData) {

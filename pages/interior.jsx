@@ -4,7 +4,8 @@ import NavbarOffcanvas from "../components/nav/NavbarOffcanvas";
 import Logo from "../components/Logo";
 import Interior from "../components/Interior";
 import Copyright from "../components/Copyright";
-import Footer from "../components/nav/NavbarPhones";
+import Footer from '../components/nav/NavbarFooter'
+
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export default function Home(initialData) {

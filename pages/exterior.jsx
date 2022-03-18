@@ -5,7 +5,7 @@ import Logo from "../components/Logo";
 import Exterior from "../components/Exterior";
 import Hero from "../components/Hero";
 import Copyright from "../components/Copyright";
-import Footer from "../components/nav/NavbarPhones";
+import Footer from '../components/nav/NavbarFooter'
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export default function Home(initialData) {
