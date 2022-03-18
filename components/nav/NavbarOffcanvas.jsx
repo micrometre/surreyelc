@@ -87,7 +87,7 @@ function NavBarPhones() {
                     alt="Picture of the logo"
                     width={165}
                     height={89}
-                    loading="eager"
+                    priority
                   />
                 </Offcanvas.Title>
               </Offcanvas.Header>
