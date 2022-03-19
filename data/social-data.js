@@ -1,5 +1,5 @@
 import { FaFacebook, FaGem, FaBars, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
-export const data = [
+export const socialdata = [
   {
     socialLinks: [
       {

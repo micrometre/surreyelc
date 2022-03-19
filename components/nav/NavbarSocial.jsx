@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { data } from "../../data/social-data";
+import { socialdata } from "../../data/social-data";
 import { FaPhone, IconContext } from "react-icons/fa";
 
 function NavBarPhones() {
@@ -13,7 +13,7 @@ function NavBarPhones() {
   };
   return (
     <>
-      {data.map((e, i) => {
+      {socialdata.map((e, i) => {
         return (
           <div className="socialdiv" key={i}>
             {e.socialLinks.map((e, i) => {

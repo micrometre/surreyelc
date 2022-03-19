@@ -1,14 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import { data } from "../data/phone-data";
+import { emaildata } from "../data/email-data";
+import { socialdata } from "../data/social-data";
 import { FaPhone } from "react-icons/fa";
-const phoneLinksStyles = {
+const emailIconStyles = {
   fontSize: "0.9rem",
-  color: "black",
-  margin: "2.010rem",
+  color: "red",
+  margin: "0.1rem",
   textDecoration: "none",
 };
 
+const emailLinksStyles = {
+  fontSize: "0.9rem",
+  color: "red",
+  margin: "0.1rem",
+  textDecoration: "none",
+};
+
+const socialIconStyles = {
+  fontSize: "1.8em",
+  color: "black",
+  margin: "0.1rem",
+};
 function Contact() {
   return (
     <div className="about-container">
@@ -16,62 +30,82 @@ function Contact() {
         <h2 className="title">Contact us</h2>
         <div className="row">
           <div className="column">
-            <div>
+            <div className="contact-description">
               <h3 className="contact-title"> </h3>
               <p className="contact-description">
                 The easiest way to contact us is by giving us a call to arrange
                 a viewing of the work and a no-obligation quote.
-              Alternatively, you can email us at info@elmbridgepainting
-              <br />
-              Please provide your name and telephone contact details in the
-              email so we can get back to you at the very earliest opportunity.
-              We are also on Facebook, Instagram and Twitter.
               </p>
-              <div>
-              </div>
+
+              {socialdata.map((e, i) => {
+                return (
+                  <div className="social-div" key={i}>
+                    {e.socialLinks.map((e, i) => {
+                      return (
+                        <a
+                          style={socialIconStyles}
+                          href={e.href}
+                          key={i}
+                          title={e.title}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <span className="icons" key={i}>
+                            <e.icons style={socialIconStyles} />
+                          </span>
+                        </a>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+              <div></div>
             </div>
           </div>
           <div className="column">
             <p className="contact-description">
+              Alternatively, you can email us at info@elmbridgepainting Please
+              provide your name and telephone contact details in the email so we
+              can get back to you at the very earliest opportunity. We are also
+              on Facebook, Instagram and Twitter.
+            </p>
+            {emaildata.map((e, i) => {
+              return (
+                <div key={i}>
+                  {e.contact.map((e, i) => {
+                    return (
+                      <a
+                        className="email-links"
+                        style={emailLinksStyles}
+                        href={e.href}
+                        key={i}
+                        title={e.title}
+                      >
+                        <e.icons
+                          className="emial-icons"
+                          style={emailIconStyles}
+                        ></e.icons>
+                        {e.name}
+                      </a>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="contact-details">
+          <p className="contact-description">
             Address: 44 Clarks Ln, Halstead
             <br />
-            Sevenoaks TN14 7DQ
-            Business Hours
+            Sevenoaks TN14 7DQ Business Hours
             <br />
             Monday-Friday from 07:30am - 7pm
             <br />
             Saturday-Sunday from 07:30am - 7pm
-            </p>
-
-          {data.map((e, i) => {
-            return (
-              <div className="phonesdiv" key={i}>
-                {e.contact.map((e, i) => {
-                  return (
-                    <a
-                      style={phoneLinksStyles}
-                      className="phoneLinksStyles"
-                      href={e.href}
-                      key={i}
-                      title={e.title}
-                    >
-                      <e.icons className="phoneIconsStyles"></e.icons>
-                      {e.name}
-                    </a>
-                  );
-                })}
-              </div>
-            );
-          })}
-
-
-          </div>
-
+          </p>
         </div>
-
-          <div className="contact-details">
-            Address: 44 Clarks Ln, Halstead
-          </div>
       </main>
 
       <style jsx>{`
@@ -82,7 +116,7 @@ function Contact() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-                    background-image: linear-gradient(
+          background-image: linear-gradient(
               rgba(0, 0, 0, 0.3),
               rgba(0, 0, 0, 0.2)
             ),
@@ -143,7 +177,7 @@ function Contact() {
         }
         .contact-details {
           border: 1px solid black;
-                    margin: 0rem;
+          margin: 0rem;
           padding: 1.4rem;
           text-align: left;
           color: inherit;
@@ -152,7 +186,7 @@ function Contact() {
           border: 1px solid #ffffff;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
         @media screen and (max-width: 600px) {
           .column {
