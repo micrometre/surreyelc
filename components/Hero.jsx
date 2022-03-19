@@ -1,182 +1,169 @@
 import Image from "next/image";
 import Link from "next/link";
+import { data } from "../data/phone-data";
+import { FaPhone } from "react-icons/fa";
+const phoneLinksStyles = {
+  fontSize: "0.9rem",
+  color: "black",
+  margin: "2.010rem",
+  textDecoration: "none",
+};
 
-function CopyRight() {
+function Contact() {
   return (
-    <div className="container">
-        <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+    <div className="about-container">
+      <main>
+        <h2 className="title">Contact us</h2>
+        <div className="row">
+          <div className="column">
+            <div>
+              <h3 className="contact-title"> </h3>
+              <p className="contact-description">
+                The easiest way to contact us is by giving us a call to arrange
+                a viewing of the work and a no-obligation quote.
+              Alternatively, you can email us at info@elmbridgepainting
+              <br />
+              Please provide your name and telephone contact details in the
+              email so we can get back to you at the very earliest opportunity.
+              We are also on Facebook, Instagram and Twitter.
+              </p>
+              <div>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <p className="contact-description">
+            Address: 44 Clarks Ln, Halstead
+            <br />
+            Sevenoaks TN14 7DQ
+            Business Hours
+            <br />
+            Monday-Friday from 07:30am - 7pm
+            <br />
+            Saturday-Sunday from 07:30am - 7pm
             </p>
-          </a>
+
+          {data.map((e, i) => {
+            return (
+              <div className="phonesdiv" key={i}>
+                {e.contact.map((e, i) => {
+                  return (
+                    <a
+                      style={phoneLinksStyles}
+                      className="phoneLinksStyles"
+                      href={e.href}
+                      key={i}
+                      title={e.title}
+                    >
+                      <e.icons className="phoneIconsStyles"></e.icons>
+                      {e.name}
+                    </a>
+                  );
+                })}
+              </div>
+            );
+          })}
+
+
+          </div>
+
         </div>
+
+          <div className="contact-details">
+            Address: 44 Clarks Ln, Halstead
+          </div>
       </main>
+
       <style jsx>{`
-          .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
+        .about-container {
+          padding: 0.1rem;
+          margin-top: 8.9rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-            background-repeat: no-repeat, repeat;
-  background-image: url(/img/map.webp);
-  background-blend-mode: lighten;
+                    background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.2)
+            ),
+            url(./img/map.webp);
+          background-repeat: no-repeat;
+          background-size: cover;
         }
 
         main {
-          padding: 5rem 0;
+          padding: 2rem;
+          margin: 1rem;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border: 5px solid yellow;
+          flex-basis: 60%;
+          border: 1px solid #ffffff;
+        }
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          border: 1px solid #ffffff;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+          background: #ffffff;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
         }
 
         .title {
-          margin: 0;
-          line-height: 1.15;
+          text-decoration: none;
+          margin: 1rem;
           font-size: 4rem;
-        }
-
-        .title,
-        .description {
           text-align: center;
         }
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
+        p {
+          line-height: 1.7;
+          font-size: 1.09rem;
+          margin: 0.5rem;
           flex-basis: 45%;
-          padding: 1.5rem;
+          padding: 0.5rem;
           text-align: left;
+          text-decoration: none;
+          margin: 1rem;
+          flex-basis: 60%;
+          padding: 1.5rem;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+        }
+        .contact-details {
+          border: 1px solid black;
+                    margin: 0rem;
+          padding: 1.4rem;
+          text-align: left;
+          color: inherit;
+          background: white;
+          text-decoration: none;
+          border: 1px solid #ffffff;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
+        @media screen and (max-width: 600px) {
+          .column {
             width: 100%;
-            flex-direction: column;
+          }
+          p {
+            line-height: 1.8;
           }
         }
       `}</style>
     </div>
   );
 }
-export default CopyRight;
+export default Contact;
