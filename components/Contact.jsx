@@ -5,41 +5,41 @@ import { emaildata } from "../data/email-data";
 import { socialdata } from "../data/social-data";
 import { FaPhone } from "react-icons/fa";
 const phoneIconStyles = {
-  fontSize: "0.9rem",
-  color: "black",
+  fontSize: "1.0rem",
+  color: "olive",
   margin: "0.1rem",
   textDecoration: "none",
 };
 
 const phoneLinksStyles = {
-  fontSize: "1.6rem",
+  fontSize: "1.0rem",
   color: "teal",
   margin: "0.1rem",
   textDecoration: "none",
   display: "flex",
 };
 const emailIconStyles = {
-  fontSize: "0.9rem",
-  color: "black",
+  fontSize: "1.0rem",
+  color: "olive",
   margin: "0.1rem",
   textDecoration: "none",
 };
 const emailLinksStyles = {
-  fontSize: "1.4rem",
-  color: "black",
+  fontSize: "1.0rem",
+  color: "#008080",
   margin: "0.1rem",
   textDecoration: "none",
 };
 
 const socialIconStyles = {
-  fontSize: "1.4em",
+  fontSize: "2.0rem",
   color: "black",
   margin: "0.1rem",
   padding: "0.5rem",
 };
 function Contact() {
   return (
-    <div className="about-container">
+    <div className="contact-container">
       <main>
         <div className="row">
           <div className="column">
@@ -170,8 +170,7 @@ function Contact() {
         </div>
       </main>
       <style jsx>{`
-        .about-container {
-          min-height: 138vh;
+        .contact-container {
           padding: 0.0rem;
           margin-top: 9.0rem;
 
@@ -199,7 +198,7 @@ function Contact() {
         }
 
         .column {
-          margin: 1rem;
+          margin: 0rem;
           flex-basis: 45%;
           padding: 0.2rem;
           display: flex;
@@ -222,9 +221,8 @@ function Contact() {
           line-height: 1.5;
         }
                 code {
-          background: #fafafa;
-          border-radius: 5px;
           padding: 0.75rem;
+          color: #008080;
           font-size: 1.1rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;

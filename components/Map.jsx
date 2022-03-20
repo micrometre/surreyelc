@@ -43,7 +43,7 @@ function AreasMap() {
           align-items: center;
         }
         .title {
-          color: #0070f3;
+          color: #008080;
           text-decoration: none;
           text-decoration: underline;
         }
