@@ -60,7 +60,9 @@ function Contact() {
                   </code>
                   Please provide your name and telephone contact details in the
                   email so we can get back to you at the very earliest
-                  opportunity. We are also on Facebook, Instagram and Twitter.
+                  opportunity.
+                  <br />
+                  We are also on Facebook, Instagram and Twitter.
                 </p>
 
                 <div>
@@ -140,12 +142,8 @@ function Contact() {
       <style jsx>{`
         .about-container {
           min-height: 100vh;
-          padding: 1.0rem;
+          padding: 0.0rem;
           margin-top: 9.0rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
           border: 0.4rem solid red;
 
         }
@@ -173,14 +171,16 @@ function Contact() {
 
         .column {
           margin: 1rem;
-          padding: 1.5rem;
+                    flex-basis: 45%;
+
+          padding: 0.2rem;
           display: flex;
           flex-direction: column;
           flex-basis: 100%;
           flex: 1;
           text-align: left;
           text-decoration: none;
-          border: 4px solid #eaeaea;
+          border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
           background-color: white;
@@ -191,7 +191,6 @@ function Contact() {
           font-size: 1.25rem;
         }
         .business-description {
-          border: 0.4rem solid blue;
 
           margin: 0;
           font-size: 1.25rem;
