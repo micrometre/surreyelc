@@ -4,6 +4,15 @@ import { data } from "../data/phone-data";
 import { emaildata } from "../data/email-data";
 import { socialdata } from "../data/social-data";
 import { FaPhone } from "react-icons/fa";
+
+const phoneTitleStyles = {
+  fontSize: "1.0rem",
+  color: "black",
+  margin: "0.1rem",
+  padding: "0.1rem",
+  textDecoration: "none",
+};
+
 const phoneIconStyles = {
   fontSize: "1.0rem",
   color: "olive",
@@ -15,6 +24,7 @@ const phoneLinksStyles = {
   fontSize: "1.0rem",
   color: "teal",
   margin: "0.1rem",
+  padding: "0.1rem",
   textDecoration: "none",
   display: "flex",
 };
@@ -109,6 +119,7 @@ function Contact() {
                                 style={emailIconStyles}
                               ></e.icons>
                               {e.name}
+
                             </a>
                           );
                         })}
@@ -155,6 +166,9 @@ function Contact() {
                             >
                               <e.icons style={phoneIconStyles}></e.icons>
                               {e.name}
+                              <span style={phoneTitleStyles}>
+                              {e.subtitle}
+                              </span>
                             </a>
                           );
                         })}

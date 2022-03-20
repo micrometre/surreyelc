@@ -14,7 +14,6 @@ function CopyRight() {
           <div href="https://nextjs.org/docs" className="copyright-card">
             <p className="description">
               Copyright ©{year}
-              Elmbridge Painting and Decorating Services Ltd.
               <code>Elmbridge Painting and Decorating Services Ltd.</code>
             </p>
           </div>
