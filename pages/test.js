@@ -21,7 +21,10 @@ export default function Home(initialData) {
   <div className="home">
  <div className="home-container">
     <MainLayout>
+    <Social />
+    <NavbarOffcanvas />
     <Hero />
+    <Footer />
     </MainLayout>
    </div>
     <style jsx>{`
