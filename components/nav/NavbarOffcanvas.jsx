@@ -28,6 +28,9 @@ function NavBarPhones() {
     padding: 0,
     height: "100%",
     backgroundColor: "white",
+    border: "0.2rem solid teal",
+    boxShadow:"0 0 10px",
+
   };
   const offcanvasBody = { padding: 0, height: "100%" };
   const OffcanvasLinks = {
