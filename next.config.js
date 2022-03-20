@@ -61,6 +61,8 @@ module.exports = {
   },
 };
 
+{/* # Progressive Web App Example
+
 const withPWA = require("next-pwa");
 
 module.exports = withPWA({
@@ -72,3 +74,6 @@ module.exports = withPWA({
 
   },
 });
+
+
+*/}
