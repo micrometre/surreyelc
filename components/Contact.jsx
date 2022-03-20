@@ -171,13 +171,14 @@ function Contact() {
       </main>
       <style jsx>{`
         .contact-container {
-          padding: 0.0rem;
+          padding: 0.1rem;
           margin-top: 9.0rem;
+           border: 0.2rem solid green;
 
         }
 
         main {
-          padding: 0.2rem;
+          padding: 0.1rem;
           margin 0.1rem;
           flex: 1;
           display: flex;
@@ -188,6 +189,7 @@ function Contact() {
         }
 
         .row {
+          padding: 0.1rem;
           margin: 0.1rem;
           display: flex;
           flex-direction: row;
@@ -198,7 +200,7 @@ function Contact() {
         }
 
         .column {
-          margin: 0rem;
+          margin: 0.9rem;
           flex-basis: 45%;
           padding: 0.2rem;
           display: flex;
@@ -209,6 +211,7 @@ function Contact() {
           text-decoration: none;
           transition: color 0.15s ease, border-color 0.15s ease;
           background-color: white;
+           border: 0.2rem solid teal;
         }
           .contact-description{
           margin: 0;
