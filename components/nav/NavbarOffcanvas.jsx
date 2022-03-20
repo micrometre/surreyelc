@@ -81,14 +81,16 @@ function NavBarPhones() {
                   id="offcanvasNavbarLabel"
                   style={offcanvasTitle}
                 >
-                  <Image
-                    src="/img/logo.png"
-                    className="brandLogo"
-                    alt="Picture of the logo"
-                    width={165}
-                    height={89}
-                    priority
-                  />
+                  <Link href="/" passHref className="card">
+                    <Image
+                      src="/img/logo.png"
+                      className="brandLogo"
+                      alt="Picture of the logo"
+                      width={165}
+                      height={89}
+                      priority
+                    />
+                  </Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={offcanvasBody}>

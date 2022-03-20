@@ -45,13 +45,15 @@ function Contact() {
           <div className="column">
             <div className="right-column">
               <div className="contact">
-                <Image
-                  src="/img/logo.png"
-                  alt="logo"
-                  width={524}
-                  height={282}
-                  priority
-                />
+                <div className="contact-logo">
+                  <Image
+                    src="/img/logo.png"
+                    alt="logo"
+                    width={524}
+                    height={282}
+                    priority
+                  />
+                </div>
                 <p className="contact-description">
                   The easiest way to contact us is by giving us a call to
                   arrange a viewing of the work and a no-obligation quote.
@@ -120,13 +122,16 @@ function Contact() {
           <div className="column">
             <div className="left-column">
               <div className="contact">
+                <div className="contact-map">
                 <Image
                   src="/img/map.webp"
                   alt="map-location"
                   width={524}
                   height={282}
+                  layout="responsive"
                   priority
                 />
+                </div>
                 <div className="contact-details">
                   <p className="business-description">
                     Business Hours
@@ -173,7 +178,7 @@ function Contact() {
         .contact-container {
           padding: 0.1rem;
           margin-top: 9.0rem;
-           border: 0.2rem solid green;
+           border: 0.1rem solid teal;
 
         }
 
@@ -211,11 +216,18 @@ function Contact() {
           text-decoration: none;
           transition: color 0.15s ease, border-color 0.15s ease;
           background-color: white;
-           border: 0.2rem solid teal;
+           border: 0.2rem solid white;
         }
           .contact-description{
           margin: 0;
           font-size: 1.25rem;
+
+        }
+
+          .contact-map{
+           border: 0.1rem solid teal;
+          padding: 0.2rem;
+          margin 0.1rem;
         }
         .business-description {
 
