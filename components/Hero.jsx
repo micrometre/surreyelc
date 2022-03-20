@@ -2,28 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 function CopyRight() {
-  const current = new Date();
-  const date = `${current.getDate()}/${
-    current.getMonth() + 1
-  }/${current.getFullYear()}`;
-  const year = `${current.getFullYear()}`;
   return (
-    <div className="copyright-container">
+    <div className="interior-container">
       <main>
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <p className="description">
-              Copyright ©{year}
-              Elmbridge Painting and Decorating Services Ltd.
-              <code>Elmbridge Painting and Decorating Services Ltd.</code>
-            </p>
-          </a>
+        <div className="interior-grid">
+          <div className="img-container">
+            <Image
+              src="/img/1.webp"
+              alt="Locations Map picture"
+              width={1200}
+              height={500}
+            />
+            <div className="centered">Centered</div>
+          </div>
         </div>
       </main>
       <style jsx>{`
-        .container {
+        .interior-container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -31,7 +27,8 @@ function CopyRight() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 0rem;
+          margin-top: 8.5rem;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -83,6 +80,55 @@ function CopyRight() {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
+        }
+
+        /* Container holding the image and the text */
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+
+        /* Bottom left text */
+        .bottom-left {
+          position: absolute;
+          bottom: 8px;
+          font-size: 7.25rem;
+          left: 16px;
+        }
+
+        /* Top left text */
+        .top-left {
+          position: absolute;
+          top: 8px;
+          bottom: 8px;
+          left: 16px;
+          font-size: 7.25rem;
+        }
+
+        /* Top right text */
+        .top-right {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-size: 7.25rem;
+        }
+
+        /* Bottom right text */
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+          font-size: 7.25rem;
+        }
+
+        /* Centered text */
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 7.25rem;
         }
 
         @media (max-width: 600px) {
