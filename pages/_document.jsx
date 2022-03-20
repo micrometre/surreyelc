@@ -7,6 +7,7 @@ export default function Document() {
         {}
         <meta name="viewport" content="width=device-width" />
 
+  <meta name="theme-color" content="#ffffff"/>
 
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
