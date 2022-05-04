@@ -10,6 +10,11 @@ import {
 import { data } from "../../data/paths-data";
 import { FaPhone } from "react-icons/fa";
 function NavBarPhones() {
+  const offcanvasContainer= { 
+    padding: 0, 
+    fontSize: "1.59rem",
+    height: "100%" 
+  };
   const OffcanvasNav = {
     padding: 0,
     backgroundColor: "#6c757d",
@@ -43,8 +48,8 @@ function NavBarPhones() {
   return (
     <>
       <main>
-        <Navbar bg="light" expand="lg">
-          <Container>
+        <Navbar  expand="lg" bg="dark">
+          <Container  style={offcanvasContainer} > 
             <Navbar.Collapse id="basic-navbar-nav">
               {data.map((e, i) => {
                 return (
@@ -67,7 +72,7 @@ function NavBarPhones() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
           <Container>
             <Navbar.Toggle
               aria-controls="offcanvasNavbar"
@@ -134,7 +139,7 @@ function NavBarPhones() {
 
           .pathsLinks {
             text-decoration: none;
-            color: black;
+            color: #fff;
           }
           .pathsDiv {
             margin-top: 0rem;

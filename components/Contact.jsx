@@ -135,7 +135,7 @@ function Contact() {
               <div className="contact">
                 <div className="contact-map">
                 <Image
-                  src="/img/map.webp"
+                  src="/images/map.webp"
                   alt="map-location"
                   width={524}
                   height={282}

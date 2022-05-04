@@ -8,7 +8,7 @@ function AreasMap() {
     <div className="map-container">
       <main>
         <Image
-          src="/img/map.jpeg"
+          src="/images/map.jpeg"
           alt="Locations Map picture"
           width={1200}
           height={500}

@@ -13,7 +13,7 @@ function Promise() {
           <div className="column">
             <div className="card">
               <Image
-                src="/img/kitchen-2.webp"
+                src="/images/kitchen-2.webp"
                 alt="About picture"
                 width={500}
                 height={300}
@@ -27,7 +27,7 @@ function Promise() {
           <div className="column">
             <div className="card">
               <Image
-                src="/img/kitchen-3.webp"
+                src="/images/kitchen-3.webp"
                 alt="About picture"
                 width={500}
                 height={300}
@@ -42,7 +42,7 @@ function Promise() {
           <div className="column">
             <div className="card">
               <Image
-                src="/img/leavingroom-1.webp"
+                src="/images/leavingroom-1.webp"
                 alt="About picture"
                 width={500}
                 height={300}

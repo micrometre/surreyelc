@@ -5,7 +5,7 @@ export const socialdata = [
       {
         title: "Follow us on Facebook",
         subtitle: "Facebook Icon",
-        href: "https://www.facebook.com/profile.php?id=100070020624202",
+        href: "/",
         icons: FaFacebook
       },
       {
@@ -16,7 +16,7 @@ export const socialdata = [
       },
       {
         title: "Follow us on twitter",
-        href: "https://twitter.com/elmbridgepaint1",
+        href: "/",
         subtitle: "Twitter Icon",
         icons: FaTwitter
       }

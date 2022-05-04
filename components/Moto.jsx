@@ -3,8 +3,7 @@ function Moto() {
     <div className="moto-container">
       <main>
         <h1 className="title">
-          Professional Painters and Decorators in Elmbridge and surrounding
-          areas.
+        Electrical specialists serving surrey and surrounding areas.
         </h1>
       </main>
       <style jsx>{`
@@ -26,6 +25,7 @@ function Moto() {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
         .title {
+          color: #fff;
           text-decoration: none;
           line-height: 1.15;
           font-size: 4rem;

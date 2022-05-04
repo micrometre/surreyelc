@@ -3,18 +3,11 @@ export const data = [
   {
     contact: [
       {
-        name: "Email:info@elmbridgepainting.com",
-        title: "Email Elmbridgepainting and Decorating Services Ltd",
-        href:   "mailto:info@elmbridgepainting.com",
-        subtitle: "Mobile contact",
+        name: "Email:info@electricalsurrey.com",
+        title: "Electricalsurrey Ltd",
+        href:   "mailto:info@electricalsurrey.com",
+        subtitle: "Email contact",
         icons: FaEnvelope
-      },
-      {
-        name: "tel: 01932 253753",
-        title: "Call Elmbridgepainting and Decorating Services Ltd",
-        href:   "tel:+441932253753<" ,
-        subtitle: "Secound Mobile contact",
-        icons: FaPhone
       },
     ]
   }

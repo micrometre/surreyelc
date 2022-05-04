@@ -40,7 +40,7 @@ function NavBarPhones() {
           width: 100%;
           display: flex;
           justify-content: space-around;
-          background-color: #6c757d;
+          background-color: #23513e;
           position: fixed;
           top: 0;
           right: 0;

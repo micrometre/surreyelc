@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 export const siteTitle = "Elmbridge Painting and Decorating Services Ltd";
 
 export default function Layout({ children }) {
@@ -21,7 +20,8 @@ export default function Layout({ children }) {
         />
         <title>{siteTitle}</title>
       </Head>
-      <main>{children}</main>
+      <main> {children}</main>
+
     </div>
   );
 }

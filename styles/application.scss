@@ -1,7 +1,15 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-.md-container {
-  max-width: 1500px;
-  padding-top: 2rem;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$assetPath :"/images";
+$navbar-dark-color:         #23513e;
+@import "bootstrap";
+body {
+  background: url(#{$assetPath}/darkbg.jpg);
 }
 
+.md-container {
+  max-width: 1500px;
+  padding-top: 1rem;
+}

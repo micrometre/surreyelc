@@ -8,13 +8,12 @@ function Logo() {
         <div className="grid">
           <Link href="/" passHref className="card">
             <a className="card">
-              <Image
-                src="/img/logo.png"
-                alt="logo"
-                width={524}
-                height={282}
-                priority
-              />
+            <Image
+          src="/images/logo.jpg"
+          alt="logo"
+          width={200}
+          height={300}
+        />
             </a>
           </Link>
         </div>
@@ -52,12 +51,9 @@ function Logo() {
         .card {
           margin: 1rem;
           flex-basis: 60%;
-          padding: 1.5rem;
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #ffffff;
-
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

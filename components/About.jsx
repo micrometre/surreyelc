@@ -9,7 +9,7 @@ function AboutUs() {
         <div className="row">
           <div className="column">
             <Image
-              src="/img/4.webp"
+              src="/images/4.webp"
               alt="logo"
               width={492}
               height={288}

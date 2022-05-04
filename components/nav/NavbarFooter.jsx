@@ -49,7 +49,7 @@ function NavBarContact({ name, href, ...props }) {
           display: flex;
           align-items: center;
           justify-content: space-evenly;
-          background-color: #6c757d;
+          background-color: #23513e;
           text-decoration: none;
           font-size: 1.4rem;
         }
