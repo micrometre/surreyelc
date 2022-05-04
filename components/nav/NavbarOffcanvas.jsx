@@ -17,7 +17,7 @@ function NavBarPhones() {
   };
   const OffcanvasNav = {
     padding: 0,
-    backgroundColor: "#6c757d",
+    backgroundColor: "#23513e",
     width: "50%",
     height: "100%",
   };
@@ -25,13 +25,13 @@ function NavBarPhones() {
     padding: 3,
     backgroundColor: "#fff",
     width: "100%",
-    height: "20%",
+    height: "2%",
     borderRadius: "5px",
     margin: 2,
   };
   const offcanvasTitle = {
     padding: 0,
-    height: "100%",
+    height: "10%",
     backgroundColor: "white",
     border: "0.2rem solid teal",
     boxShadow:"0 0 10px",
@@ -89,16 +89,6 @@ function NavBarPhones() {
                   id="offcanvasNavbarLabel"
                   style={offcanvasTitle}
                 >
-                  <Link href="/" passHref className="card">
-                    <Image
-                      src="/img/logo.png"
-                      className="brandLogo"
-                      alt="Picture of the logo"
-                      width={165}
-                      height={89}
-                      priority
-                    />
-                  </Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={offcanvasBody}>

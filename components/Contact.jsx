@@ -57,22 +57,16 @@ function Contact() {
               <div className="contact">
                 <div className="contact-logo">
                   <Image
-                    src="/img/logo.png"
-                    alt="logo"
-                    width={524}
-                    height={282}
+                            src="/images/logo.jpg"
+                            alt="logo"
+                            width={200}
+                            height={300}
                     priority
                   />
                 </div>
                 <p className="contact-description">
-                  The easiest way to contact us is by giving us a call to
-                  arrange a viewing of the work and a no-obligation quote.
                   <br />
-                  Alternatively, you can email us at
-                  <code>info@elmbridgepainting</code>
-                  Please provide your name and telephone contact details in the
-                  email so we can get back to you at the very earliest
-                  opportunity.
+                  <code>info@eelectricalsurrey</code>
                   <br />
                   We are also on Facebook, Instagram and Twitter.
                   <code>
@@ -153,36 +147,7 @@ function Contact() {
                   </p>
                 </div>
                 <div>
-                  {data.map((e, i) => {
-                    return (
-                      <div key={i}>
-                        {e.contact.map((e, i) => {
-                          return (
-                            <a
-                              style={phoneLinksStyles}
-                              href={e.href}
-                              key={i}
-                              title={e.title}
-                            >
-                              <e.icons style={phoneIconStyles}></e.icons>
-                              {e.name}
-                              <span style={phoneTitleStyles}>
-                              {e.subtitle}
-                              </span>
-                            </a>
-                          );
-                        })}
-                      </div>
-                    );
-                  })}
                 </div>
-                <p className="contact-description">
-                  44 Clarks Ln,
-                  <br />
-                  Halstead
-                  <br />
-                  Sevenoaks TN14 7DQ
-                </p>
               </div>
             </div>
           </div>
