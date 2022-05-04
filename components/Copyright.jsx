@@ -44,14 +44,14 @@ function CopyRight() {
           text-decoration: none;
           color: #fff;
           line-height: 1.3;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
 
         code {
           border-radius: 5px;
           padding: 0.75rem;
-          color: #008080;
-          font-size: 0.7rem;
+          color: #fff;
+          font-size: 0.8rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }

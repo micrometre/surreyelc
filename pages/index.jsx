@@ -20,6 +20,7 @@ export default function Home(initialData) {
     <NavbarOffcanvas />
     <Logo />
     <Moto />
+    <Services />
     <Copyright />
     <Footer />
     </MainLayout>
