@@ -10,6 +10,19 @@ import {
 import { data } from "../../data/paths-data";
 import { FaPhone } from "react-icons/fa";
 function NavBarPhones() {
+  const offcanvasToggle = {
+    color: "#fff",
+    backgroundColor: "#fff",
+    border: "1px solid #088413",
+    fontSize: 20,
+    fontWeight: "bold",
+    letterSpacing: 1,
+    borderRadius: 1,
+    padding: "4px 6px",
+    marginLeft: 10,
+    lineHeight: 1,
+  }
+  
   const offcanvasContainer= { 
     padding: 0, 
     fontSize: "1.59rem",
@@ -77,6 +90,7 @@ function NavBarPhones() {
             <Navbar.Toggle
               aria-controls="offcanvasNavbar"
               aria-labelledby="offcanvasNavbar"
+              style={offcanvasToggle}
             />
             <Navbar.Offcanvas
               style={OffcanvasNav}
@@ -119,12 +133,12 @@ function NavBarPhones() {
         </Navbar>
         <style jsx>{`
           main {
-            margin-top: 3.6rem;
+            z-index: 1030;
             position: fixed;
             top: 0;
             right: 0;
             left: 0;
-            z-index: 1030;
+            margin-top: 3.6rem;
           }
 
           .pathsLinks {
