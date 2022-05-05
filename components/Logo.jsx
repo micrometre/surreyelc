@@ -11,8 +11,8 @@ function Logo() {
             <Image
           src="/images/logo.webp"
           alt="logo"
-          width={256}
-          height={358}
+          width={286}
+          height={400}
         />
             </a>
           </Link>
