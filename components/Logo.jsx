@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 function Logo() {
   return (
     <div className="logo-container">
@@ -11,8 +11,8 @@ function Logo() {
             <Image
           src="/images/logo.jpg"
           alt="logo"
-          width={200}
-          height={300}
+          width={256}
+          height={358}
         />
             </a>
           </Link>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   Offcanvas,
   Navbar,
@@ -9,15 +10,21 @@ import {
 } from "react-bootstrap";
 import { data } from "../../data/paths-data";
 import { FaPhone } from "react-icons/fa";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+}
+
 function NavBarPhones() {
   const offcanvasToggle = {
     color: "#fff",
     backgroundColor: "#fff",
-    border: "1px solid #088413",
-    fontSize: 20,
+    border: "4px solid #fff",
+    borderRadius: 22,
+    fontSize: 21,
     fontWeight: "bold",
     letterSpacing: 1,
-    borderRadius: 1,
     padding: "4px 6px",
     marginLeft: 10,
     lineHeight: 1,
