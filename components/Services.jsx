@@ -48,34 +48,6 @@ export default function Home() {
         </div>
       </main>
       <style jsx>{`
-                .marquee {
-                  min-height: 10vh;
-                  padding: 0 0.5rem;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                }
-        
-                .grid {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 0.0rem;
-                }
-                .card{
-
-                  align-items: center;
-                  justify-content: center;
-                  margin: 5.0rem;
-
-                }
-                @media (max-width: 600px) {
-                  .grid {
-                    width: 100%;
-                    flex-direction: column;
-                  }
-                }
               `}</style>
 
     </div>
