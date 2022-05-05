@@ -9,7 +9,7 @@ function Logo() {
           <Link href="/" passHref className="card">
             <a className="card">
             <Image
-          src="/images/logo.jpg"
+          src="/images/logo.webp"
           alt="logo"
           width={256}
           height={358}
