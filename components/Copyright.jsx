@@ -9,16 +9,16 @@ function CopyRight() {
   const year = `${current.getFullYear()}`;
   return (
     <div className="copyright-container">
-      <main>
+      <div className="copyright-main">
         <div className="copyright-grid">
           <div  className="copyright-card">
-            <p className="description">
+            <p className="copyrigght-description">
               Copyright ©{year}
               <code>Electricalsurrey Ltd.</code>
             </p>
           </div>
         </div>
-      </main>
+      </div>
       <style jsx>{`
         .container {
           padding:  0.5rem;
@@ -28,7 +28,7 @@ function CopyRight() {
           align-items: center;
         }
 
-        main {
+        .copyright-main {
           padding:  0.5rem;
           flex: 1;
           display: flex;
@@ -68,14 +68,9 @@ function CopyRight() {
           text-decoration: none;
         }
 
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
 
         @media (max-width: 600px) {
-          .grid {
+          .copyright-grid {
             width: 100%;
             flex-direction: column;
           }

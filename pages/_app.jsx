@@ -1,7 +1,7 @@
 import '../styles/application.scss'
 
-function App({ Component, pageProps }) {
+function SurreyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default App
+export default SurreyApp

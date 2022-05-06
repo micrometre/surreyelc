@@ -9,14 +9,9 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 import { data } from "../../data/paths-data";
-import { FaPhone } from "react-icons/fa";
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-}
 
-function NavBarPhones() {
+export function NavBarPaths() {
   const offcanvasToggle = {
     color: "#fff",
     backgroundColor: "#fff",
@@ -165,4 +160,4 @@ function NavBarPhones() {
   );
 }
 
-export default NavBarPhones;
+export default NavBarPaths;

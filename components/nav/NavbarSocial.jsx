@@ -3,7 +3,7 @@ import Link from "next/link";
 import { socialdata } from "../../data/social-data";
 import { FaPhone, IconContext } from "react-icons/fa";
 
-function NavBarPhones() {
+export function NavSocail() {
   const socialIconStyles = {
     fontSize: "2.7em",
     color: "white",
@@ -63,4 +63,4 @@ function NavBarPhones() {
   );
 }
 
-export default NavBarPhones;
+export default NavSocail;

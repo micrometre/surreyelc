@@ -1,8 +1,7 @@
 import Layout from '../components/layout'
 import NavSocail from '../components/nav/NavbarSocial'
 import NavBarPaths from '../components/nav/NavbarPaths'
-import LogoImage from '../components/Logoimage'
-import ServicesEv from '../components/Services'
+import Contact from '../components/Contact'
 import { NavBarFooter } from '../components/nav/NavbarFooter'
 import CopyRight from '../components/Copyright'
 export default function Home() {
@@ -12,8 +11,8 @@ export default function Home() {
       <div className="home-container">
         <NavSocail />
         <NavBarPaths />
-        <LogoImage />
-        <ServicesEv />
+        <Contact  />
+
         <CopyRight />
         <NavBarFooter/>
       </div>

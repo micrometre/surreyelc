@@ -57,7 +57,7 @@ function Contact() {
               <div className="contact">
                 <div className="contact-logo">
                   <Image
-                            src="/images/logo.jpg"
+                            src="/images/logo.webp"
                             alt="logo"
                             width={200}
                             height={300}
@@ -66,7 +66,7 @@ function Contact() {
                 </div>
                 <p className="contact-description">
                   <br />
-                  <code>info@eelectricalsurrey</code>
+                  <code>info@electricalsurrey</code>
                   <br />
                   We are also on Facebook, Instagram and Twitter.
                   <code>
@@ -155,7 +155,7 @@ function Contact() {
       </main>
       <style jsx>{`
         .contact-container {
-          padding: 0.1rem;
+          padding: 4.1rem;
           margin-top: 9.0rem;
            border: 0.1rem solid teal;
 

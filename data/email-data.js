@@ -3,9 +3,9 @@ export const emaildata = [
   {
     contact: [
       {
-        name: "Email: info@elmbridgepainting.com",
-        title: "Email Elmbridgepainting and Decorating Services Ltd",
-        href:   "mailto:info@elmbridgepainting.com",
+        name: "Email: info@electricalsurrey.com",
+        title: "Email electricalsurrey Ltd",
+        href:   "mailto:info@electricalsurrey.com",
         subtitle: "Email icon",
         icons: FaEnvelope
       },

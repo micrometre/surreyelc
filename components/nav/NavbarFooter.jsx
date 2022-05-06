@@ -9,7 +9,7 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 
-function NavBarContact({ name, href, ...props }) {
+export function NavBarFooter({ name, href, ...props }) {
   const phoneLinksStyles = { fontSize: "1.0em", color: "white" };
   const phoneIconStyles = { fontSize: "2.5em", color: "white" };
 
@@ -71,4 +71,4 @@ function NavBarContact({ name, href, ...props }) {
   );
 }
 
-export default NavBarContact;
+export default NavBarFooter;
