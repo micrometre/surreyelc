@@ -19,6 +19,21 @@ const imageVariants = {
         transition,
     },
 }
+const thumbnailVariants = {
+    initial: { scale: 0.9, opacity: 0 },
+    enter: { scale: 1, opacity: 1, transition },
+    exit: {
+      scale: 0.5,
+      opacity: 0,
+      transition: { duration: 1.5, ...transition },
+    },
+  }
+  
+  const frameVariants = {
+    hover: { scale: 0.95 },
+  }
+  
+
 
 const backVariants = {
     exit: { x: 100, opacity: 0, transition },
@@ -29,11 +44,11 @@ const Logo = ({ index }) => (
     <>
         <motion.div className="logo-div" initial="exit" animate="enter" exit="exit">
             <motion.img
-                variants={imageVariants}
+                variants={thumbnailVariants}
                 src={images}
                 alt="The Barbican"
             />
-            <motion.div className="back" variants={backVariants}>
+            <motion.div className="back" variants={imageVariants}>
                     <h1 className="logo-title">
                         Electrical specialists serving surrey and surrounding areas.
                     </h1>
@@ -52,32 +67,22 @@ const Logo = ({ index }) => (
         }
         .logo-title{
             background: linear-gradient(
-                to right, 
+                to left, 
                 hsl(98 100% 62%), 
-                hsl(204 100% 59%)
+                hsl(204 100% 89%)
               );
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              text-align: center;
-            padding: 5rem 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem;
-            flex-basis: 45%;
             padding: 0.5rem;
             text-align: left;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .logo-div img {
             max-width: 100%;
             max-height: 100vh;
             margin-top: 4rem;
+            flex-basis: 45%;
+            box-shadow: 1px 1px #fff;
         }
 
         @media (max-width: 600px) {
