@@ -1,9 +1,9 @@
 # This is a Next.js project bootstrapped with 
 
 ## Demo
-### [Demo](https://surreyelc-ifkdext6x-micrometre.vercel.app/) 
+### [Demo](https://surreyelc-micrometre.vercel.app/) 
 
-https://surreyelc-ifkdext6x-micrometre.vercel.app/
+https://surreyelc-micrometre.vercel.app/
 
 ## Frontend
 -   bootstrap
