@@ -1,10 +1,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import Marquee from "react-fast-marquee"
-import { images } from '../data/images-data'
-import Image from 'next/image'
-
+import { images } from '../data/logo-images-data'
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 const thumbnailVariants = {
   initial: { scale: 0.9, opacity: 0 },
@@ -22,33 +19,38 @@ const frameVariants = {
 const imageVariants = {
   hover: { scale: 1.1 },
 }
-export function LogoThumbnail({ id, i }) {
+export function Thumbnail({ id, i }) {
   return (
     <>
-      <motion.div className="thumbnail" variants={thumbnailVariants}>
+      <motion.div className="logo-thumbnail" variants={thumbnailVariants}>
         <motion.div
-          className="frame"
+          className="logo-frame"
           whileHover="hover"
           variants={frameVariants}
           transition={transition}
         >
           <motion.img
             src={`/images/${id}?auto=format&fit=crop&w=1500`}
-            alt="The surreyelc"
+            alt="surreyelc"
             variants={imageVariants}
             transition={transition} />
         </motion.div>
       </motion.div>
       <style>
         {`
-            .thumbnail {
+            .logo-thumbnail {
+            margin-top: 6rem;
+                flex: 1 0 33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
-            .frame {
+            .logo-frame {
                 overflow: hidden;
             }
 
-            .thumbnail img {
+            .logo-thumbnail img {
                 width: 100%;
                 height: 100%;
             }
@@ -58,60 +60,38 @@ export function LogoThumbnail({ id, i }) {
   )
 }
 
-function LogoImage() {
-  return (
-    <>
-      <div className="gallery">
-        <motion.div
-          className="thumbnails"
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-        >
-          {images.map((id, i) => (
-            <LogoThumbnail key={id} id={id} i={i} />
-          ))}
-        </motion.div>
-      </div>
-      <style>
-        {`
+const LogoImage = () => (
+  <>
+    <div className="gallery">
+      <motion.div
+        className="thumbnails"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
+      >
+        {images.map((id, i) => (
+          <Thumbnail key={id} id={id} i={i} />
+        ))}
+      </motion.div>
+    </div>
+    <style>
+      {`
         .gallery {
-            padding: 40px;
-            margin: 0 auto;
+            margin-top: 12rem;
             width: 100%;
+            max-width: 1200px;
         }
 
         .thumbnails {
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
-            width: 100%;
         }
         `}
-      </style>
-    </>
-  )
-}
+    </style>
+  </>
+)
 
-
-export  function ServicesEv() {
-  return (
-    <div className="marquee">
-      <Marquee
-        gradient={false}
-        style={{
-        }}
-      >
-
-<LogoImage />
-      </Marquee>
-      <style jsx>{`
-              `}</style>
-
-    </div>
-  )
-}
-
-
-export default ServicesEv
+export default LogoImage

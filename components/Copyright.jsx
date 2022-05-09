@@ -12,7 +12,7 @@ function CopyRight() {
       <div className="copyright-main">
         <div className="copyright-grid">
           <div  className="copyright-card">
-            <p className="copyrigght-description">
+            <p className="copyright-description">
               Copyright ©{year}
               <code>Electricalsurrey Ltd.</code>
             </p>
@@ -20,7 +20,7 @@ function CopyRight() {
         </div>
       </div>
       <style jsx>{`
-        .container {
+        .copyright-container {
           padding:  0.5rem;
           display: flex;
           flex-direction: column;
@@ -39,7 +39,7 @@ function CopyRight() {
         }
 
 
-        .description {
+        .copyright-description {
           text-align: center;
           text-decoration: none;
           color: #fff;

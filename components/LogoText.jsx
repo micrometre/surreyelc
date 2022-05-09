@@ -27,9 +27,6 @@ const thumbnailVariants = {
       opacity: 0,
       transition: { duration: 1.5, ...transition },
     },
-  }
-  
-  const frameVariants = {
     hover: { scale: 0.95 },
   }
   
@@ -38,16 +35,12 @@ const thumbnailVariants = {
 const backVariants = {
     exit: { x: 100, opacity: 0, transition },
     enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
+    hover: { scale: 0.95 },
 }
 
-const Logo = ({ index }) => (
+const LogoText = ({ index }) => (
     <>
         <motion.div className="logo-div" initial="exit" animate="enter" exit="exit">
-            <motion.img
-                variants={thumbnailVariants}
-                src={images}
-                alt="The Barbican"
-            />
             <motion.div className="back" variants={imageVariants}>
                     <h1 className="logo-title">
                         Electrical specialists serving surrey and surrounding areas.
@@ -58,7 +51,6 @@ const Logo = ({ index }) => (
             {`
         .logo-div {
             overflow: hidden;
-            height: 100vh;
             padding: 0 0.5rem;
             display: flex;
             flex-direction: column;
@@ -97,4 +89,4 @@ const Logo = ({ index }) => (
     </>
 )
 
-export default Logo
+export default LogoText

@@ -34,7 +34,7 @@ export function LogoThumbnail({ id, i }) {
         >
           <motion.img
             src={`/images/${id}?auto=format&fit=crop&w=1500`}
-            alt="The surreyelc"
+            alt="The Barbican"
             variants={imageVariants}
             transition={transition} />
         </motion.div>
@@ -101,6 +101,7 @@ export  function ServicesEv() {
       <Marquee
         gradient={false}
         style={{
+          backgroundColor: "#fff",
         }}
       >
 
