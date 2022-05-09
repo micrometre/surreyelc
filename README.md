@@ -1,16 +1,13 @@
-# This is a Next.js project bootstrapped with 
 
-## Demo
-### [Demo](https://surreyelc-micrometre.vercel.app/) 
+#### [Demo](https://surreyelc-micrometre.vercel.app/) 
 
 https://surreyelc-micrometre.vercel.app/
 
-## Frontend
--   bootstrap
--   framer-motion
--   react-bootstrap
--   react-fast-marquee
--   react-icons
+# This is a Next.js project bootstrapped with 
+-   React-bootstrap
+-   React-fast-marquee
+-   React-icons
+-   Framer-motion
 
 
 ## Getting Started
