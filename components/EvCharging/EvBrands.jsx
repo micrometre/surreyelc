@@ -2,9 +2,9 @@ import * as React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Marquee from "react-fast-marquee"
-import { images } from '../data/images-data'
+import { images } from '../../data/images-data'
 import Image from 'next/image'
-
+import { Parallax } from './EvCharging'
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 const thumbnailVariants = {
   initial: { scale: 0.9, opacity: 0 },
@@ -22,10 +22,11 @@ const frameVariants = {
 const imageVariants = {
   hover: { scale: 1.1 },
 }
-export function LogoThumbnail({ id, i }) {
+export function EvBrands({ id, i }) {
   return (
     <>
       <motion.div className="thumbnail" variants={thumbnailVariants}>
+        <motion.div />
         <motion.div
           className="frame"
           whileHover="hover"
@@ -58,7 +59,7 @@ export function LogoThumbnail({ id, i }) {
   )
 }
 
-function LogoImage() {
+export function EvBrandsImages() {
   return (
     <>
       <div className="gallery">
@@ -70,7 +71,7 @@ function LogoImage() {
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
           {images.map((id, i) => (
-            <LogoThumbnail key={id} id={id} i={i} />
+            <EvBrands key={id} id={id} i={i} />
           ))}
         </motion.div>
       </div>
@@ -78,7 +79,7 @@ function LogoImage() {
         {`
         .gallery {
             padding: 40px;
-            margin: 0 auto;
+            margin: 1rem;
             width: 100%;
         }
 
@@ -95,7 +96,7 @@ function LogoImage() {
 }
 
 
-export  function ServicesEv() {
+export function EvBrandsMarquee() {
   return (
     <div className="marquee">
       <Marquee
@@ -103,8 +104,7 @@ export  function ServicesEv() {
         style={{
         }}
       >
-
-<LogoImage />
+        <EvBrandsImages />
       </Marquee>
       <style jsx>{`
               `}</style>
@@ -114,4 +114,4 @@ export  function ServicesEv() {
 }
 
 
-export default ServicesEv
+export default EvBrandsMarquee;

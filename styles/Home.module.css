@@ -1,0 +1,25 @@
+
+.homecontainer {
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(37, 231, 12);
+  padding-top: 20px;
+}
+
+.box {
+    width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.magic {
+    width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
