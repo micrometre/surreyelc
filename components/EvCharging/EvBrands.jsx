@@ -1,11 +1,11 @@
-import * as React from 'react'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import Marquee from "react-fast-marquee"
-import { images } from '../../data/images-data'
-import Image from 'next/image'
-import { Parallax } from './EvCharging'
-const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
+import * as React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
+import { images } from "../../data/images-data";
+import Image from "next/image";
+import { Parallax } from "./EvCharging";
+const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 const thumbnailVariants = {
   initial: { scale: 0.9, opacity: 0 },
   enter: { scale: 1, opacity: 1, transition },
@@ -14,17 +14,18 @@ const thumbnailVariants = {
     opacity: 0,
     transition: { duration: 1.5, ...transition },
   },
-}
+};
 const frameVariants = {
   hover: { scale: 0.95 },
-}
+};
 
 const imageVariants = {
   hover: { scale: 1.1 },
-}
+};
 export function EvBrands({ id, i }) {
   return (
     <>
+    <div className="evbrandsSection">
       <motion.div className="thumbnail" variants={thumbnailVariants}>
         <motion.div />
         <motion.div
@@ -37,34 +38,44 @@ export function EvBrands({ id, i }) {
             src={`/images/${id}?auto=format&fit=crop&w=1500`}
             alt="The surreyelc"
             variants={imageVariants}
-            transition={transition} />
+            transition={transition}
+          />
         </motion.div>
       </motion.div>
+    </div>
       <style>
         {`
+        .evbrandsSection{
+              border: 0.0.1rem solid teal;
+
+        }
             .thumbnail {
+              border: 0.0.1rem solid red;
+
             }
 
             .frame {
+              border: 0.0.1rem solid yellow;
                 overflow: hidden;
             }
 
             .thumbnail img {
+              border: 0.0.1rem solid blue;
                 width: 100%;
                 height: 100%;
             }
         `}
       </style>
     </>
-  )
+  );
 }
 
 export function EvBrandsImages() {
   return (
     <>
-      <div className="gallery">
+      <div className="eVgallery">
         <motion.div
-          className="thumbnails"
+          className="eVthumbnails"
           initial="initial"
           animate="enter"
           exit="exit"
@@ -77,13 +88,14 @@ export function EvBrandsImages() {
       </div>
       <style>
         {`
-        .gallery {
+        .eVgallery {
+              border: 0.0.1rem solid teal;
             padding: 40px;
             margin: 1rem;
             width: 100%;
         }
 
-        .thumbnails {
+        .eVthumbnails {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -92,26 +104,22 @@ export function EvBrandsImages() {
         `}
       </style>
     </>
-  )
+  );
 }
-
 
 export function EvBrandsMarquee() {
   return (
-    <div className="marquee">
-      <Marquee
-        gradient={false}
-        style={{
-        }}
-      >
+    <div className="evBrandMarquee">
+      <Marquee gradient={false} style={{}}>
         <EvBrandsImages />
       </Marquee>
       <style jsx>{`
-              `}</style>
-
+        .evBrandMarquee {
+              background: white;
+        }
+      `}</style>
     </div>
-  )
+  );
 }
-
 
 export default EvBrandsMarquee;

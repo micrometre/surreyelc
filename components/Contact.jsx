@@ -5,29 +5,6 @@ import { emaildata } from "../data/email-data";
 import { socialdata } from "../data/social-data";
 import { FaPhone } from "react-icons/fa";
 
-const phoneTitleStyles = {
-  fontSize: "1.0rem",
-  color: "black",
-  margin: "0.1rem",
-  padding: "0.1rem",
-  textDecoration: "none",
-};
-
-const phoneIconStyles = {
-  fontSize: "1.0rem",
-  color: "olive",
-  margin: "0.1rem",
-  textDecoration: "none",
-};
-
-const phoneLinksStyles = {
-  fontSize: "1.0rem",
-  color: "teal",
-  margin: "0.1rem",
-  padding: "0.1rem",
-  textDecoration: "none",
-  display: "flex",
-};
 const emailIconStyles = {
   fontSize: "1.0rem",
   color: "olive",
@@ -47,7 +24,7 @@ const socialIconStyles = {
   margin: "0.1rem",
   padding: "0.5rem",
 };
-function Contact() {
+export function Contact() {
   return (
     <div className="contact-container">
       <main>
@@ -155,7 +132,7 @@ function Contact() {
       </main>
       <style jsx>{`
         .contact-container {
-          padding: 4.1rem;
+          padding: 0.1rem;
           margin-top: 9.0rem;
            border: 0.1rem solid teal;
 
@@ -163,7 +140,6 @@ function Contact() {
 
         main {
           padding: 0.1rem;
-          margin 0.1rem;
           flex: 1;
           display: flex;
           flex-direction: column;

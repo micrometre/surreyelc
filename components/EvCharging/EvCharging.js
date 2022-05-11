@@ -20,7 +20,6 @@ export function EvChargingHeader() {
     triggerOnce: false
   });
 
-  console.log(entry);
 
 
   const variants = {

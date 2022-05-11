@@ -9,11 +9,6 @@ import { useInView } from 'react-intersection-observer';
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./Logo.module.css";
-
-
-
-
-
 export function BrandLogo() {
   const { scrollY } = useViewportScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 200]);
@@ -24,7 +19,6 @@ export function BrandLogo() {
     triggerOnce: false
   });
 
-  console.log(entry);
 
 
   const variants = {

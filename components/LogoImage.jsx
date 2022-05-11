@@ -39,7 +39,6 @@ export function Thumbnail({ id, i }) {
       <style>
         {`
             .logo-thumbnail {
-            margin-top: 6rem;
                 flex: 1 0 33%;
                 display: flex;
                 justify-content: center;
@@ -62,9 +61,9 @@ export function Thumbnail({ id, i }) {
 
 const LogoImage = () => (
   <>
-    <div className="gallery">
+    <div className="logoGallery">
       <motion.div
-        className="thumbnails"
+        className="logoThumbnails"
         initial="initial"
         animate="enter"
         exit="exit"
@@ -77,13 +76,12 @@ const LogoImage = () => (
     </div>
     <style>
       {`
-        .gallery {
-            margin-top: 12rem;
+        .logoGallery {
+            margin-top: 10rem;
             width: 100%;
-            max-width: 1200px;
         }
 
-        .thumbnails {
+        .logoThumbnails {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;

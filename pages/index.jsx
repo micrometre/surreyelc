@@ -30,7 +30,6 @@ export function Home() {
         triggerOnce: false
     });
 
-    console.log(entry);
     const variants = {
         visible: { opacity: 1, scale: 1, y: 0 },
         hidden: {

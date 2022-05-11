@@ -25,7 +25,6 @@ export function Parallax() {
     triggerOnce: false
   });
 
-  console.log(entry);
 
   // const [isInViewport, setIsInViewport] = useState(false);
 
