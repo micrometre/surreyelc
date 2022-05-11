@@ -55,36 +55,14 @@ export function EvServices() {
     <div className="evContainer">
 
       <main  className='evMain'      >
-
-        <p className="evDescription">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
         <div className="evGrid">
           <div 
           className="evCard">
-            <p>Find in-depth information about Next.js features and API.</p>
-          </div>
-
-          <div 
-          className="evCard">
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </div>
-
-          <div
-            className="evCard"
-          >
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </div>
-
-          <div
-            href="#"
-            className="evCard"
-          >
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+               We have a passion for helping homeowners make the most of  cheaper environmentally friendly driving.
+              </p>
           </div>
+
         </div>
       </main>
 
@@ -110,11 +88,6 @@ export function EvServices() {
         }
 
 
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
 
         .title a {
           color: #0070f3;
@@ -151,14 +124,13 @@ export function EvServices() {
         }
 
         .evGrid {
-          display: flex;
           align-items: center;
           justify-content: center;
-          margin-top: 3rem;
+          margin-top: 1rem;
         }
 
         .evCard {
-          margin: 1rem;
+          margin: 0rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
