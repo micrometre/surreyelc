@@ -16,7 +16,7 @@ import LogoText from "../components/LogoText"
 import EvBrandsMarquee from '../components/EvCharging/EvBrands';
 import { EvChargingHeader } from '../components/EvCharging/EvCharging';
 import EvChargingDescription from '../components/EvChargingServices/EvChargingDescription'
-import { EvServices } from '../components/EvCharging/EvCharging';
+import Domestic from '../components/domestic';
 import { NavBarFooter } from '../components/nav/NavbarFooter'
 import CopyRight from '../components/Copyright'
 
@@ -57,6 +57,7 @@ export function Home() {
                         <LogoText />
                     </motion.div>
                 </motion.div>
+                <Domestic />
                 <EvBrandsMarquee />
                 <EvChargingHeader />
                 <EvChargingDescription />
