@@ -1,23 +1,10 @@
 import * as React from 'react'
-import Link from 'next/link'
-
 import { motion } from 'framer-motion'
-
-const images = ["/images/logo.webp"]
 
 
 const transition = {
     duration: 1,
     ease: [0.43, 0.13, 0.23, 0.96],
-}
-
-const imageVariants = {
-    exit: { y: '50%', opacity: 0, transition },
-    enter: {
-        y: '0%',
-        opacity: 1,
-        transition,
-    },
 }
 const thumbnailVariants = {
     initial: { scale: 0.9, opacity: 0 },
@@ -29,26 +16,19 @@ const thumbnailVariants = {
     },
     hover: { scale: 0.95 },
   }
-  
 
-
-const backVariants = {
-    exit: { x: 100, opacity: 0, transition },
-    enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
-    hover: { scale: 0.95 },
-}
-
-const LogoText = ({ index }) => (
-    <>
-        <motion.div className="logo-div" initial="exit" animate="enter" exit="exit">
-            <motion.div className="back" variants={imageVariants}>
+export function LogoText() {
+    return (
+        <>
+            <motion.div className="logo-div" initial="exit" animate="enter" exit="exit">
+                <motion.div className="back" variants={thumbnailVariants}>
                     <h1 className="logo-title">
                         Electrical specialists serving surrey and surrounding areas.
                     </h1>
+                </motion.div>
             </motion.div>
-        </motion.div>
-        <style>
-            {`
+            <style>
+                {`
         .logo-div {
             overflow: hidden;
             padding: 0 0.5rem;
@@ -66,7 +46,7 @@ const LogoText = ({ index }) => (
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             padding: 0.5rem;
-            text-align: left;
+            text-align: center;
         }
 
         .logo-div img {
@@ -85,8 +65,9 @@ const LogoText = ({ index }) => (
           }
 
 `}
-        </style>
-    </>
-)
+            </style>
+        </>
+    )
+}
 
 export default LogoText

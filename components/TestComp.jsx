@@ -7,10 +7,9 @@ export function Domestic() {
                 FREE QUOTATIONS. 
                 </h2>
                 <p className="description">
-                    Domestic services
-                    Full domestic rewires
+                    Full domestic rewires,
                     Consumer unit chargers
-                    Periodic test + inspections.
+                    Periodic test and inspections.
                 </p>
 
                 <div className="row">
@@ -46,9 +45,9 @@ export function Domestic() {
                             />
                         </div>
                     </div>
-                <p className="description">
+                <h2 className="description">
 Lighting installations of all types. 
-                </p>
+                </h2>
                 </div>
             </main>
             <style jsx>{`
