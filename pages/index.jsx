@@ -9,8 +9,8 @@ import EvBrandsMarquee from "../components/EvCharging/EvBrands";
 import { EvChargingHeader } from "../components/EvCharging/EvCharging";
 import Domestic from "../components/Domestic";
 import { NavBarFooter } from "../components/nav/NavbarFooter";
-
-
+import CommercialMoto from "../components/CommercialMoto";
+import CommercialHero from "../components/CommercialHero";
 import CopyRight from '../components/Copyright'
 export default function Home() {
   return (
@@ -23,9 +23,11 @@ export default function Home() {
         <Domestic />
         <EvChargingHeader />
         <EvBrandsMarquee />
+        <CommercialMoto />
+        <CommercialHero />
         <CopyRight />
         <NavBarFooter/>
-        </Layout>
+          </Layout>
     </div>
   )
 }
