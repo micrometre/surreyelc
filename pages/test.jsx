@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home-container">
-        <Layout>
         <NavSocail />
         <NavBarPaths />
         <LogoCard />
@@ -28,7 +27,6 @@ export default function Home() {
         <CommercialHero />
         <CopyRight />
         <NavBarFooter/>
-        </Layout>
       </div>
     </div>
   )

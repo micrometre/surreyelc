@@ -2,6 +2,8 @@ module.exports = {
   reactStrictMode: true,
 };
 
+
+
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self';
