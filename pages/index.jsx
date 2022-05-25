@@ -17,6 +17,7 @@ import EvBrandsMarquee from "../components/EvCharging/EvBrands";
 import { EvChargingHeader } from "../components/EvCharging/EvCharging";
 import EvChargingHero from "../components/EvChargingHero";
 import Domestic from "../components/Domestic";
+import CommercialServices from "../components/Commercial/Commercial";
 import { NavBarFooter } from "../components/nav/NavbarFooter";
 import CopyRight from "../components/Copyright";
 
@@ -47,6 +48,7 @@ export function Home() {
         <LogoImage />
         <Moto />
         <Domestic />
+        <CommercialServices />
         <EvChargingHeader />
         <EvChargingHero />
         <EvBrandsMarquee />
