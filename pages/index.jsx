@@ -8,14 +8,12 @@ import Moto from "../components/Moto/Moto";
 import EvBrandsMarquee from "../components/EvCharging/EvBrands";
 import { EvChargingHeader } from "../components/EvCharging/EvCharging";
 import Domestic from "../components/Domestic";
-import CommercialHero from "../components/Commercial/Commercial";
 import { NavBarFooter } from "../components/nav/NavbarFooter";
 
 
 import CopyRight from '../components/Copyright'
 export default function Home() {
   return (
-    <div className="home">
       <div className="home-container">
         <Layout>
         <NavSocail />
@@ -25,11 +23,9 @@ export default function Home() {
         <Domestic />
         <EvChargingHeader />
         <EvBrandsMarquee />
-        <CommercialHero />
         <CopyRight />
         <NavBarFooter/>
         </Layout>
-      </div>
     </div>
   )
 }

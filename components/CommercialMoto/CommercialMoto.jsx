@@ -5,7 +5,7 @@ import {
   useTransform,
 } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import styles from "./Commercial.module.css";
+import styles from "./CommercialMoto.module.css";
 
 
 export function CommercialMoto() {
@@ -43,14 +43,6 @@ export function CommercialMoto() {
 }
 
 
-export function CommercialHero (){
-    return(
-        <>
-        <CommercialMoto/>
-        </>
-    )
-}
 
 
-
-export default CommercialHero;
+export default CommercialMoto;

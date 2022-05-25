@@ -56,7 +56,7 @@ export function Domestic() {
           <div className={styles.column}>
             <div className={styles.card}>
               <Image
-                src="/images/7.webp"
+                src="/images/2.webp"
                 alt="About picture"
                 width={500}
                 height={300}
