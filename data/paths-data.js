@@ -10,6 +10,13 @@ export const data = [
         icons: FaHome
       },
      {
+        name: 'Electric Car Charging',
+        title: "Electric Car Charging",
+        subtitle: "Electric Car Charging ",
+        href: '/ElectricCarCharging',
+        icons: FaAddressCard
+     },
+     {
         name: 'Contact',
         title: "Contact page",
         subtitle: "homepage ",

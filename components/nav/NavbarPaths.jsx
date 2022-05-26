@@ -24,11 +24,11 @@ export function NavBarPaths() {
     marginLeft: 10,
     lineHeight: 1,
   }
-  
-  const offcanvasContainer= { 
-    padding: 0, 
+
+  const offcanvasContainer = {
+    padding: 0,
     fontSize: "1.59rem",
-    height: "100%" 
+    height: "100%"
   };
   const OffcanvasNav = {
     padding: 0,
@@ -49,7 +49,7 @@ export function NavBarPaths() {
     height: "10%",
     backgroundColor: "white",
     border: "0.2rem solid teal",
-    boxShadow:"0 0 10px",
+    boxShadow: "0 0 10px",
 
   };
   const offcanvasBody = { padding: 0, height: "100%" };
@@ -63,27 +63,27 @@ export function NavBarPaths() {
   return (
     <>
       <main>
-        <Navbar  expand="lg" bg="dark">
-          <Container  style={offcanvasContainer} > 
+        <Navbar expand="lg" bg="dark">
+          <Container style={offcanvasContainer} >
             <Navbar.Collapse id="basic-navbar-nav">
               {data.map((e, i) => {
                 return (
                   <div className="pathsDiv" key={i}>
-                    {e.contact.map((e, i) => {
-                      return (
-                        <a
-                          className="pathsLinks"
-                          href={e.href}
-                          key={i}
-                          title={e.title}
-                        >
-                          {e.name}
-                        </a>
-                      );
-                    })}
-                  </div>
-                );
-              })}
+                  {e.contact.map((e, i) => {
+                    return (
+                      <a
+                        className="pathsLinks"
+                        href={e.href}
+                        key={i}
+                        title={e.title}
+                      >
+                        {e.name}
+                      </a>
+                    );
+                  })}
+                </div>
+              );
+            })}
             </Navbar.Collapse>
           </Container>
         </Navbar>

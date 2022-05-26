@@ -8,6 +8,7 @@ import { useInView } from 'react-intersection-observer';
 import styles from "./CommercialMoto.module.css";
 
 
+
 export function CommercialMoto() {
   const { scrollY } = useViewportScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 200]);

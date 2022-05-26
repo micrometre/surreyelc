@@ -42,38 +42,29 @@ const inputs = {
   },
 };
 
-export function HomePage() {
+const HomePage = () => {
   return (
-    <div style={styles.homePage}>
-      <Layout>
-        <NavSocail />
-        <NavBarPaths />
-        <motion.section
-          exit={{ opacity: 0 }}
+    <div className="home-container">
+    <Layout>
+      <NavSocail />
+      <NavBarPaths />
+      <motion.section
+        exit={{ opacity: 0 }}
+      >
+        <motion.div
+          variants={content}
+          animate="animate"
+          initial="initial"
         >
-          <motion.div
-            variants={content}
-            animate="animate"
-            initial="initial"
-          >
-            <motion.div
-              variants={title}
-            >
-              <LogoCard />
-              <Moto />
-              <Domestic />
-              <EvChargingHeader />
-              <EvBrandsMarquee />
-              <CommercialMoto />
-              <CommercialHero />
-              <CopyRight />
-              <NavBarFooter />
-            </motion.div>
-          </motion.div>
-        </motion.section>
-      </Layout>
+          <EvBrandsMarquee />
+          <EvChargingHeader />
+          <CopyRight />
+          <NavBarFooter />
+        </motion.div>
+      </motion.section>
+    </Layout>
     </div>
   );
-}
+};
 
 export default HomePage;
