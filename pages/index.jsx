@@ -12,8 +12,8 @@ import { NavBarFooter } from "../components/nav/NavbarFooter";
 import CommercialMoto from "../components/CommercialMoto";
 import CommercialHero from "../components/CommercialHero";
 import ExternalHero from "../components/ExternalHero"
+import ExternalMoto from "../components/ExternalMoto/ExternalMoto";
 import CopyRight from '../components/Copyright'
-import { External } from "../components/ExternalHero/ExternalHero";
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },
@@ -68,7 +68,8 @@ export function HomePage() {
               <EvBrandsMarquee />
               <CommercialMoto />
               <CommercialHero />
-              <ExternalHero/>
+              <ExternalMoto />
+              <ExternalHero />
               <CopyRight />
               <NavBarFooter />
             </motion.div>
