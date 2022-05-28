@@ -42,20 +42,16 @@ export function ContactPage() {
     <Layout>
       <NavSocail />
       <NavBarPaths />
-      <Contact  />
 
       <CopyRight />
-        <NavBarFooter/>
-    <motion.section
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
-        variants={content}
-        animate="animate"
-        initial="initial"
-      >
-      </motion.div>
-    </motion.section>
+      <NavBarFooter />
+      <motion.section exit={{ opacity: 0 }}>
+        <motion.div variants={content} animate="animate" initial="initial">
+          <motion.div variants={title}>
+      <Contact />
+          </motion.div>
+        </motion.div>
+      </motion.section>
     </Layout>
   );
 }
