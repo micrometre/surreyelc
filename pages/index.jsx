@@ -13,6 +13,7 @@ import CommercialMoto from "../components/CommercialMoto";
 import CommercialHero from "../components/CommercialHero";
 import ExternalHero from "../components/ExternalHero"
 import ExternalMoto from "../components/ExternalMoto/ExternalMoto";
+import Contact from "../components/Contact/Contact";
 import CopyRight from '../components/Copyright'
 const content = {
   animate: {
@@ -70,6 +71,7 @@ export function HomePage() {
               <CommercialHero />
               <ExternalMoto />
               <ExternalHero />
+              <Contact />
               <CopyRight />
               <NavBarFooter />
             </motion.div>

@@ -5,8 +5,7 @@ import NavSocail from "../components/nav/NavbarSocial";
 import NavBarPaths from "../components/nav/NavbarPaths";
 import { NavBarFooter } from "../components/nav/NavbarFooter";
 import CopyRight from '../components/Copyright'
-import Contact from '../components/Contact'
-
+import Contact from "../components/Contact";
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },

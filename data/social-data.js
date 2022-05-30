@@ -14,12 +14,6 @@ export const socialdata = [
         href: "/",
         icons: FaInstagram
       },
-      {
-        title: "Follow us on twitter",
-        href: "/",
-        subtitle: "Twitter Icon",
-        icons: FaTwitter
-      }
     ],
   }
 ];
