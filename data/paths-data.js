@@ -10,6 +10,13 @@ export const data = [
         icons: FaHome
       },
      {
+        name: 'Domestic Services',
+        title: "Domestic Services",
+        subtitle: "Domestic Services",
+        href: '/domestic ',
+        icons: FaAddressCard
+     },
+     {
         name: 'External Electrical ',
         title: "External Electrical ",
         subtitle: "External Electrical",

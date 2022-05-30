@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background-color: #fff;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 
@@ -41,12 +41,10 @@
 .title,
 .description {
   text-align: center;
-}
-
-.description {
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;

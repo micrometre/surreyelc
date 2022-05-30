@@ -24,7 +24,8 @@ const imageVariants = {
 export function Logo({ id, i }) {
   return (
     <>
-          <motion.img className={styles.card} src={`/images/${id}?auto=format&fit=crop&w=1500`} alt="The surreyelc" variants={imageVariants} transition={transition} />
+          <motion.img className={styles.card} src={`/images/${id}?auto=format&fit=crop&w=500`} 
+          alt="The surreyelc" variants={imageVariants} transition={transition} />
     </>
   );
 }

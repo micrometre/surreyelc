@@ -116,6 +116,7 @@ export function EvBrandsMarquee() {
       <style jsx>{`
         .evBrandMarquee {
               background: white;
+
         }
       `}</style>
     </div>
