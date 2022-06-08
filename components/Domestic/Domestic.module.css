@@ -46,6 +46,14 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+
   .column {
     width: 100%;
     display: block;

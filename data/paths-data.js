@@ -10,21 +10,21 @@ export const data = [
         icons: FaHome
       },
      {
-        name: 'Domestic Services',
+        name: 'Domestic ',
         title: "Domestic Services",
         subtitle: "Domestic Services",
         href: '/domestic ',
         icons: FaAddressCard
      },
      {
-        name: 'External Electrical ',
+        name: 'External ',
         title: "External Electrical ",
         subtitle: "External Electrical",
         href: '/external',
         icons: FaAddressCard
      },
      {
-        name: 'Electric Car Charging',
+        name: 'Car Charging',
         title: "Electric Car Charging",
         subtitle: "Electric Car Charging ",
         href: '/electriccar',

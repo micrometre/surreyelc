@@ -33,6 +33,16 @@ export function CommercialHero() {
           </div>
         </div>
       </div>
+        <h1 className={styles.description}>
+
+          Maintenance contracts
+          all electrical installations.
+          Consumer unit distribution board units.
+          Periodic test + inspections
+          Emergency lighting test.
+          Out of hours work for customer convenience.
+        </h1>
+
     </motion.div>
   );
 }

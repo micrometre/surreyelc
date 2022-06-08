@@ -5,15 +5,12 @@ export default function Hero() {
     return (
         <>
             <div>
-                <div className="px-3 py-1 my-1 text-center text-white">
-                    <div className="col-lg-6 mx-auto">
-                        <h1 className=" mb-4">
-                            Surrey electrical and car charging offer a full 
-                            electrical service for all domestic and commercial properties. 
-                            Our fully qualified engineers work to regulation standards in design, 
-                            installation and niceic certification.
-                            </h1>
-                    </div>
+                <div className="px-3 py-1 my-1  text-white">
+                    <h3 className=" mb-4">
+                        We are fully invested in the future of our planet and younger generations.<br/>
+                        We are exploring greener every friendly solutions. We have started with electric car chargers
+                        and are hoping to offer all forms of green energy in the future.
+                    </h3>
                 </div>
             </div>
         </>

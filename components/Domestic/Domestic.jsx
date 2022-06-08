@@ -3,34 +3,19 @@ import Link from "next/link";
 import Image from "next/image";
 import * as styles from "../../components/Domestic/Domestic.module.css";
 
-const links = [
-  {
-    description:
-      "Full domestic rewires. Consumer unit chargers, Periodic test & inspections.",
-  },
-
-];
 export function Domestic() {
   return (
-    <div  className={styles.container}>
+    <div className={styles.container}>
       <div
         className={styles.main}>
         <div
           className={styles.description}>
-          <h2 className={styles.title}
-          >
-            FREE QUOTATIONS.
-          </h2>
-          <ul
-            className={styles.list}>
-            {links.map((link, i) => (
-              <li key={i} className={styles.list}
-                style={{ listStyleType: "none"}}>
-                <p key={link.description} className={styles.list}
-                >{link.description}</p>
-              </li>
-            ))}
-          </ul>
+          <h1 className={styles.description}>
+            Surrey electrical and car charging offer a full
+            electrical service for all domestic and commercial properties.
+            Our fully qualified engineers work to regulation standards in design,
+            installation and niceic certification.
+          </h1>
         </div>
         <div className={styles.row}>
           <div className={styles.column}>
@@ -63,10 +48,16 @@ export function Domestic() {
               />
             </div>
           </div>
-          <h2 className={styles.title}>
-            Lighting installations of all types.
-          </h2>
         </div>
+        <h1 className={styles.description}>
+          We work a very high standard and pride  ourselves on being 100% honest.
+          We are always dependable and time keeping is one of strongest points.
+          Care and attention to our clients is something that
+          sets us apart from other companies and we are always
+          contactable and at the end of the phone to sort out any
+          problems or explain any processes
+          for the job being undertaken.
+        </h1>
       </div>
     </div>
   );

@@ -110,10 +110,21 @@ export function EvBrandsImages() {
 export function EvBrandsMarquee() {
   return (
     <div className="evBrandMarquee">
+        <h3 className="evBrandMarqueetitle">
+          We have a passion for helping homeowners make the most of cheaper environmentally friendly driving.
+        </h3>
       <Marquee gradient={false} style={{}}>
         <EvBrandsImages />
       </Marquee>
       <style jsx>{`
+
+       .evBrandMarqueetitle{
+          text-align: center;
+
+
+       }
+
+
         .evBrandMarquee {
               background: white;
 

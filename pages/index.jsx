@@ -65,9 +65,9 @@ export function HomePage() {
             >
               <LogoCard />
               <Moto />
-              <Hero />
               <Domestic />
               <EvChargingHeader />
+              <Hero />
               <EvBrandsMarquee />
               <CommercialMoto />
               <CommercialHero />

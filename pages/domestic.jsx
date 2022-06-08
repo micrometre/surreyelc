@@ -41,19 +41,19 @@ export function ExternalPage() {
       <NavSocail />
       <NavBarPaths />
       <motion.section exit={{ opacity: 0 }}
-           style={{
-            borderRadius: "3px",
-            border: "1px solid black",
-            fontSize: 14,
-            marginTop: 80,
-            marginBottom: 0,
-            lineHeight: 1.25,
-          }} 
-      
+        style={{
+          borderRadius: "3px",
+          border: "1px solid black",
+          fontSize: 14,
+          marginTop: 135,
+          marginBottom: 0,
+          lineHeight: 1.25,
+        }}
+
       >
         <motion.div variants={content} animate="animate" initial="initial">
           <motion.div variants={title} >
-          <Domestic />
+            <Domestic />
           </motion.div>
         </motion.div>
       </motion.section>
