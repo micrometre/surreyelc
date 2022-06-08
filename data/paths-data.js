@@ -17,6 +17,13 @@ export const data = [
         icons: FaAddressCard
      },
      {
+        name: 'commercial ',
+        title: "Commercial Services",
+        subtitle: "Commercial Services",
+        href: '/commercial ',
+        icons: FaAddressCard
+     },
+     {
         name: 'External ',
         title: "External Electrical ",
         subtitle: "External Electrical",
