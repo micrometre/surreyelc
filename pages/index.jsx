@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/layout";
 import NavSocail from "../components/nav/NavbarSocial";
 import NavBarPaths from "../components/nav/NavbarPaths";
+import Hero from "../components/Hero";
 import LogoCard from '../components/Logo/Logo'
 import Moto from "../components/Moto/Moto";
 import EvBrandsMarquee from "../components/EvCharging/EvBrands";
@@ -64,6 +65,7 @@ export function HomePage() {
             >
               <LogoCard />
               <Moto />
+              <Hero />
               <Domestic />
               <EvChargingHeader />
               <EvBrandsMarquee />
