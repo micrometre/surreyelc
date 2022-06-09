@@ -13,7 +13,7 @@ export default function Domestic() {
                                 src="/images/5.webp"
                                 alt="About picture"
                                 width={500}
-                                height={300}
+                                height={375}
                             />
                         </div>
                         <div className="col-lg-6 text-white">

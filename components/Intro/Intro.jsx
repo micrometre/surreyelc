@@ -18,10 +18,12 @@ export function Intro() {
           <div className="intro-column">
             <div className="intro-card">
               <Image
-                src="/images/17.webp"
+                src="/images/2.webp"
                 alt="About picture"
-                width={500}
+                width={498}
                 height={300}
+                priority
+
               />
               <h4 className="intro-description">
                 We work a to very high standard and pride ourselves on being 100% honest.
@@ -32,10 +34,11 @@ export function Intro() {
           <div className="intro-column">
             <div className="intro-card">
               <Image
-                src="/images/15.webp"
+                src="/images/3.webp"
                 alt="About picture"
-                width={500}
+                width={498}
                 height={300}
+                priority
               />
               <h4 className="intro-description">
                 We are always dependable and time keeping is one of strongest points.
@@ -46,10 +49,11 @@ export function Intro() {
           <div className="intro-column">
             <div className="intro-card">
               <Image
-                src="/images/5.webp"
+                src="/images/2.webp"
                 alt="About picture"
-                width={500}
+                width={498}
                 height={300}
+                priority
               />
               <h4 className="intro-description">
                 Care and attention to our clients is something that sets us apart .
@@ -102,7 +106,6 @@ export function Intro() {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           padding: 0px;
           text-align: left;
-          background-image: url('/images/darkbg.jpg');
         }
 
 
