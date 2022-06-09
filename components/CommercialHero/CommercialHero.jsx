@@ -33,7 +33,7 @@ export function CommercialHero() {
           </div>
         </div>
       </div>
-        <h1 className={styles.description}>
+        <p className={styles.description}>
 
           Maintenance contracts
           all electrical installations.
@@ -41,7 +41,7 @@ export function CommercialHero() {
           Periodic test + inspections
           Emergency lighting test.
           Out of hours work for customer convenience.
-        </h1>
+        </p>
 
     </motion.div>
   );

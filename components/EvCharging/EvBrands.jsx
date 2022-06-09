@@ -108,9 +108,9 @@ export function EvBrandsMarquee() {
       <Marquee gradient={false} >
         <EvBrandsImages />
       </Marquee>
-        <h4 className="evBrandMarqueetitle">
+        <h1 className="evBrandMarqueetitle">
           We have a passion for helping homeowners make the most of cheaper environmentally friendly driving.
-        </h4>
+        </h1>
       <style jsx>{`
 
        .evBrandMarqueetitle{

@@ -7,12 +7,9 @@ export function Intro() {
   return (
     <div className="intro-container">
       <main>
-        <h4 className="intro-description">
-
+        <p className="intro-description">
           Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
-
-
-        </h4>
+        </p>
 
         <div className="intro-row">
           <div className="intro-column">
@@ -25,9 +22,9 @@ export function Intro() {
                 priority
 
               />
-              <h4 className="intro-description">
+              <p className="intro-description">
                 We work a to very high standard and pride ourselves on being 100% honest.
-              </h4>
+              </p>
             </div>
           </div>
 
@@ -40,9 +37,9 @@ export function Intro() {
                 height={300}
                 priority
               />
-              <h4 className="intro-description">
+              <p className="intro-description">
                 We are always dependable and time keeping is one of strongest points.
-              </h4>
+              </p>
             </div>
           </div>
 
@@ -55,9 +52,9 @@ export function Intro() {
                 height={300}
                 priority
               />
-              <h4 className="intro-description">
+              <p className="intro-description">
                 Care and attention to our clients is something that sets us apart .
-              </h4>
+              </p>
             </div>
           </div>
         </div>
@@ -109,7 +106,7 @@ export function Intro() {
         }
 
 
-        .domstic-description {
+        .intro-description {
           line-height: 1.5;
           text-align: left;
         }
@@ -120,9 +117,9 @@ export function Intro() {
             display: block;
             margin-bottom: 20px;
           }
-           .comestic-description {
-    text-align: left;
-    line-height: 1.5;
+           .intro-description {
+            text-align: left;
+            line-height: 1.5;
   }
         }
       `}</style>

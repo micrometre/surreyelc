@@ -39,7 +39,15 @@ export function ExternalPage() {
     <Layout>
       <NavSocail />
       <NavBarPaths />
-      <motion.section exit={{ opacity: 0 }}>
+      <motion.section exit={{ opacity: 0 }}
+             style={{
+          fontSize: 14,
+          marginTop: 135,
+          marginBottom: 0,
+          lineHeight: 1.25,
+        }}
+      
+      >
         <motion.div variants={content} animate="animate" initial="initial">
           <motion.div variants={title}>
           <ExternalHero />

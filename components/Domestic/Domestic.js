@@ -18,7 +18,7 @@ export default function Domestic() {
                         </div>
                         <div className="col-lg-6 text-white">
                             <h1 className="display-5 fw-bold lh-1 mb-3">Domestic services</h1>
-                            <h4 className=" mb-4">
+                            <p className=" mb-4">
                                 Full domestic rewires<br/>
                                 Emergency call out<br/>
                                 Consumer unit chargers<br/>
@@ -34,7 +34,7 @@ export default function Domestic() {
                                 Driveway lighting,
                                 Decking areas and
                                 External living Areas<br/>
-                            </h4>
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,22 +1,17 @@
 .evContainer {
-  font-family: sans-serif;
   text-align: center;
   padding-top: 2px;
-  color: #f9f07e;
-}
-.box {
-    width: 100%;
-  border-radius: 1em;
-  background-color: #f9f07e;
-  margin-left: auto;
-  margin-right: auto;
+  color: #fff;
 }
 
 .magic {
     width: 100%;
   margin: auto;
   padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+.title {
+  line-height: 1em;
+  text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+}
