@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <>
             <div>
-                <div className="px-3 py-1 my-1  text-white">
+                <div className="px-1 py-1 my-1  text-white">
                     <h4 className=" mb-4">
                         We are fully invested in the future of our planet and younger generations.<br/>
                         We are exploring greener every friendly solutions. We have started with electric car chargers

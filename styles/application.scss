@@ -3,12 +3,13 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $assetPath :"/images";
-$navbar-dark-color:         #23513e;
+$navbar-dark-color:         #1d7551;
 @import "bootstrap";
 body {
-  background: url(#{$assetPath}/darkbg.jpg);
+  background: url(#{$assetPath}/darkbg.webp);
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+    background: #1d7551;
 }
 
 .md-container {

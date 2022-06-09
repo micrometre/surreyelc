@@ -46,21 +46,17 @@ export function EvBrands({ id, i }) {
       <style>
         {`
         .evbrandsSection{
-              border: 0.0.1rem solid teal;
 
         }
             .thumbnail {
-              border: 0.0.1rem solid red;
 
             }
 
             .frame {
-              border: 0.0.1rem solid yellow;
                 overflow: hidden;
             }
 
             .thumbnail img {
-              border: 0.0.1rem solid blue;
                 width: 100%;
                 height: 100%;
             }
@@ -89,8 +85,7 @@ export function EvBrandsImages() {
       <style>
         {`
         .eVgallery {
-              border: 0.0.1rem solid teal;
-            padding: 40px;
+            padding: 39px;
             margin: 1rem;
             width: 100%;
         }
@@ -120,6 +115,7 @@ export function EvBrandsMarquee() {
 
        .evBrandMarqueetitle{
           text-align: center;
+            padding: 3px;
 
 
        }

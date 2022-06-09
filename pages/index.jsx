@@ -6,9 +6,10 @@ import NavBarPaths from "../components/nav/NavbarPaths";
 import Hero from "../components/Hero";
 import LogoCard from '../components/Logo/Logo'
 import Moto from "../components/Moto/Moto";
+import Intro from "../components/Intro/Intro";
+import Domestic from "../components/Domestic";
 import EvBrandsMarquee from "../components/EvCharging/EvBrands";
 import { EvChargingHeader } from "../components/EvCharging/EvCharging";
-import Domestic from "../components/Domestic";
 import { NavBarFooter } from "../components/nav/NavbarFooter";
 import CommercialMoto from "../components/CommercialMoto";
 import CommercialHero from "../components/CommercialHero";
@@ -65,6 +66,7 @@ export function HomePage() {
             >
               <LogoCard />
               <Moto />
+              <Intro />
               <Domestic />
               <EvChargingHeader />
               <Hero />

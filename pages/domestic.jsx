@@ -1,9 +1,9 @@
 import ExternalHero from "../components/ExternalHero"
-import Domestic from "../components/Domestic/Domestic";
 import { motion } from "framer-motion";
 import Layout from "../components/layout";
 import NavSocail from "../components/nav/NavbarSocial";
 import NavBarPaths from "../components/nav/NavbarPaths";
+import Domestic from "../components/Domestic/Domestic";
 import CopyRight from '../components/Copyright'
 import { NavBarFooter } from "../components/nav/NavbarFooter";
 const content = {
@@ -35,15 +35,13 @@ const inputs = {
     },
   },
 };
-export function ExternalPage() {
+export function DomesticPage() {
   return (
     <Layout>
       <NavSocail />
       <NavBarPaths />
       <motion.section exit={{ opacity: 0 }}
         style={{
-          borderRadius: "3px",
-          border: "1px solid black",
           fontSize: 14,
           marginTop: 135,
           marginBottom: 0,
@@ -53,13 +51,13 @@ export function ExternalPage() {
       >
         <motion.div variants={content} animate="animate" initial="initial">
           <motion.div variants={title} >
-            <Domestic />
           </motion.div>
         </motion.div>
       </motion.section>
+      <Domestic />
       <CopyRight />
       <NavBarFooter />
     </Layout>
   )
 }
-export default ExternalPage
+export default DomesticPage
