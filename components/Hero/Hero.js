@@ -6,11 +6,11 @@ export default function Hero() {
         <>
             <div>
                 <div className="px-3 py-1 my-1  text-white">
-                    <h3 className=" mb-4">
+                    <h4 className=" mb-4">
                         We are fully invested in the future of our planet and younger generations.<br/>
                         We are exploring greener every friendly solutions. We have started with electric car chargers
                         and are hoping to offer all forms of green energy in the future.
-                    </h3>
+                    </h4>
                 </div>
             </div>
         </>
