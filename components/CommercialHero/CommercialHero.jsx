@@ -1,49 +1,52 @@
 import Image from 'next/image';
-import {
-  useViewportScroll,
-  motion,
-  useInvertedScale,
-} from 'framer-motion';
-import styles from "./CommercialHero.module.css";
-
-
+import { Container, Row, Card, Button } from 'react-bootstrap'
 
 export function CommercialHero() {
   return (
-    <motion.div>
-      <div className={styles.commercialContainer}>
-        <div className={styles.main}>
-          <div className={styles.row}>
-            <div className={styles.column}>
+    <>
+      <Container className="md-container">
+        <Row className="justify-content-md-between">
+          <Card className="lml-card text-white">
+            <Card.Body>
+              <Card.Text>
+                <p className="description ">
+                  Maintenance contracts
+                  all electrical installations.
+                  Consumer unit distribution board units.
+                </p>
+              </Card.Text>
               <Image
                 src="/images/9.webp"
                 alt="About picture"
                 width={500}
                 height={300}
               />
-            </div>
-            <div className={styles.column}>
+            </Card.Body>
+          </Card>
+
+          <Card className="lml-card text-white">
+            <Card.Body>
+              <Card.Text>
+                <p className="description ">
+                  Periodic test + inspections
+                  Emergency lighting test.
+                  Out of hours work for customer convenience.
+                </p>
+              </Card.Text>
               <Image
-                src="/images/10.webp"
+                src="/images/9.webp"
                 alt="About picture"
                 width={500}
                 height={300}
               />
-            </div>
-          </div>
-        </div>
-      </div>
-        <p className={styles.description}>
+            </Card.Body>
+          </Card>
 
-          Maintenance contracts
-          all electrical installations.
-          Consumer unit distribution board units.
-          Periodic test + inspections
-          Emergency lighting test.
-          Out of hours work for customer convenience.
-        </p>
 
-    </motion.div>
+
+        </Row>
+      </Container>
+    </>
   );
 }
 

@@ -35,7 +35,7 @@ export function CommercialMoto() {
         ref={ref}
         className={styles.magic}
       >
-        <h1 className={styles.title}>
+        <h1 className="title">
         Full Electrical service for  Commercial properties.
         </h1>
       </motion.div>

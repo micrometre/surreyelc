@@ -27,7 +27,7 @@ export function Moto() {
   };
 
   return (
-    <div className={styles.evContainer}>
+    <div className={styles.motoContainer}>
       <motion.div
         animate={inView ? 'visible' : 'hidden'}
         variants={variants}
@@ -35,7 +35,7 @@ export function Moto() {
         ref={ref}
         className={styles.magic}
       >
-        <h1 className={styles.title}>
+        <h1 className="title">
         Electrical specialists serving surrey and surrounding areas.
         </h1>
       </motion.div>

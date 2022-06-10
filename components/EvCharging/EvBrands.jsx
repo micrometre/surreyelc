@@ -1,10 +1,8 @@
 import * as React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { images } from "../../data/images-data";
 import Image from "next/image";
-import { Parallax } from "./EvCharging";
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 const thumbnailVariants = {
   initial: { scale: 0.9, opacity: 0 },
@@ -25,32 +23,26 @@ const imageVariants = {
 export function EvBrands({ id, i }) {
   return (
     <>
-    <div className="evbrandsSection">
-      <motion.div className="thumbnail" variants={thumbnailVariants}>
-        <motion.div />
-        <motion.div
-          className="frame"
-          whileHover="hover"
-          variants={frameVariants}
-          transition={transition}
-        >
-          <motion.img
-            src={`/images/${id}?auto=format&fit=crop&w=1500`}
-            alt="The surreyelc"
-            variants={imageVariants}
+      <div className="evbrandsSection">
+        <motion.div className="thumbnail" variants={thumbnailVariants}>
+          <motion.div />
+          <motion.div
+            className="frame"
+            whileHover="hover"
+            variants={frameVariants}
             transition={transition}
-          />
+          >
+            <motion.img
+              src={`/images/${id}?auto=format&fit=crop&w=1500`}
+              alt="The surreyelc"
+              variants={imageVariants}
+              transition={transition}
+            />
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </div>
+      </div>
       <style>
         {`
-        .evbrandsSection{
-
-        }
-            .thumbnail {
-
-            }
 
             .frame {
                 overflow: hidden;
@@ -85,8 +77,8 @@ export function EvBrandsImages() {
       <style>
         {`
         .eVgallery {
-            padding: 39px;
-            margin: 1rem;
+            padding: 19px;
+            margin: 0rem;
             width: 100%;
         }
 
@@ -105,27 +97,12 @@ export function EvBrandsImages() {
 export function EvBrandsMarquee() {
   return (
     <div className="evBrandMarquee">
+      <p className="description " style={{textAlign: "center", padding:3, color: "#fff",}}>
+        We have a passion for helping homeowners make the most of cheaper environmentally friendly driving.
+      </p>
       <Marquee gradient={false} >
         <EvBrandsImages />
       </Marquee>
-        <h1 className="evBrandMarqueetitle">
-          We have a passion for helping homeowners make the most of cheaper environmentally friendly driving.
-        </h1>
-      <style jsx>{`
-
-       .evBrandMarqueetitle{
-          text-align: center;
-            padding: 3px;
-
-
-       }
-
-
-        .evBrandMarquee {
-              background: white;
-
-        }
-      `}</style>
     </div>
   );
 }

@@ -1,15 +1,13 @@
 .container {
-  padding: 0 0.5rem;
+  margin-top: 1rem;
+  padding: 0.1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  color: #ffffff;
 
 }
-
 .main {
   padding: 0.1rem;
   flex: 1;
@@ -19,44 +17,43 @@
   align-items: center;
 }
 
-/* Float four columns side by side */
 .column {
   float: left;
   width: 33%;
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
 .row {
-  margin: 0 5px;
+  margin: 0 -5px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.title,
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: left;
+}
+
+
 .description {
-  text-align: center;
   line-height: 1.5;
-  font-size: 1.5rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 600px) {
-
-  .description {
-    text-align: left;
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
-
-
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
+   .description {
+    text-align: left;
+    line-height: 1.5;
+}
 }

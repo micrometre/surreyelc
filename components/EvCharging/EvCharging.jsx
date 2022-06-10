@@ -39,7 +39,7 @@ export function EvChargingHeader() {
         ref={ref}
         className={styles.magic}
       >
-        <h1 className={styles.title}>Electric car charging.
+        <h1 className="title">Electric car charging.
         </h1>
       </motion.div>
     </div>

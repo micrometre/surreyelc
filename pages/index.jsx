@@ -69,8 +69,8 @@ export function HomePage() {
               <Intro />
               <Domestic />
               <EvChargingHeader />
-              <Hero />
               <EvBrandsMarquee />
+              <Hero />
               <CommercialMoto />
               <CommercialHero />
               <ExternalMoto />

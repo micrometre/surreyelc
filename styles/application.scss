@@ -8,14 +8,14 @@ body {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
     background: #1d7551;
+
 }
 
 .md-container {
   max-width: 100%;
   padding-top: 1rem;
 }
-.title {
-  line-height: 1em;
+.h1 {
   text-shadow: 0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
 }

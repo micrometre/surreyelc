@@ -1,130 +1,78 @@
-
 import Link from "next/link";
 import Image from "next/image";
+import Head from 'next/head'
+import { Container, Row, Card, Button } from 'react-bootstrap'
 
-
-export function Intro() {
+export default function Home() {
   return (
-    <div className="intro-container">
-      <main>
-        <p className="intro-description">
-          Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
-        </p>
-
-        <div className="intro-row">
-          <div className="intro-column">
-            <div className="intro-card">
-              <Image
-                src="/images/2.webp"
-                alt="About picture"
-                width={498}
-                height={300}
-                priority
-
-              />
-              <p className="intro-description">
-                We work a to very high standard and pride ourselves on being 100% honest.
+    <Container className="md-container text-white">
+      <Container className="md-container">
+        <Card className="mml-card text-white">
+          <Card.Body>
+            <Card.Title>
+              <p className="description ">
+                Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
               </p>
-            </div>
-          </div>
+            </Card.Title>
+          </Card.Body>
+        </Card>
+        <Container className="md-container">
+          <Row className="justify-content-md-between">
+            <Card className="sml-card">
+              <Card.Body>
+                <Card.Title>
+                  <p className="intro-description">
+                    We work a to very high standard and pride ourselves on being 100% honest.
+                  </p>
+                </Card.Title>
+                <Image
+                  src="/images/2.webp"
+                  alt="About picture"
+                  width={498}
+                  height={300}
+                  priority
 
-          <div className="intro-column">
-            <div className="intro-card">
-              <Image
-                src="/images/3.webp"
-                alt="About picture"
-                width={498}
-                height={300}
-                priority
-              />
-              <p className="intro-description">
-                We are always dependable and time keeping is one of strongest points.
-              </p>
-            </div>
-          </div>
+                />
+              </Card.Body>
+            </Card>
+            <Card className="sml-card">
+              <Card.Body>
+                <Card.Title>
+                  <p className="intro-description">
+                    We are always dependable and time keeping is one of strongest points.
+                  </p>
+                </Card.Title>
 
-          <div className="intro-column">
-            <div className="intro-card">
-              <Image
-                src="/images/2.webp"
-                alt="About picture"
-                width={498}
-                height={300}
-                priority
-              />
-              <p className="intro-description">
-                Care and attention to our clients is something that sets us apart .
-              </p>
-            </div>
-          </div>
-        </div>
+                <Image
+                  src="/images/3.webp"
+                  alt="About picture"
+                  width={498}
+                  height={300}
+                  priority
+                />
+              </Card.Body>
+            </Card>
+            <Card className="sml-card">
+              <Card.Body>
+                <Card.Title>
+                  <p className="intro-description">
+                    Care and attention to our clients is something that sets us apart.
+                  </p>
+                </Card.Title>
+                <Image
+                  src="/images/2.webp"
+                  alt="About picture"
+                  width={498}
+                  height={300}
+                  priority
+                />
+              </Card.Body>
+            </Card>
+          </Row>
+        </Container>
+      </Container>
 
-
-
-      </main>
-      <style jsx>{`
-        .intro-container {
-          margin-top: 1rem;
-          padding: 0.1rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: #ffffff;
-
-        }
-        main {
-          padding: 0.1rem;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .intro-column {
-          float: left;
-          width: 33%;
-          padding: 0 10px;
-        }
-
-        .intro-row {
-          margin: 0 -5px;
-        }
-
-        .intro-row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-
-
-        .intro-card {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 0px;
-          text-align: left;
-        }
-
-
-        .intro-description {
-          line-height: 1.5;
-          text-align: left;
-        }
-        
-        @media screen and (max-width: 600px) {
-          .intro-column {
-            width: 100%;
-            display: block;
-            margin-bottom: 20px;
-          }
-           .intro-description {
-            text-align: left;
-            line-height: 1.5;
-  }
-        }
-      `}</style>
-    </div>
-  );
+    </Container>
+  )
 }
 
-export default Intro;

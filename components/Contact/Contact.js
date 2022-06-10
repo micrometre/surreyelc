@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './Contact.module.css'
-import { FaPhone } from "react-icons/fa";
 import { socialdata } from '../../data/social-data';
-import { emaildata } from '../../data/email-data';
 const phoneTitleStyles = {
   fontSize: "1.0rem",
   color: "black",

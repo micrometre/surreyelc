@@ -1,4 +1,4 @@
-import '../styles/application.scss'
+import '../styles/index.css'
 import { AnimatePresence } from "framer-motion";
 
 function SurreyApp({ Component, pageProps, router }) {

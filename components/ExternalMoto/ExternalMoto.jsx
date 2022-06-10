@@ -22,7 +22,7 @@ export function ExternalMoto() {
   };
 
   return (
-    <div className={styles.evContainer}>
+    <div className={styles.externalContainer}>
       <motion.div
         animate={inView ? 'visible' : 'hidden'}
         variants={variants}
@@ -30,7 +30,7 @@ export function ExternalMoto() {
         ref={ref}
         className={styles.magic}
       >
-        <h1 className={styles.title}>
+        <h1 className="title">
         External Electrical Installation.
         </h1>
       </motion.div>

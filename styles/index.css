@@ -1,0 +1,60 @@
+/* ensure all pages have Bootstrap CSS */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+body {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  background: #1c865a;
+
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 20px;
+    font-weight: bold;
+
+}
+
+.title {
+  line-height: 1em;
+  background: #7bff00;
+  
+}
+
+
+
+.md-container {
+  max-width: 100%;
+  padding-top: 0rem;
+}
+
+.sml-card {
+  width: 22rem;
+  margin: 1rem 0;
+  background: #1d7551;
+}
+
+.mml-card {
+  width: 100%;
+  margin: 0rem;
+  background: #1d7551;
+}
+.lml-card {
+  width: 39rem;
+  margin: 1rem 0;
+  background: #1d7551;
+}
+.cntr-footer {
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+}
+
+.sml-logo {
+  height: 1em;
+  margin-left: 10px;
+}
