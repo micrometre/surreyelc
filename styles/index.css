@@ -18,14 +18,13 @@ body {
 
 .title {
   padding: 3;
-  margin: 3;
+  margin: 5;
   font-weight: 400;
   font-size: 40px;
   color: #fff;
   line-height: 1em;
-  background: #1d7551;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #1c865a;
+  box-shadow: 0 4px  0 rgba(54, 248, 5, 1.2);
 
 }
 
