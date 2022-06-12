@@ -21,10 +21,11 @@ body {
   margin: 5;
   font-weight: 400;
   font-size: 40px;
+  font-weight: bolder;
   color: #fff;
   line-height: 1em;
   background: #1c865a;
-  box-shadow: 0 4px  0 rgba(54, 248, 5, 1.2);
+  box-shadow: 0 5px 0px  0 rgba(54, 248, 5, 1.2);
 
 }
 
@@ -38,19 +39,19 @@ body {
 .sml-card {
   width: 22rem;
   margin: 1rem 0;
-  background: #1d7551;
+  background: #0e5739;
 }
 
 .mml-card {
   width: 100%;
   margin: 0rem;
-  background: #1d7551;
+  background: #0e5739;
 }
 
 .lml-card {
   width: 39rem;
   margin: 1rem 0;
-  background: #1d7551;
+  background: #0e5739;
 }
 
 .cntr-footer {
