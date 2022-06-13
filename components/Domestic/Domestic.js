@@ -42,14 +42,7 @@ export default function Domestic() {
                             />
                         </Card.Body>
                     </Card>
-
-
-
                 </Row>
-            </Container>
-            <Container className="md-container">
-                <p className="description ">
-                </p>
             </Container>
         </>
     )

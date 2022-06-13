@@ -9,6 +9,13 @@ export const data = [
         subtitle: "Email contact",
         icons: FaEnvelope
       },
+      {
+        name: "01932 886593",
+        title: "Electricalsurrey Ltd",
+        href:   "tel:01932 886593  <" ,
+        subtitle: "Office",
+        icons: FaPhone
+      },
     ]
   }
 ];

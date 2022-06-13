@@ -14,8 +14,8 @@ export function LogoCard() {
             <Image
               src="/images/logo.webp"
               alt="The surreyelc"
-              width={438}
-              height={612}
+              width={640}
+              height={248}
               priority
             />
           </div>

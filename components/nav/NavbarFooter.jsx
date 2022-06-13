@@ -1,17 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
 import { data } from "../../data/contact-data";
-import { FaPhone } from "react-icons/fa";
 import {
-  Offcanvas,
   Navbar,
-  Nav,
-  NavDropdown,
 } from "react-bootstrap";
 
 export function NavBarFooter({ name, href, ...props }) {
   const phoneLinksStyles = { fontSize: "1.0em", color: "white" };
-  const phoneIconStyles = { fontSize: "2.5em", color: "white" };
 
   return (
     <>
