@@ -54,7 +54,7 @@ export function NavBarFooter({ name, href, ...props }) {
         @media (max-width: 990px) {
           .phonesdiv {
             text-decoration: none;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
               font-weight: 795;
 
           }

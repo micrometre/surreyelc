@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import styles from "../styles/Home.module.css";
 import Layout from "../components/layout";
 import NavSocail from "../components/nav/NavbarSocial";
 import NavBarPaths from "../components/nav/NavbarPaths";
@@ -42,15 +41,20 @@ export function ContactPage() {
       <NavSocail />
       <NavBarPaths />
 
-      <CopyRight />
-      <NavBarFooter />
-      <motion.section exit={{ opacity: 0 }}>
+      <motion.section exit={{ opacity: 0 }} style={{         
+         marginBottom: "1rem",
+         marginTop: "10rem",
+
+
+      }}>
         <motion.div variants={content} animate="animate" initial="initial">
           <motion.div variants={title}>
       <Contact />
           </motion.div>
         </motion.div>
       </motion.section>
+      <CopyRight />
+      <NavBarFooter />
     </Layout>
   );
 }

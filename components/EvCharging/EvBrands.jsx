@@ -85,7 +85,6 @@ export function EvBrandsImages() {
         .eVthumbnails {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             width: 100%;
         }
         `}
@@ -100,7 +99,11 @@ export function EvBrandsMarquee() {
       <p className="description " style={{textAlign: "center", padding:3, color: "#fff",}}>
         We have a passion for helping homeowners make the most of cheaper environmentally friendly driving.
       </p>
-      <Marquee gradient={false} >
+      <Marquee 
+      gradient={false} 
+      pauseOnHover={true}
+      speed={20}
+      >
         <EvBrandsImages />
       </Marquee>
     </div>
