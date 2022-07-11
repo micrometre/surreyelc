@@ -18,7 +18,7 @@ export function Contact() {
               <Card.Text>
                 <p className="description ">
                   The easiest way to contact us is by giving us a call to arrange a viewing of the work and a no-obligation quote.<br />
-                  Alternatively, you can email us at <code>info@elmbridgepainting </code>Please provide your name and telephone contact details in the email so we can get back to you at the very earliest opportunity.
+                  Alternatively, you can email us at <code>info@electricalsurrey.com </code>Please provide your name and telephone contact details in the email so we can get back to you at the very earliest opportunity.
                   We are also on Facebook and Instagram.
                 </p>
               </Card.Text>
